@@ -36,7 +36,8 @@ Let us know if you think you've found one we'd like. 😏
 	line-height: var(--line-height-medium);
 }
 
-.body-text + .body-text {
+:is(.body-text, .large, .larger, .medium)
+	+ :is(.body-text, .large, .larger, .medium) {
 	margin-top: 1em;
 }
 
@@ -178,6 +179,13 @@ Let us know if you think you've found one we'd like. 😏
 	.page-grid-left {
 		width: calc(50% - 2rem);
 	}
+}
+
+/* About */
+
+.about-the-website {
+	font-size: var(--font-size-small);
+	margin: 1rem 0 2rem;
 }
 
 /* Events */
