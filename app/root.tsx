@@ -21,7 +21,7 @@ const metaTags = [
 	{ content: "Philadelphia JavaScript Club", property: "og:title" },
 	{ content: "Philadelphia JavaScript Club", property: "twitter:title" },
 	{ content: "Philly JS Club", name: "title" },
-	{ content: "summary_large_image", property: "twitter:card" },
+	{ content: "summary", property: "twitter:card" },
 	{ content: "website", property: "og:type" },
 	{ content: "width=device-width,initial-scale=1", name: "viewport" },
 	{ content: description, name: "description" },
