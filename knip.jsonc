@@ -2,6 +2,8 @@
 	"$schema": "https://unpkg.com/knip@next/schema.json",
 	"entry": ["app/routes/**/*.tsx", "*.d.ts"],
 	"ignoreDependencies": [
+		"@typescript-eslint/eslint-plugin-strict-type-checked",
+		"@typescript-eslint/eslint-plugin-stylistic-type-checked",
 		"isbot",
 		"stylelint-config-standard",
 		"stylelint-order"
