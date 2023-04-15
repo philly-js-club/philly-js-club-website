@@ -52,6 +52,7 @@ html {
 body {
 	background: var(--color-background);
 	font-family: "League Spartan", monospace;
+	overflow: overlay;
 }
 
 body,
