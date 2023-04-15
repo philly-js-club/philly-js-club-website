@@ -110,14 +110,12 @@ Let us know if you think you've found one we'd like. 😏
 	line-height: var(--line-height-title);
 	margin: 0;
 	padding: 0;
-	text-align: right;
 }
 
 .page-grid-subtitle {
 	font-size: var(--font-size-larger);
 	font-weight: var(--font-weight-title);
 	line-height: var(--line-height-larger);
-	text-align: right;
 	text-transform: uppercase;
 }
 
@@ -128,7 +126,8 @@ Let us know if you think you've found one we'd like. 😏
 	flex-wrap: wrap;
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-large);
-	justify-content: flex-end;
+	height: 100%;
+	justify-content: flex-start;
 }
 
 .page-grid-footer-separator {
@@ -136,7 +135,6 @@ Let us know if you think you've found one we'd like. 😏
 }
 
 .page-grid-footer-link {
-	float: right;
 	padding: 0;
 }
 
@@ -167,12 +165,14 @@ Let us know if you think you've found one we'd like. 😏
 	}
 
 	.page-grid-header {
+		text-align: right;
 		top: 2rem;
 	}
 
 	.page-grid-footer {
 		bottom: 2rem;
 		height: 50%;
+		justify-content: flex-end;
 	}
 
 	.page-grid-left {
