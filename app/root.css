@@ -61,6 +61,8 @@ html {
 body {
 	background: var(--color-background);
 	font-family: "League Spartan", monospace;
+	font-smooth: smooth; /* stylelint-disable property-no-unknown */
+	-webkit-font-smoothing: antialiased;
 	overflow: overlay;
 }
 
