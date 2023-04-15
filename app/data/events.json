@@ -1,0 +1,32 @@
+[
+	{
+		"date": "2023-11-12",
+		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-569920616907",
+		"location": "Fancy Schmancy Location",
+		"topics": [
+			"First talk topic, short",
+			"Second talk topic, a bit longer to go across the line hooray",
+			"TBD"
+		]
+	},
+	{
+		"date": "2023-10-23",
+		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-569920616907",
+		"location": "Fancy Schmancy Location",
+		"topics": [
+			"First talk topic, short",
+			"Second talk topic, a bit longer to go across the line hooray",
+			"TBD"
+		]
+	},
+	{
+		"date": "2022-01-23",
+		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-569920616907",
+		"location": "Fancy Schmancy Location",
+		"topics": [
+			"First talk topic, short",
+			"Second talk topic, a bit longer to go across the line hooray",
+			"TBD"
+		]
+	}
+]

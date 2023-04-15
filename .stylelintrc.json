@@ -1,0 +1,8 @@
+{
+	"extends": ["stylelint-config-standard"],
+	"plugins": ["stylelint-order"],
+	"rules": {
+		"import-notation": null,
+		"order/properties-alphabetical-order": true
+	}
+}

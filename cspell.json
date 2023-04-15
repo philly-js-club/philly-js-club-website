@@ -1,0 +1,20 @@
+{
+	"dictionaries": ["css", "html", "softwareTerms", "typescript"],
+	"ignorePaths": [
+		".github",
+		"app/data/events.json",
+		"build",
+		"node_modules",
+		"pnpm-lock.yaml",
+		"public"
+	],
+	"words": [
+		"clsx",
+		"jawn",
+		"knip",
+		"isbot",
+		"typecheck",
+		"packagejson",
+		"stylelint"
+	]
+}

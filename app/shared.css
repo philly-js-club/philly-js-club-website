@@ -1,0 +1,189 @@
+/*
+TODO: WE WILL CHOOSE A MORE COMPONENT-ORIENTED STYLING SOLUTION!
+
+Don't come at us with your annoying CSS-in-JS/Tailwind/whatever hot takes.
+We know they exist. We've seen them. We've used them. They're all subpar.
+
+We want a styling solution with...
+* ...design systems token support
+* ...longevity (i.e. is used in multiple reputable repos)
+* ...minimal runtime performance bloat
+* ...responsive type safe CSS-in-JS props
+
+Let us know if you think you've found one we'd like. 😏
+*/
+
+/* Shared */
+
+.larger {
+	font-size: var(--font-size-larger);
+	font-weight: var(--font-weight-larger);
+}
+
+.large {
+	font-size: var(--font-size-large);
+	font-weight: var(--font-weight-large);
+}
+
+.medium {
+	font-size: var(--font-size-medium);
+	font-weight: var(--font-weight-medium);
+}
+
+.body-text {
+	font-size: var(--font-size-medium);
+	font-weight: var(--font-weight-light);
+	line-height: var(--line-height-medium);
+}
+
+/* Arrows */
+
+.arrow {
+	margin: 0;
+}
+
+.arrow-back {
+	height: 0.7em;
+	margin-left: 0.1em;
+	width: 0.7em;
+}
+
+.arrow-out {
+	height: 1em;
+	margin-bottom: -0.1em;
+	margin-left: 0.1em;
+	width: 1em;
+}
+
+/* EventDetails */
+
+.event-details {
+	margin: 1.5rem 0;
+}
+
+.event-details + .event-details {
+	margin-top: 3rem;
+}
+
+.event-details-date {
+	font-size: var(--font-size-large);
+	margin-bottom: 1rem;
+}
+
+.event-details-topics {
+	margin: 2rem 0 1rem;
+}
+
+.event-details-topic {
+	margin: 0.25em 0;
+}
+
+/* PageGrid */
+
+.page-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	margin: auto;
+	padding: 2rem;
+	position: relative;
+	width: 100%;
+}
+
+.page-grid-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.page-grid-title {
+	font-size: var(--font-size-title);
+	font-weight: var(--font-weight-title);
+	line-height: var(--line-height-title);
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.page-grid-subtitle {
+	font-size: var(--font-size-larger);
+	font-weight: var(--font-weight-title);
+	line-height: var(--line-height-larger);
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.page-grid-footer {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: var(--font-size-medium);
+	font-weight: var(--font-weight-large);
+	justify-content: flex-end;
+}
+
+.page-grid-footer-separator {
+	flex-basis: 100%;
+}
+
+.page-grid-footer-link {
+	float: right;
+	padding: 0;
+}
+
+.page-grid-footer-link:not(
+		:first-of-type,
+		.page-grid-footer-separator + .page-grid-footer-link
+	)::before {
+	background: var(--color-foreground);
+	border-radius: 100%;
+	content: "";
+	display: inline-block;
+	height: 0.3em;
+	margin: 0 0.5em 0.15em;
+	position: relative;
+	width: 0.3em;
+}
+
+@media (width >= 1000px) {
+	.page-grid {
+		max-width: var(--width-main-max);
+	}
+
+	.page-grid-header,
+	.page-grid-footer {
+		position: fixed;
+		right: 2rem;
+		width: 50%;
+	}
+
+	.page-grid-header {
+		top: 2rem;
+	}
+
+	.page-grid-footer {
+		bottom: 2rem;
+	}
+
+	.page-grid-left {
+		width: calc(50% - 2rem);
+	}
+}
+
+/* Events */
+
+.events-year {
+	list-style-type: none;
+	padding: 0;
+}
+
+.events-year-list + .events-year-list {
+	margin-top: 5rem;
+}
+
+.events-year-heading {
+	font-size: var(--font-size-larger);
+	font-weight: var(--font-weight-larger);
+}
+
+.events-year-events-list {
+	padding: 0;
+}
