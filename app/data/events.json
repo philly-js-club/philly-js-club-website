@@ -3,9 +3,7 @@
 		"date": "2023-05-10",
 		"link": "https://www.eventbrite.com/e/technically-super-meetup-during-philly-tech-week-tickets-611213515077",
 		"location": "HealthVerity",
-		"topics": [
-			"Technical.ly Super Meetup during Philly Tech Week"
-		]
+		"topics": ["Technical.ly Super Meetup during Philly Tech Week"]
 	},
 	{
 		"date": "2023-04-20",
@@ -27,64 +25,48 @@
 		"date": "2023-02-09",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-519965168817",
 		"location": "Indy Hall",
-		"topics": [
-			"Social meeting / hack night"
-		]
+		"topics": ["Social meeting / hack night"]
 	},
 	{
 		"date": "2023-01-11",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-472565545267",
 		"location": "Indy Hall",
-		"topics": [
-			"JavaScript build systems + TypeScript projects"
-		]
+		"topics": ["JavaScript build systems + TypeScript projects"]
 	},
 	{
 		"date": "2022-11-10",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-451216569907",
 		"location": "Fastmail's Philadelphia HQ",
-		"topics": [
-			"Linting & Mastodon!"
-		]
+		"topics": ["Linting & Mastodon!"]
 	},
 	{
 		"date": "2022-10-13",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-420958005727",
 		"location": "Fastmail's Philadelphia HQ",
-		"topics": [
-			"Social meeting / sharing projects"
-		]
+		"topics": ["Social meeting / sharing projects"]
 	},
 	{
 		"date": "2022-09-08",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-400972919797",
 		"location": "Fastmail's Philadelphia HQ",
-		"topics": [
-			"Social meeting / sharing projects"
-		]
+		"topics": ["Social meeting / sharing projects"]
 	},
 	{
 		"date": "2022-08-11",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-387233926097",
 		"location": "Fastmail's Philadelphia HQ",
-		"topics": [
-			"Social meeting / sharing projects"
-		]
+		"topics": ["Social meeting / sharing projects"]
 	},
 	{
 		"date": "2022-07-14",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-meetup-tickets-370871054307",
 		"location": "Fastmail's Philadelphia HQ",
-		"topics": [
-			"Social meeting / sharing projects"
-		]
+		"topics": ["Social meeting / sharing projects"]
 	},
 	{
 		"date": "2022-06-09",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-meetup-tickets-345760176997",
 		"location": "Fastmail's Philadelphia HQ",
-		"topics": [
-			"Our very first meeting!"
-		]
+		"topics": ["Our very first meeting!"]
 	}
 ]
