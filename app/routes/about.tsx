@@ -19,6 +19,14 @@ const team = [
 		name: "Cody Lewis",
 		role: "Organizer-At-Large",
 	},
+	{
+		name: "Rasha Moumneh",
+		role: "Organizer Emeritus",
+	},
+	{
+		name: "Matt Brophy",
+		role: "Organizer Emeritus",
+	},
 ];
 
 export const meta: V2_MetaFunction = () => {
