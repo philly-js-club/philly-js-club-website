@@ -30,7 +30,7 @@
 
 @media screen and (width >= 1400px) {
 	:root {
-		--font-size-large: 3.5rem;
+		--font-size-large: 3rem;
 		--font-size-larger: 5rem;
 		--font-size-title: 15rem;
 		--line-height-title: 12rem;

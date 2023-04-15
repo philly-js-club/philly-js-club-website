@@ -36,6 +36,10 @@ Let us know if you think you've found one we'd like. 😏
 	line-height: var(--line-height-medium);
 }
 
+.body-text + .body-text {
+	margin-top: 1em;
+}
+
 /* Arrows */
 
 .arrow {

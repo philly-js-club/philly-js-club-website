@@ -8,7 +8,7 @@ The website for Philadelphia's monthly JavaScript meetup. ✨
 	<a href="#contributors" target="_blank">
 <!-- prettier-ignore-start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<img alt="All Contributors: 1" src="https://img.shields.io/badge/all_contributors-1-21bb42.svg" />
+<img alt="All Contributors: 2" src="https://img.shields.io/badge/all_contributors-2-21bb42.svg" />
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- prettier-ignore-end -->
 	</a>
@@ -36,6 +36,7 @@ Thanks! 💖
 <table>
   <tbody>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/joewoods"><img src="https://avatars.githubusercontent.com/u/3072953?v=4?s=100" width="100px;" alt="JoeWoods"/><br /><sub><b>JoeWoods</b></sub></a><br /><a href="#content-joewoods" title="Content">🖋</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.joshuakgoldberg.com"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt="Josh Goldberg"/><br /><sub><b>Josh Goldberg</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-site/commits?author=JoshuaKGoldberg" title="Code">💻</a> <a href="#design-JoshuaKGoldberg" title="Design">🎨</a> <a href="#tool-JoshuaKGoldberg" title="Tools">🔧</a></td>
     </tr>
   </tbody>

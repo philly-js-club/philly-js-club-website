@@ -10,15 +10,23 @@ export default function About() {
 	return (
 		<PageGrid
 			left={
-				<p className="body-text">
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry's standard dummy text ever
-					since the 1500s, when an unknown printer took a galley of type and
-					scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic typesetting,
-					remaining essentially unchanged. ... It has roots in a piece of
-					classical Latin literature from 45 BC, making it over 2000 years old.
-				</p>
+				<>
+					<p className="body-text">
+						The Philadelphia JavaScript Club, founded in 2022, is a a place for
+						developers of all skill and experience levels to connect, show off
+						their work, and learn new things.{" "}
+					</p>
+					<p className="body-text">
+						We are devoted to being good citizens: we're here to help support
+						individual and organizational development, to connect developers
+						with the events going on in Philadelphia, and to provide a safe
+						space for people to try new things. We want to empower everyone who
+						joins us to build the best things they can build; we want to help
+						make instant friends amongst the developers who call Philadelphia
+						home.
+					</p>
+					<p className="body-text">We’re happy you could join us!</p>
+				</>
 			}
 			subtitle
 			title="About"

@@ -13,6 +13,15 @@
       "login": "JoshuaKGoldberg",
       "name": "Josh Goldberg",
       "profile": "http://www.joshuakgoldberg.com"
+    },
+    {
+      "login": "joewoods",
+      "name": "JoeWoods",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3072953?v=4",
+      "profile": "https://github.com/joewoods",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
