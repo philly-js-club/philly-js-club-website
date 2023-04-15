@@ -65,6 +65,10 @@ Let us know if you think you've found one we'd like. 😏
 	margin: 1.5rem 0;
 }
 
+.event-details-light {
+	font-weight: var(--font-weight-light);
+}
+
 .event-details + .event-details {
 	margin-top: 3rem;
 }
@@ -88,6 +92,7 @@ Let us know if you think you've found one we'd like. 😏
 	display: flex;
 	flex-direction: column;
 	gap: 4rem;
+	height: 100%;
 	margin: auto;
 	padding: 2rem;
 	position: relative;
@@ -117,6 +122,8 @@ Let us know if you think you've found one we'd like. 😏
 }
 
 .page-grid-footer {
+	align-content: flex-end;
+	align-items: baseline;
 	display: flex;
 	flex-wrap: wrap;
 	font-size: var(--font-size-medium);
@@ -165,6 +172,7 @@ Let us know if you think you've found one we'd like. 😏
 
 	.page-grid-footer {
 		bottom: 2rem;
+		height: 50%;
 	}
 
 	.page-grid-left {

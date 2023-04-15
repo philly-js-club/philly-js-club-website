@@ -4,9 +4,9 @@
 :root {
 	--color-background: #efdb4f;
 	--color-foreground: #323330;
-	--font-size-large: 1.5rem;
-	--font-size-larger: 2rem;
-	--font-size-medium: var(--font-size-large);
+	--font-size-medium: 1.5rem;
+	--font-size-large: 2rem;
+	--font-size-larger: 2.5rem;
 	--font-size-title: 7rem;
 	--font-weight-light: 400;
 	--font-weight-medium: 600;
@@ -18,9 +18,18 @@
 	--width-main-max: 150rem;
 }
 
+@media screen and (width >= 700px) {
+	:root {
+		--font-size-medium: var(--font-size-large);
+		--font-size-title: 10rem;
+		--line-height-title: 8rem;
+		--padding-page: 2rem;
+	}
+}
+
 @media screen and (width >= 1000px) {
 	:root {
-		--font-size-large: 2rem;
+		--font-size-large: 2.5rem;
 		--font-size-larger: 4rem;
 		--font-size-title: 12rem;
 		--line-height-medium: var(--font-size-medium);

@@ -34,6 +34,11 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 					target="_blank"
 				>
 					Code of Conduct
+					<Arrow
+						className="arrow-out"
+						label="External link indication arrow"
+						rotate={-45}
+					/>
 				</a>
 				<span className="page-grid-footer-separator" />
 				<a className="page-grid-footer-link" href="/events">
@@ -46,12 +51,22 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 					target="_blank"
 				>
 					GitHub
+					<Arrow
+						className="arrow-out"
+						label="External link indication arrow"
+						rotate={-45}
+					/>
 				</a>
 				<a
 					className="page-grid-footer-link"
 					href="https://forms.gle/NDLyNNE51RHoXgMC7"
 				>
 					Slack
+					<Arrow
+						className="arrow-out"
+						label="External link indication arrow"
+						rotate={-45}
+					/>
 				</a>
 			</footer>
 		</div>

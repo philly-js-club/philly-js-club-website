@@ -27,6 +27,7 @@ export default function Index() {
 						linkText="Register Now"
 						location={event.location}
 						topics={event.topics}
+						weight="medium"
 					/>
 				</>
 			}

@@ -6,6 +6,7 @@ interface EventDetailsProps {
 	linkText: string;
 	location: string;
 	topics: string[];
+	weight?: "light" | "medium";
 }
 
 export function EventDetails({
@@ -14,6 +15,7 @@ export function EventDetails({
 	location,
 	linkText,
 	topics,
+	weight = "light",
 }: EventDetailsProps) {
 	const formatter = new Intl.DateTimeFormat("en-US", {
 		day: "numeric",
@@ -21,7 +23,7 @@ export function EventDetails({
 	});
 
 	return (
-		<article className="event-details medium">
+		<article className={`event-details medium event-details-${weight}`}>
 			<h3 className="event-details-date">{formatter.format(date)}</h3>
 			<p>{location}</p>
 			<ul className="event-details-topics">
