@@ -1,0 +1,26 @@
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/prepare
+      - name: Install Playwright Browsers
+        run: pnpm playwright install --with-deps
+      - name: Run Playwright tests
+        run: pnpm test:ci
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+name: End-to-End Tests
+
+on:
+  pull_request: ~
+
+  push:
+    branches:
+      - main

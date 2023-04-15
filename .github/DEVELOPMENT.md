@@ -49,6 +49,15 @@ Each should be shown in VS Code, and can be run manually on the command-line:
 - `pnpm lint:package` ([npm-package-json-lint](https://npmpackagejsonlint.org)): Lints the `package.json` file
 - `pnpm lint:spelling` ([cspell](https://cspell.org)): Spell checks across all source files
 
+### Tests
+
+We include basic [Playwright](https://playwright.dev) accesibility tests with [aXe](https://www.deque.com/axe).
+You can run them locally with:
+
+```shell
+pnpm test
+```
+
 ### Type Checking
 
 Run [TypeScript](https://typescriptlang.org) locally:

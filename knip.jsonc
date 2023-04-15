@@ -1,9 +1,9 @@
 {
 	"$schema": "https://unpkg.com/knip@next/schema.json",
+	"entry": ["app/routes/**/*.tsx", "*.d.ts"],
 	"ignoreDependencies": [
 		"isbot",
 		"stylelint-config-standard",
 		"stylelint-order"
-	],
-	"entry": ["app/routes/**/*.tsx", "*.d.ts"]
+	]
 }

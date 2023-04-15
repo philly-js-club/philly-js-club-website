@@ -1,5 +1,7 @@
-build/
+build
+playwright-report
 pnpm-lock.yaml
+test-results
 
 # See https://github.com/all-contributors/cli/issues/347
 .all-contributorsrc
