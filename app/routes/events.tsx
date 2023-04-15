@@ -9,13 +9,13 @@ function groupBy<T, K extends number | string>(
 	items: T[],
 	getKey: (item: T) => K
 ) {
-	const grouped = {} as Record<K, T[]>;
+	const grouped = {} as Record<K, T[] | undefined>;
 
 	for (const item of items) {
 		(grouped[getKey(item)] ??= []).push(item);
 	}
 
-	return grouped;
+	return grouped as Record<K, T[]>;
 }
 
 export const loader = async () => {

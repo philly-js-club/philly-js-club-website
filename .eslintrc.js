@@ -21,19 +21,19 @@ module.exports = {
 		},
 		{
 			extends: [
-				"plugin:@typescript-eslint/recommended",
+				"plugin:@typescript-eslint/strict",
 				"plugin:typescript-sort-keys/recommended",
 			],
-			files: ["**/*.ts"],
+			files: ["**/*.ts", "**/*.tsx"],
 			parser: "@typescript-eslint/parser",
 		},
 		{
 			extends: [
-				"plugin:@typescript-eslint/recommended-requiring-type-checking",
-				"plugin:@typescript-eslint/strict",
+				"plugin:@typescript-eslint/strict-type-checked",
+				"plugin:@typescript-eslint/stylistic-type-checked",
 			],
 			excludedFiles: ["**/*.md/*.ts"],
-			files: ["**/*.ts"],
+			files: ["**/*.ts", "**/*.tsx"],
 			parser: "@typescript-eslint/parser",
 			parserOptions: {
 				project: true,

@@ -23,6 +23,10 @@
 	"lint-staged": {
 		"*": "prettier --ignore-unknown --write"
 	},
+	"resolutions": {
+		"@typescript-eslint/eslint-plugin": "6.0.0-alpha.124",
+		"@typescript-eslint/parser": "6.0.0-alpha.124"
+	},
 	"dependencies": {
 		"@axe-core/playwright": "^4.6.1",
 		"@playwright/test": "^1.32.3",
@@ -42,8 +46,8 @@
 		"@remix-run/serve": "^1.15.0",
 		"@types/react": "^18.0.25",
 		"@types/react-dom": "^18.0.8",
-		"@typescript-eslint/eslint-plugin": "^5.58.0",
-		"@typescript-eslint/parser": "^5.58.0",
+		"@typescript-eslint/eslint-plugin": "6.0.0-alpha.124",
+		"@typescript-eslint/parser": "6.0.0-alpha.124",
 		"cspell": "^6.31.1",
 		"eslint": "^8.27.0",
 		"eslint-plugin-deprecation": "^1.4.1",
