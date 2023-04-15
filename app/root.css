@@ -4,6 +4,7 @@
 :root {
 	--color-background: #efdb4f;
 	--color-foreground: #323330;
+	--font-size-small: 1.25rem;
 	--font-size-medium: 1.5rem;
 	--font-size-large: 2rem;
 	--font-size-larger: 2.5rem;
@@ -20,8 +21,10 @@
 
 @media screen and (width >= 700px) {
 	:root {
+		--font-size-small: 1.5rem;
 		--font-size-medium: var(--font-size-large);
 		--font-size-title: 10rem;
+		--line-height-medium: var(--font-size-medium);
 		--line-height-title: 8rem;
 		--padding-page: 2rem;
 	}
@@ -29,10 +32,10 @@
 
 @media screen and (width >= 1000px) {
 	:root {
+		--font-size-small: 2rem;
 		--font-size-large: 2.5rem;
 		--font-size-larger: 4rem;
 		--font-size-title: 12rem;
-		--line-height-medium: var(--font-size-medium);
 		--line-height-title: 9rem;
 	}
 }
