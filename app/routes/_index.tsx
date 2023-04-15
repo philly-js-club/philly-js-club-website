@@ -6,7 +6,18 @@ import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
 
 export const loader = async () => {
-	return json((await import("../data/events.json")).default[0]);
+	// This assumes the events are always in sorted order, newest first.
+	// Surely this assumption on undocumented data behavior will never come back to haunt us.
+	const events = (await import("../data/events.json")).map((event) => ({
+		...event,
+		date: new Date(event.date),
+	}));
+
+	// This assumes we'll always have a rebuild of the site after an event finishes.
+	// Surely this assumption tied to datetime logic will never come back to haunt us.
+	const now = new Date();
+
+	return json(events[events.findIndex((event) => now > event.date) - 1]);
 };
 
 export const meta: V2_MetaFunction = () => {
@@ -22,7 +33,7 @@ export default function Index() {
 				<>
 					<h2 className="larger">Next Jawn</h2>
 					<EventDetails
-						date={new Date(event.date[0])}
+						date={new Date(event.date)}
 						link={event.link}
 						linkText="Register Now"
 						location={event.location}
