@@ -30,7 +30,7 @@ export default function About() {
 		<PageGrid
 			left={
 				<>
-					<h2 className="larger">Who, us?</h2>
+					<h2 className="larger">Who, Us?</h2>
 					<p className="body-text">
 						The Philadelphia JavaScript Club, founded in 2022, is a a place for
 						developers of all skill and experience levels to connect, show off
