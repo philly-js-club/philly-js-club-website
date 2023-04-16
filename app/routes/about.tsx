@@ -21,14 +21,7 @@ const team = [
 	},
 ];
 
-const organizersEmeritum = [
-	{
-		name: "Rasha Moumneh",
-	},
-	{
-		name: "Matt Brophy",
-	},
-];
+const organizersEmeritum = ["Rasha Moumneh", "Matt Brophy"];
 
 export const meta: V2_MetaFunction = () => {
 	return [{ title: "About | Philly JS Club" }];
@@ -65,7 +58,7 @@ export default function About() {
 					</ul>
 					<h3 className="large">Organizers Emeritus</h3>
 					<ul className="body-text">
-						{organizersEmeritum.map(({ name }) => (
+						{organizersEmeritum.map((name) => (
 							<li key={name}>{name}</li>
 						))}
 					</ul>
