@@ -22,6 +22,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "tjwds",
+      "name": "Joe Woods",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7093793?v=4",
+      "profile": "https://joewoods.dev",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -31,7 +40,7 @@
   ],
   "imageSize": 100,
   "projectName": "philly-js-club-site",
-  "projectOwner": "philly-js-club",
+  "projectOwner": "JoshuaKGoldberg",
   "repoHost": "https://github.com",
   "repoType": "github"
 }
