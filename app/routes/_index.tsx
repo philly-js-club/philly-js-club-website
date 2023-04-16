@@ -6,12 +6,11 @@ import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
 
 export const loader = async () => {
-	// This assumes the events are always in sorted order, newest first.
-	// Surely this assumption on undocumented data behavior will never come back to haunt us.
 	const events = (await import("../data/events.json")).map((event) => ({
 		...event,
 		date: new Date(event.date),
 	}));
+	events.sort((a, b) => +b.date - +a.date);
 
 	// This assumes we'll always have a rebuild of the site after an event finishes.
 	// Surely this assumption tied to datetime logic will never come back to haunt us.
