@@ -176,6 +176,7 @@ Let us know if you think you've found one we'd like. 😏
 	}
 
 	.page-grid-left {
+		padding-bottom: 2rem;
 		width: calc(50% - 2rem);
 	}
 }
