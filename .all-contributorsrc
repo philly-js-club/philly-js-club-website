@@ -22,6 +22,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "jazzypants1989",
+      "name": "Jesse Pence",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102560332?v=4",
+      "profile": "http://jovialpenguin.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -31,7 +40,7 @@
   ],
   "imageSize": 100,
   "projectName": "philly-js-club-site",
-  "projectOwner": "philly-js-club",
+  "projectOwner": "JoshuaKGoldberg",
   "repoHost": "https://github.com",
   "repoType": "github"
 }
