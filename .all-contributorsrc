@@ -7,7 +7,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
       "contributions": [
         "code",
+        "content",
         "design",
+        "maintenance",
         "tool"
       ],
       "login": "JoshuaKGoldberg",
@@ -20,9 +22,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/7093793?v=4",
       "profile": "https://joewoods.dev",
       "contributions": [
+        "code",
         "content",
-        "maintenance",
-        "code"
+        "maintenance"
       ]
     },
     {
