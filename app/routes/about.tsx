@@ -19,13 +19,14 @@ const team = [
 		name: "Cody Lewis",
 		role: "Organizer-At-Large",
 	},
+];
+
+const organizersEmeritum = [
 	{
 		name: "Rasha Moumneh",
-		role: "Organizer Emeritus",
 	},
 	{
 		name: "Matt Brophy",
-		role: "Organizer Emeritus",
 	},
 ];
 
@@ -60,6 +61,12 @@ export default function About() {
 							<li key={name}>
 								<strong>{name}</strong> - {role}
 							</li>
+						))}
+					</ul>
+					<h3 className="large">Organizers Emeritus</h3>
+					<ul className="body-text">
+						{organizersEmeritum.map(({ name }) => (
+							<li key={name}>{name}</li>
 						))}
 					</ul>
 					<h3 className="large">The Website</h3>
