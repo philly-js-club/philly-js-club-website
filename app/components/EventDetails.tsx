@@ -18,6 +18,7 @@ export function EventDetails({
 	weight = "light",
 }: EventDetailsProps) {
 	const formatter = new Intl.DateTimeFormat("en-US", {
+		timeZone: "UTC",
 		day: "numeric",
 		month: "long",
 	});
