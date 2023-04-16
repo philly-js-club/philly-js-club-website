@@ -37,7 +37,7 @@ Thanks! 💖
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://jovialpenguin.com"><img src="https://avatars.githubusercontent.com/u/102560332?v=4?s=100" width="100px;" alt="Jesse Pence"/><br /><sub><b>Jesse Pence</b></sub></a><br /><a href="https://github.com/JoshuaKGoldberg/philly-js-club-site/commits?author=jazzypants1989" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://joewoods.dev"><img src="https://avatars.githubusercontent.com/u/7093793?v=4?s=100" width="100px;" alt="Joe Woods"/><br /><sub><b>Joe Woods</b></sub></a><br /><a href="#content-tjwds" title="Content">🖋</a> <a href="#maintenance-tjwds" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://joewoods.dev"><img src="https://avatars.githubusercontent.com/u/7093793?v=4?s=100" width="100px;" alt="Joe Woods"/><br /><sub><b>Joe Woods</b></sub></a><br /><a href="#content-tjwds" title="Content">🖋</a> <a href="#maintenance-tjwds" title="Maintenance">🚧</a> <a href="https://github.com/JoshuaKGoldberg/philly-js-club-site/commits?author=tjwds" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.joshuakgoldberg.com"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt="Josh Goldberg"/><br /><sub><b>Josh Goldberg</b></sub></a><br /><a href="https://github.com/JoshuaKGoldberg/philly-js-club-site/commits?author=JoshuaKGoldberg" title="Code">💻</a> <a href="#design-JoshuaKGoldberg" title="Design">🎨</a> <a href="#tool-JoshuaKGoldberg" title="Tools">🔧</a></td>
     </tr>
   </tbody>
