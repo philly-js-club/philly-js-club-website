@@ -15,21 +15,22 @@
       "profile": "http://www.joshuakgoldberg.com"
     },
     {
-      "login": "joewoods",
-      "name": "JoeWoods",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3072953?v=4",
-      "profile": "https://github.com/joewoods",
-      "contributions": [
-        "content"
-      ]
-    },
-    {
       "login": "tjwds",
       "name": "Joe Woods",
       "avatar_url": "https://avatars.githubusercontent.com/u/7093793?v=4",
       "profile": "https://joewoods.dev",
       "contributions": [
+        "content",
         "maintenance"
+      ]
+    },
+    {
+      "login": "jazzypants1989",
+      "name": "Jesse Pence",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102560332?v=4",
+      "profile": "http://jovialpenguin.com",
+      "contributions": [
+        "code"
       ]
     }
   ],
