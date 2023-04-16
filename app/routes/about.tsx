@@ -2,6 +2,27 @@ import type { V2_MetaFunction } from "@remix-run/react";
 
 import { PageGrid } from "~/components/PageGrid";
 
+const team = [
+	{
+		name: "Joe Woods",
+		role: "Director",
+	},
+	{
+		name: "Chasen Stark",
+		role: "Events",
+	},
+	{
+		name: "Josh Goldberg",
+		role: "Marketing",
+	},
+	{
+		name: "Cody Lewis",
+		role: "Organizer-At-Large",
+	},
+];
+
+const organizersEmeritum = ["Rasha Moumneh", "Matt Brophy"];
+
 export const meta: V2_MetaFunction = () => {
 	return [{ title: "About | Philly JS Club" }];
 };
@@ -11,10 +32,11 @@ export default function About() {
 		<PageGrid
 			left={
 				<>
+					<h2 className="larger">Who, Us?</h2>
 					<p className="body-text">
 						The Philadelphia JavaScript Club, founded in 2022, is a a place for
 						developers of all skill and experience levels to connect, show off
-						their work, and learn new things.{" "}
+						their work, and learn new things.
 					</p>
 					<p className="body-text">
 						We are devoted to being good citizens: we're here to help support
@@ -25,7 +47,25 @@ export default function About() {
 						make instant friends amongst the developers who call Philadelphia
 						home.
 					</p>
-					<p className="body-text">We’re happy you could join us!</p>
+					<p className="body-text">We’re happy for you to join us.</p>
+					<h2 className="larger">The Team</h2>
+					<ul className="body-text">
+						{team.map(({ name, role }) => (
+							<li key={name}>
+								<strong>{name}</strong> - {role}
+							</li>
+						))}
+					</ul>
+					<h3 className="large">Organizers Emeritus</h3>
+					<ul className="body-text">
+						{organizersEmeritum.map((name) => (
+							<li key={name}>{name}</li>
+						))}
+					</ul>
+					<h3 className="large">The Website</h3>
+					<p className="about-the-website">
+						Courtesy of Josh using Figma, Remix, and TypeScript.
+					</p>
 				</>
 			}
 			subtitle
