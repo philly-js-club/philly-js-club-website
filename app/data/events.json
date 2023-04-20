@@ -1,5 +1,11 @@
 [
 	{
+		"date": "2023-05-11",
+		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-contributing-to-open-source-projects-tickets-621853449407",
+		"location": "Indy Hall",
+		"topics": ["Contributing to Open Source Projects"]
+	},
+	{
 		"date": "2023-05-10",
 		"link": "https://www.eventbrite.com/e/technically-super-meetup-during-philly-tech-week-tickets-611213515077",
 		"location": "HealthVerity",
