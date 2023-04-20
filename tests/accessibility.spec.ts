@@ -1,7 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
-for (const uri of ["/", "about", "events"]) {
+for (const uri of ["/", "about", "events", "code-of-conduct"]) {
 	test(uri, async ({ page }) => {
 		await page.goto("/");
 

@@ -27,18 +27,8 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 				<a className="page-grid-footer-link" href="/about">
 					About
 				</a>
-				<a
-					className="page-grid-footer-link"
-					href="https://github.com/philly-js-club/code-of-conduct"
-					rel="noreferrer"
-					target="_blank"
-				>
+				<a className="page-grid-footer-link" href="/code-of-conduct">
 					Code of Conduct
-					<Arrow
-						className="arrow-out"
-						label="External link indication arrow"
-						rotate={-45}
-					/>
 				</a>
 				<span className="page-grid-footer-separator" />
 				<a className="page-grid-footer-link" href="/events">
