@@ -39,7 +39,8 @@ jobs:
         run: |
           npm run dev &
           sleep 10 &&
-          wget --mirror http://localhost:3000 -P out --no-host-directories --page-requisites --adjust-extension
+          wget --mirror http://localhost:3000 -P out --no-host-directories --page-requisites --adjust-extension &&
+          echo "phillyjs.com" > out/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
