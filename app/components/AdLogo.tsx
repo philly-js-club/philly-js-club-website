@@ -1,4 +1,4 @@
-export interface AdLogoProps {
+interface AdLogoProps {
 	className?: string;
 }
 
