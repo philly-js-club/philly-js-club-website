@@ -35,7 +35,7 @@ export default function Index() {
 		<PageGrid
 			left={
 				<>
-					<h2 className="larger">Next Jawn</h2>
+					<h2 className="larger">Next Jawn{events.length === 1 ? "" : "s"}</h2>
 					{events.map((event, index) => (
 						<EventDetails
 							date={new Date(event.date)}
