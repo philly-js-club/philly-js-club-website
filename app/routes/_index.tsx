@@ -16,8 +16,12 @@ export const loader = async () => {
 	// This assumes we'll always have a rebuild of the site after an event finishes.
 	// Surely this assumption tied to datetime logic will never come back to haunt us.
 	const now = new Date();
+	const oneMonthInTheFuture = new Date();
+	oneMonthInTheFuture.setUTCMonth(oneMonthInTheFuture.getUTCMonth() + 1);
 
-	return json(events[events.findIndex((event) => now > event.date) - 1]);
+	return json(
+		events.filter(({ date }) => date > now && date < oneMonthInTheFuture)
+	);
 };
 
 export const meta: V2_MetaFunction = () => {
@@ -25,21 +29,24 @@ export const meta: V2_MetaFunction = () => {
 };
 
 export default function Index() {
-	const event = useLoaderData<typeof loader>();
+	const events = useLoaderData<typeof loader>();
 
 	return (
 		<PageGrid
 			left={
 				<>
-					<h2 className="larger">Next Jawn</h2>
-					<EventDetails
-						date={new Date(event.date)}
-						link={event.link}
-						linkText="Register Now"
-						location={event.location}
-						topics={event.topics}
-						weight="medium"
-					/>
+					<h2 className="larger">Next Jawn{events.length === 1 ? "" : "s"}</h2>
+					{events.map((event, index) => (
+						<EventDetails
+							date={new Date(event.date)}
+							key={index}
+							link={event.link}
+							linkText="Register Now"
+							location={event.location}
+							topics={event.topics}
+							weight="medium"
+						/>
+					))}
 				</>
 			}
 			title={
