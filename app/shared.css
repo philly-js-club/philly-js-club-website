@@ -238,6 +238,7 @@ Let us know if you think you've found one we'd like. 😏
 .ad-text h1 {
 	font-size: 5rem;
 	font-weight: var(--font-weight-title);
+	line-height: 0.85;
 	margin: 0 15vw;
 	text-transform: uppercase;
 }
