@@ -30,6 +30,11 @@ Let us know if you think you've found one we'd like. 😏
 	font-weight: var(--font-weight-medium);
 }
 
+.smaller {
+	font-size: var(--font-size-small);
+	font-weight: var(--font-weight-small);
+}
+
 .body-text {
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-light);
@@ -309,4 +314,40 @@ Let us know if you think you've found one we'd like. 😏
 	.ad-text h1 {
 		font-size: 10rem;
 	}
+}
+
+/* Sponsors */
+
+.sponsor-cta > a {
+	text-decoration: underline;
+}
+
+.sponsors {
+	margin-top: 3rem;
+	list-style-type: none;
+	padding: 0;
+}
+
+.sponsor-list + .sponsor-list {
+	margin-top: 3rem;
+}
+
+.sponsor {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.sponsor-info {
+	flex: 1 0 50%;
+}
+
+.sponsor-info > * + * {
+	margin-top: 0.5rem;
+}
+
+.sponsor-image {
+	height: 10rem;
+	width: 10rem;
 }

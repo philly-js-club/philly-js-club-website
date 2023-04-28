@@ -76,6 +76,10 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 						rotate={-45}
 					/>
 				</a>
+				<span className="page-grid-footer-separator" />
+				<a className="page-grid-footer-link" href="/sponsors">
+					Sponsors
+				</a>
 			</footer>
 		</div>
 	);
