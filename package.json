@@ -17,7 +17,7 @@
 		"lint:styles": "stylelint \"**/*.css\"",
 		"prepare": "husky install",
 		"test": "playwright test --headed",
-		"test:ci": "playwright test",
+		"test:ci": "playwright test --project=chromium",
 		"typecheck": "tsc"
 	},
 	"lint-staged": {

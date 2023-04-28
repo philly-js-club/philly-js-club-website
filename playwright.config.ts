@@ -17,7 +17,10 @@ export default {
 	projects: [
 		{
 			name: "chromium",
-			use: devices["Desktop Chrome"],
+			use: {
+				...devices["Desktop Chrome"],
+				channel: "chrome",
+			},
 		},
 	],
 	outputDir: "test-results/",
