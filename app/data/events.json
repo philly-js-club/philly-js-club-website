@@ -1,5 +1,13 @@
 [
 	{
+		"date": "2023-06-29",
+		"link": "https://www.eventbrite.com/e/scripted-philadelphia-a-python-javascript-and-ruby-joint-meetup-tickets-626403759507",
+		"location": "Jon M. Huntsman Hall",
+		"topics": [
+			"Scripted Philadelphia: a Python, JavaScript, and Ruby joint meetup"
+		]
+	},
+	{
 		"date": "2023-05-11",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-contributing-to-open-source-projects-tickets-621853449407",
 		"location": "Indy Hall",
