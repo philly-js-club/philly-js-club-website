@@ -3,8 +3,8 @@
 After [forking the repo from GitHub](https://help.github.com/articles/fork-a-repo) and [installing pnpm](https://pnpm.io/installation):
 
 ```shell
-git clone https://github.com/<your-name-here>/philly-js-club-site
-cd philly-js-club-site
+git clone https://github.com/<your-name-here>/philly-js-club-website-remix
+cd philly-js-club-website-remix
 pnpm install
 ```
 
