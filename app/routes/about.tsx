@@ -17,7 +17,7 @@ const team = [
 	},
 	{
 		name: "Cody Lewis",
-		role: "Organizer-At-Large",
+		role: "Community",
 	},
 ];
 
