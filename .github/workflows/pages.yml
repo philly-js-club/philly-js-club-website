@@ -35,7 +35,10 @@ jobs:
           npm run dev &
           sleep 10 &&
           wget --mirror http://localhost:3000 -P out --no-host-directories --page-requisites --adjust-extension &&
-          echo "phillyjs.com" > out/CNAME
+          echo "phillyjs.com" > out/CNAME &&
+          cp public/favicon.ico out &&
+          cp public/logo.png out &&
+          cp public/logo.svg out
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
