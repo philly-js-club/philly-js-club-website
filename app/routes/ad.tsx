@@ -1,3 +1,4 @@
+import type { V2_MetaFunction } from "@remix-run/react";
 import { useSearchParams } from "@remix-run/react";
 
 import { AdLogo } from "~/components/AdLogo";
@@ -16,6 +17,20 @@ const monthNames = new Set([
 	"november",
 	"december",
 ]);
+
+export const meta: V2_MetaFunction<{ month: string; year: string }> = ({
+	location,
+}) => {
+	const params = new URLSearchParams(location.search);
+	const month = params.get("month")?.toLowerCase() ?? "idk";
+	const year = params.get("year")?.toLowerCase() ?? "when";
+
+	if (!monthNames.has(month) || !/\d{4}/.test(year)) {
+		return [{ title: "Ad | Philly JS Club" }];
+	}
+
+	return [{ title: `Ad (${upperFirst(month)} ${year}) | Philly JS Club` }];
+};
 
 export default function Ad() {
 	const [params] = useSearchParams();
