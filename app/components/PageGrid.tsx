@@ -50,8 +50,23 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 				<a
 					className="page-grid-footer-link"
 					href="https://forms.gle/NDLyNNE51RHoXgMC7"
+					rel="noreferrer"
+					target="_blank"
 				>
 					Slack
+					<Arrow
+						className="arrow-out"
+						label="External link indication arrow"
+						rotate={-45}
+					/>
+				</a>
+				<a
+					className="page-grid-footer-separator"
+					href="https://jawns.club/@jsclub"
+					rel="me noreferrer"
+					target="_blank"
+				>
+					Mastodon
 					<Arrow
 						className="arrow-out"
 						label="External link indication arrow"
