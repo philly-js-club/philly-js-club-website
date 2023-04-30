@@ -18,9 +18,7 @@ const monthNames = new Set([
 	"december",
 ]);
 
-export const meta: V2_MetaFunction<{ month: string; year: string }> = ({
-	location,
-}) => {
+export const meta: V2_MetaFunction = ({ location }) => {
 	const params = new URLSearchParams(location.search);
 	const month = params.get("month")?.toLowerCase() ?? "idk";
 	const year = params.get("year")?.toLowerCase() ?? "when";
