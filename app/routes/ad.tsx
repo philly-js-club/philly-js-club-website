@@ -3,27 +3,11 @@ import { useSearchParams } from "@remix-run/react";
 
 import { AdLogo } from "~/components/AdLogo";
 
-const monthNames = new Set([
-	"january",
-	"february",
-	"march",
-	"april",
-	"may",
-	"june",
-	"july",
-	"august",
-	"september",
-	"october",
-	"november",
-	"december",
-]);
-
 export const meta: V2_MetaFunction = ({ location }) => {
 	const params = new URLSearchParams(location.search);
-	const month = params.get("month")?.toLowerCase() ?? "idk";
-	const year = params.get("year")?.toLowerCase() ?? "when";
+	const { month, year } = getMonthAndYear(params);
 
-	if (!monthNames.has(month) || !/\d{4}/.test(year)) {
+	if (!isValidMonth(month) || !isValidYear(year)) {
 		return [{ title: "Ad | Philly JS Club" }];
 	}
 
@@ -32,13 +16,13 @@ export const meta: V2_MetaFunction = ({ location }) => {
 
 export default function Ad() {
 	const [params] = useSearchParams();
-	const month = params.get("month")?.toLowerCase() ?? "idk";
-	if (!monthNames.has(month)) {
+	const { month, year } = getMonthAndYear(params);
+
+	if (!isValidMonth(month)) {
 		return "nope (month)";
 	}
 
-	const year = params.get("year")?.toLowerCase() ?? "when";
-	if (!/\d{4}/.test(year)) {
+	if (!isValidYear(year)) {
 		return "nope (year)";
 	}
 
@@ -59,4 +43,33 @@ export default function Ad() {
 
 function upperFirst(text: string) {
 	return text[0].toUpperCase() + text.slice(1);
+}
+
+function getMonthAndYear(params: URLSearchParams) {
+	const month = params.get("month")?.toLowerCase() ?? "idk";
+	const year = params.get("year")?.toLowerCase() ?? "when";
+	return { month, year };
+}
+
+function isValidMonth(month: string) {
+	const monthNames = new Set([
+		"january",
+		"february",
+		"march",
+		"april",
+		"may",
+		"june",
+		"july",
+		"august",
+		"september",
+		"october",
+		"november",
+		"december",
+	]);
+
+	return monthNames.has(month);
+}
+
+function isValidYear(year: string) {
+	return /\d{4}/.test(year);
 }
