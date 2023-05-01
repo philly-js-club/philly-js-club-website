@@ -11,6 +11,7 @@ jobs:
             renovate
             renovate[bot]
           ignore-team-members: false
+          title-check-enable: false
 
 name: Compliance
 
