@@ -60,8 +60,9 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 						rotate={-45}
 					/>
 				</a>
+				<span className="page-grid-footer-separator" />
 				<a
-					className="page-grid-footer-separator"
+					className="page-grid-footer-link"
 					href="https://jawns.club/@jsclub"
 					rel="me noreferrer"
 					target="_blank"
