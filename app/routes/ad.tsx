@@ -2,16 +2,19 @@ import type { V2_MetaFunction } from "@remix-run/react";
 import { useSearchParams } from "@remix-run/react";
 
 import { AdLogo } from "~/components/AdLogo";
+import site from "~/config/site";
+import { constructSiteTitle, upperFirst } from "~/utils/common";
 
 export const meta: V2_MetaFunction = ({ location }) => {
 	const params = new URLSearchParams(location.search);
 	const { month, year } = getMonthAndYear(params);
-
+	let pageTitle = "Ad";
 	if (!isValidMonth(month) || !isValidYear(year)) {
-		return [{ title: "Ad | Philly JS Club" }];
+		return [{ title: constructSiteTitle(pageTitle) }];
 	}
 
-	return [{ title: `Ad (${upperFirst(month)} ${year}) | Philly JS Club` }];
+	pageTitle = `Ad (${upperFirst(month)} ${year})`;
+	return [{ title: constructSiteTitle(pageTitle) }];
 };
 
 export default function Ad() {
@@ -32,17 +35,13 @@ export default function Ad() {
 				<AdLogo className="ad-img" />
 			</div>
 			<div className="ad-text">
-				<h1>Philly JS Club</h1>
+				<h1>{site.title}</h1>
 				<p>
 					{upperFirst(month)} {year}
 				</p>
 			</div>
 		</main>
 	);
-}
-
-function upperFirst(text: string) {
-	return text[0].toUpperCase() + text.slice(1);
 }
 
 function getMonthAndYear(params: URLSearchParams) {

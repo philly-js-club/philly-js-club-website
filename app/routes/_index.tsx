@@ -4,6 +4,7 @@ import { useLoaderData } from "@remix-run/react";
 
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
+import { constructSiteTitle } from "~/utils/common";
 
 export const loader = async () => {
 	// This assumes the events are always in sorted order, newest first.
@@ -25,7 +26,7 @@ export const loader = async () => {
 };
 
 export const meta: V2_MetaFunction = () => {
-	return [{ title: "Philly JS Club" }];
+	return [{ title: constructSiteTitle() }];
 };
 
 export default function Index() {

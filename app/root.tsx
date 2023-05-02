@@ -7,25 +7,23 @@ import {
 	ScrollRestoration,
 } from "@remix-run/react";
 
+import site from "./config/site";
 import styles from "./root.css";
-
-const description =
-	"A local community for talking about the things that excite us about Javascript development and the web.";
 
 const metaTags = [
 	{ charSet: "utf-8" },
-	{ content: "https://phillyjs.com", property: "og:url" },
-	{ content: "https://phillyjs.com", property: "twitter:url" },
-	{ content: "https://phillyjs.com/logo.png", property: "og:image" },
-	{ content: "https://phillyjs.com/logo.png", property: "twitter:image" },
-	{ content: "Philadelphia JavaScript Club", property: "og:title" },
-	{ content: "Philadelphia JavaScript Club", property: "twitter:title" },
-	{ content: "Philly JS Club", name: "title" },
+	{ content: site.baseURL, property: "og:url" },
+	{ content: site.baseURL, property: "twitter:url" },
+	{ content: `${site.baseURL}/logo.png`, property: "og:image" },
+	{ content: `${site.baseURL}/logo.png`, property: "twitter:image" },
+	{ content: site.longTitle, property: "og:title" },
+	{ content: site.longTitle, property: "twitter:title" },
+	{ content: site.title, name: "title" },
 	{ content: "summary", property: "twitter:card" },
 	{ content: "website", property: "og:type" },
 	{ content: "width=device-width,initial-scale=1", name: "viewport" },
-	{ content: description, name: "description" },
-	{ content: description, property: "twitter:description" },
+	{ content: site.description, name: "description" },
+	{ content: site.description, property: "twitter:description" },
 ];
 
 export default function App() {

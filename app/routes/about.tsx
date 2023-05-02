@@ -1,30 +1,13 @@
 import type { V2_MetaFunction } from "@remix-run/react";
 
 import { PageGrid } from "~/components/PageGrid";
-
-const team = [
-	{
-		name: "Joe Woods",
-		role: "Director",
-	},
-	{
-		name: "Chasen Stark",
-		role: "Events",
-	},
-	{
-		name: "Josh Goldberg",
-		role: "Marketing",
-	},
-	{
-		name: "Cody Lewis",
-		role: "Community",
-	},
-];
+import team from "~/data/team.json";
+import { constructSiteTitle } from "~/utils/common";
 
 const organizersEmeritum = ["Rasha Moumneh", "Matt Brophy"];
 
 export const meta: V2_MetaFunction = () => {
-	return [{ title: "About | Philly JS Club" }];
+	return [{ title: constructSiteTitle("About") }];
 };
 
 export default function About() {

@@ -4,19 +4,7 @@ import { useLoaderData } from "@remix-run/react";
 
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
-
-function groupBy<T, K extends number | string>(
-	items: T[],
-	getKey: (item: T) => K
-) {
-	const grouped = {} as Record<K, T[] | undefined>;
-
-	for (const item of items) {
-		(grouped[getKey(item)] ??= []).push(item);
-	}
-
-	return grouped as Record<K, T[]>;
-}
+import { constructSiteTitle, groupBy } from "~/utils/common";
 
 export const loader = async () => {
 	return json(
@@ -27,7 +15,7 @@ export const loader = async () => {
 };
 
 export const meta: V2_MetaFunction = () => {
-	return [{ title: "Events | Philly JS Club" }];
+	return [{ title: constructSiteTitle("Events") }];
 };
 
 export default function Events() {

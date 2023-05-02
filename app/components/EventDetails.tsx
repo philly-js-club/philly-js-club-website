@@ -1,4 +1,5 @@
 import { Arrow } from "~/components/Arrow";
+import region from "~/config/region";
 
 interface EventDetailsProps {
 	date: Date;
@@ -17,8 +18,8 @@ export function EventDetails({
 	topics,
 	weight = "light",
 }: EventDetailsProps) {
-	const formatter = new Intl.DateTimeFormat("en-US", {
-		timeZone: "UTC",
+	const formatter = new Intl.DateTimeFormat(region.locale, {
+		timeZone: region.timeZone,
 		day: "numeric",
 		month: "long",
 	});
