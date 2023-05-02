@@ -27,13 +27,6 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 				<a className="page-grid-footer-link" href="/about">
 					About
 				</a>
-				<a className="page-grid-footer-link" href="/code-of-conduct">
-					Code of Conduct
-				</a>
-				<span className="page-grid-footer-separator" />
-				<a className="page-grid-footer-link" href="/events">
-					Events
-				</a>
 				<a
 					className="page-grid-footer-link"
 					href="https://github.com/philly-js-club"
@@ -47,11 +40,34 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 						rotate={-45}
 					/>
 				</a>
+				<span className="page-grid-footer-separator" />
+				<a className="page-grid-footer-link" href="/code-of-conduct">
+					Code of Conduct
+				</a>
 				<a
 					className="page-grid-footer-link"
 					href="https://forms.gle/NDLyNNE51RHoXgMC7"
+					rel="noreferrer"
+					target="_blank"
 				>
 					Slack
+					<Arrow
+						className="arrow-out"
+						label="External link indication arrow"
+						rotate={-45}
+					/>
+				</a>
+				<span className="page-grid-footer-separator" />
+				<a className="page-grid-footer-link" href="/events">
+					Events
+				</a>
+				<a
+					className="page-grid-footer-link"
+					href="https://jawns.club/@jsclub"
+					rel="me noreferrer"
+					target="_blank"
+				>
+					Mastodon
 					<Arrow
 						className="arrow-out"
 						label="External link indication arrow"
