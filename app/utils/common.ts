@@ -29,8 +29,6 @@ export function groupBy<T, K extends number | string>(
 
 /**
  * Capitalizes the first letter in a string
- * @param text
- * @returns the resulted string
  */
 export function upperFirst(text: string): string {
 	return text[0].toUpperCase() + text.slice(1);
