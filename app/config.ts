@@ -1,4 +1,4 @@
-const site = {
+export const site = {
 	title: "Philly JS Club",
 	longTitle: "Philadelphia JavaScript Club",
 	description:
@@ -6,4 +6,7 @@ const site = {
 	baseURL: "https://phillyjs.com",
 } as const;
 
-export default site;
+export const region = {
+	locale: "en-US",
+	timeZone: "UTC",
+} as const;
