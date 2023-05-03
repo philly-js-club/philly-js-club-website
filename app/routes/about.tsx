@@ -1,14 +1,25 @@
-import type { V2_MetaFunction } from "@remix-run/react";
+import type { LoaderFunction } from "@remix-run/node";
+import { useLoaderData, type V2_MetaFunction } from "@remix-run/react";
 
 import { PageGrid } from "~/components/PageGrid";
-import team from "~/data/team.json";
 import { constructSiteTitle } from "~/utils/common";
 
 export const meta: V2_MetaFunction = () => {
 	return [{ title: constructSiteTitle("About") }];
 };
 
+interface LoaderData {
+	members: Record<"name" | "role", string>[];
+	organizersEmeritum: string[];
+}
+
+export const loader: LoaderFunction = async () => {
+	return await import("../data/team.json");
+};
+
 export default function About() {
+	const data = useLoaderData<LoaderData>();
+
 	return (
 		<PageGrid
 			left={
@@ -31,17 +42,15 @@ export default function About() {
 					<p className="body-text">We’re happy for you to join us.</p>
 					<h2 className="larger">The Team</h2>
 					<ul className="body-text">
-						{(team.members as Record<"name" | "role", string>[]).map(
-							({ name, role }) => (
-								<li key={name}>
-									<strong>{name}</strong> - {role}
-								</li>
-							)
-						)}
+						{data.members.map(({ name, role }) => (
+							<li key={name}>
+								<strong>{name}</strong> - {role}
+							</li>
+						))}
 					</ul>
 					<h3 className="large">Organizers Emeritus</h3>
 					<ul className="body-text">
-						{(team.organizersEmeritum as string[]).map((name) => (
+						{(data.organizersEmeritum as string[]).map((name) => (
 							<li key={name}>{name}</li>
 						))}
 					</ul>
