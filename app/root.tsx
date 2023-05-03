@@ -7,7 +7,7 @@ import {
 	ScrollRestoration,
 } from "@remix-run/react";
 
-import site from "./config/site";
+import { site } from "./config";
 import styles from "./root.css";
 
 const metaTags = [

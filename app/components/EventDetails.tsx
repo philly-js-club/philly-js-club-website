@@ -1,5 +1,5 @@
 import { Arrow } from "~/components/Arrow";
-import region from "~/config/region";
+import { region } from "~/config";
 
 interface EventDetailsProps {
 	date: Date;

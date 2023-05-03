@@ -4,8 +4,6 @@ import { PageGrid } from "~/components/PageGrid";
 import team from "~/data/team.json";
 import { constructSiteTitle } from "~/utils/common";
 
-const organizersEmeritum = ["Rasha Moumneh", "Matt Brophy"];
-
 export const meta: V2_MetaFunction = () => {
 	return [{ title: constructSiteTitle("About") }];
 };
@@ -33,15 +31,17 @@ export default function About() {
 					<p className="body-text">We’re happy for you to join us.</p>
 					<h2 className="larger">The Team</h2>
 					<ul className="body-text">
-						{team.map(({ name, role }) => (
-							<li key={name}>
-								<strong>{name}</strong> - {role}
-							</li>
-						))}
+						{(team.members as Record<"name" | "role", string>[]).map(
+							({ name, role }) => (
+								<li key={name}>
+									<strong>{name}</strong> - {role}
+								</li>
+							)
+						)}
 					</ul>
 					<h3 className="large">Organizers Emeritus</h3>
 					<ul className="body-text">
-						{organizersEmeritum.map((name) => (
+						{(team.organizersEmeritum as string[]).map((name) => (
 							<li key={name}>{name}</li>
 						))}
 					</ul>

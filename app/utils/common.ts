@@ -1,4 +1,4 @@
-import site from "~/config/site";
+import { site } from "~/config";
 
 /**
  * Constructs the site title convention out of the current page title:
@@ -6,8 +6,8 @@ import site from "~/config/site";
  * ```ts
  * constructSiteTitle("About") // "About | Philly JS Club"
  * ```
- * @param {string} pageTitle - The current page title
- * @returns {string} The page title including the site title
+ * @param pageTitle - The current page title
+ * @returns The page title including the site title
  */
 export function constructSiteTitle(pageTitle?: string): string {
 	if (!pageTitle) return site.title;
@@ -29,8 +29,8 @@ export function groupBy<T, K extends number | string>(
 
 /**
  * Capitalizes the first letter in a string
- * @param {string} text
- * @returns {string} the resulted string
+ * @param text
+ * @returns the resulted string
  */
 export function upperFirst(text: string): string {
 	return text[0].toUpperCase() + text.slice(1);

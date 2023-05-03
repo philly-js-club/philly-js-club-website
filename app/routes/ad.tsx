@@ -2,7 +2,7 @@ import type { V2_MetaFunction } from "@remix-run/react";
 import { useSearchParams } from "@remix-run/react";
 
 import { AdLogo } from "~/components/AdLogo";
-import site from "~/config/site";
+import { site } from "~/config";
 import { constructSiteTitle, upperFirst } from "~/utils/common";
 
 export const meta: V2_MetaFunction = ({ location }) => {
