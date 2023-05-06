@@ -44,6 +44,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "chasenstark",
+      "name": "Chasen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40804965?v=4",
+      "profile": "https://github.com/chasenstark",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
