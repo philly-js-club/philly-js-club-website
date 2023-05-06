@@ -1,3 +1,5 @@
+import { site } from "~/config";
+
 import { Arrow } from "./Arrow";
 
 interface PageGridProps {
@@ -13,7 +15,7 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 				<h1 className="page-grid-title">{title}</h1>
 				{subtitle && (
 					<a className="page-grid-subtitle" href="/">
-						Philly JS Club
+						{site.title}
 						<Arrow
 							className="arrow-back"
 							label="Back indication arrow"

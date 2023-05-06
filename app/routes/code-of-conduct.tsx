@@ -1,9 +1,10 @@
 import type { V2_MetaFunction } from "@remix-run/react";
 
 import { PageGrid } from "~/components/PageGrid";
+import { constructSiteTitle } from "~/utils/common";
 
 export const meta: V2_MetaFunction = () => {
-	return [{ title: "Code of Conduct | Philly JS Club" }];
+	return [{ title: constructSiteTitle("Code of Conduct") }];
 };
 
 export default function About() {
