@@ -35,6 +35,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "RNR1",
+      "name": "Ron Braha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45559220?v=4",
+      "profile": "https://linktr.ee/ronbraha",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -43,8 +52,8 @@
     "README.md"
   ],
   "imageSize": 100,
-  "projectName": "philly-js-club-site",
-  "projectOwner": "JoshuaKGoldberg",
+  "projectName": "philly-js-club-website",
+  "projectOwner": "philly-js-club",
   "repoHost": "https://github.com",
   "repoType": "github"
 }
