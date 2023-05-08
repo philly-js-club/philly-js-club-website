@@ -8,6 +8,12 @@
 		]
 	},
 	{
+		"date": "2023-06-08",
+		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-developments-in-react-router-and-remix-tickets-627760688117",
+		"location": "Indy Hall",
+		"topics": ["Developments in React Router (and Remix) with Matt Brophy"]
+	},
+	{
 		"date": "2023-05-17",
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-contributing-to-open-source-projects-tickets-621853449407",
 		"location": "Indy Hall",
