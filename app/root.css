@@ -5,17 +5,17 @@
 	--color-background: #efdb4f;
 	--color-foreground: #323330;
 	--font-size-small: clamp(1.5rem, 4vw, 2rem);
-	--font-size-medium: clamp(1.5rem, 4vw, var(--font-size-large));
-	--font-size-large: clamp(2rem, 4vw, 3rem);
-	--font-size-larger: clamp(2.5rem, 5vw, 5rem);
-	--font-size-title: clamp(7rem, 15vw, 15rem);
+	--font-size-medium: clamp(3vh, 5vw, var(--font-size-large));
+	--font-size-large: clamp(4vh, 5vw, 5vh);
+	--font-size-larger: clamp(4.5vh, 5vw, 8vh);
+	--font-size-title: clamp(13vh, 15vw, 24vh);
 	--font-weight-light: 400;
 	--font-weight-medium: 600;
 	--font-weight-large: 700;
 	--font-weight-larger: 700;
 	--font-weight-title: 900;
-	--line-height-medium: clamp(1.5rem, 6vw, var(--font-size-medium));
-	--line-height-title: clamp(5.5rem, 12vw, 12rem);
+	--line-height-medium: clamp(3vh, 6vw, var(--font-size-medium));
+	--line-height-title: clamp(10vh, 12vw, 20vh);
 	--width-main-max: 150rem;
 }
 
