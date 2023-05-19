@@ -4,48 +4,24 @@
 :root {
 	--color-background: #efdb4f;
 	--color-foreground: #323330;
-	--font-size-small: 1.25rem;
-	--font-size-medium: 1.5rem;
-	--font-size-large: 2rem;
-	--font-size-larger: 2.5rem;
-	--font-size-title: 7rem;
+	--font-size-small: clamp(1.5rem, 4vw, 2rem);
+	--font-size-medium: clamp(1.5rem, 4vw, var(--font-size-large));
+	--font-size-large: clamp(2rem, 4vw, 3rem);
+	--font-size-larger: clamp(2.5rem, 4vw, 5rem);
+	--font-size-title: clamp(7rem, 15vw, 15rem);
 	--font-weight-light: 400;
 	--font-weight-medium: 600;
 	--font-weight-large: 700;
 	--font-weight-larger: 700;
 	--font-weight-title: 900;
-	--line-height-medium: 1.5rem;
-	--line-height-title: 5.5rem;
+	--line-height-medium: clamp(1.5rem, 6vw, var(--font-size-medium));
+	--line-height-title: clamp(5.5rem, 12vw, 12rem);
 	--width-main-max: 150rem;
 }
 
 @media screen and (width >= 700px) {
 	:root {
-		--font-size-small: 1.5rem;
-		--font-size-medium: var(--font-size-large);
-		--font-size-title: 10rem;
-		--line-height-medium: var(--font-size-medium);
-		--line-height-title: 8rem;
 		--padding-page: 2rem;
-	}
-}
-
-@media screen and (width >= 1000px) {
-	:root {
-		--font-size-small: 2rem;
-		--font-size-large: 2.5rem;
-		--font-size-larger: 4rem;
-		--font-size-title: 12rem;
-		--line-height-title: 9rem;
-	}
-}
-
-@media screen and (width >= 1400px) {
-	:root {
-		--font-size-large: 3rem;
-		--font-size-larger: 5rem;
-		--font-size-title: 15rem;
-		--line-height-title: 12rem;
 	}
 }
 
