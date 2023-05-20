@@ -55,7 +55,7 @@ export default function About() {
 					<p className="body-text">
 						This Code of Conduct adapted from{" "}
 						<a
-							className="page-grid-footer-link"
+							className="page-grid-footer-link small"
 							href="https://plone.org/foundation/materials/foundation-resolutions/code-of-conduct"
 							rel="noreferrer"
 							target="_blank"

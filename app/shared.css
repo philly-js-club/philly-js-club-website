@@ -30,6 +30,10 @@ Let us know if you think you've found one we'd like. 😏
 	font-weight: var(--font-weight-medium);
 }
 
+.small {
+	font-size: var(--font-size-small);
+}
+
 .body-text {
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-light);
