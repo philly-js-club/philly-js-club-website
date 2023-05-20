@@ -23,7 +23,11 @@ export const loader = async () => {
 	return json(
 		events
 			.filter(({ date }) => date > now && date < oneMonthInTheFuture)
-			.sort((a, b) => (a.date >= b.date ? 1 : -1))
+			.sort((a, b) => {
+				if (a.date > b.date) return 1;
+				else if (a.date === b.date) return 0;
+				else return -1;
+			})
 	);
 };
 
