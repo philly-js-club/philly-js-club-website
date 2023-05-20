@@ -1,0 +1,13 @@
+{
+	"data": [
+		{
+			"file": "app/data/events.json",
+			"type": "item",
+			"contentMap": {
+				"title": "topics",
+				"link": "link",
+				"description": "topics"
+			}
+		}
+	]
+}
