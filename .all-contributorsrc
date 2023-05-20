@@ -72,6 +72,15 @@
         "design",
         "code"
       ]
+    },
+    {
+      "login": "colin-j-arpe",
+      "name": "C. Arpe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23365750?v=4",
+      "profile": "https://github.com/colin-j-arpe",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

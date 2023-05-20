@@ -8,7 +8,7 @@ The website for Philadelphia's monthly JavaScript meetup. ✨
 	<a href="#contributors" target="_blank">
 <!-- prettier-ignore-start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<img alt="All Contributors: 7" src="https://img.shields.io/badge/all_contributors-7-21bb42.svg" />
+<img alt="All Contributors: 8" src="https://img.shields.io/badge/all_contributors-8-21bb42.svg" />
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- prettier-ignore-end -->
 	</a>
@@ -36,12 +36,15 @@ Thanks! 💖
 <table>
   <tbody>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/colin-j-arpe"><img src="https://avatars.githubusercontent.com/u/23365750?v=4?s=100" width="100px;" alt="C. Arpe"/><br /><sub><b>C. Arpe</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=colin-j-arpe" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/chasenstark"><img src="https://avatars.githubusercontent.com/u/40804965?v=4?s=100" width="100px;" alt="Chasen"/><br /><sub><b>Chasen</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=chasenstark" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://jovialpenguin.com"><img src="https://avatars.githubusercontent.com/u/102560332?v=4?s=100" width="100px;" alt="Jesse Pence"/><br /><sub><b>Jesse Pence</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=jazzypants1989" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://joewoods.dev"><img src="https://avatars.githubusercontent.com/u/7093793?v=4?s=100" width="100px;" alt="Joe Woods"/><br /><sub><b>Joe Woods</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=tjwds" title="Code">💻</a> <a href="#content-tjwds" title="Content">🖋</a> <a href="#maintenance-tjwds" title="Maintenance">🚧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.joshuakgoldberg.com"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt="Josh Goldberg"/><br /><sub><b>Josh Goldberg</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=JoshuaKGoldberg" title="Code">💻</a> <a href="#content-JoshuaKGoldberg" title="Content">🖋</a> <a href="#design-JoshuaKGoldberg" title="Design">🎨</a> <a href="#maintenance-JoshuaKGoldberg" title="Maintenance">🚧</a> <a href="#tool-JoshuaKGoldberg" title="Tools">🔧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://linktr.ee/ronbraha"><img src="https://avatars.githubusercontent.com/u/45559220?v=4?s=100" width="100px;" alt="Ron Braha"/><br /><sub><b>Ron Braha</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=RNR1" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.codeserious.com"><img src="https://avatars.githubusercontent.com/u/414475?v=4?s=100" width="100px;" alt="Sean Kennedy"/><br /><sub><b>Sean Kennedy</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=seriouslysean" title="Code">💻</a></td>
+    </tr>
+    <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/chethtrayen"><img src="https://avatars.githubusercontent.com/u/14133613?v=4?s=100" width="100px;" alt="chethtrayen"/><br /><sub><b>chethtrayen</b></sub></a><br /><a href="#design-chethtrayen" title="Design">🎨</a> <a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=chethtrayen" title="Code">💻</a></td>
     </tr>
   </tbody>
