@@ -21,7 +21,10 @@ export const loader = async () => {
 	oneMonthInTheFuture.setUTCMonth(oneMonthInTheFuture.getUTCMonth() + 1);
 
 	return json(
-		events.filter(({ date }) => date > now && date < oneMonthInTheFuture)
+		// Filter and sort event date in ascending order.
+		events
+			.filter(({ date }) => date > now && date < oneMonthInTheFuture)
+			.sort((a, b) => a.date.getTime() - b.date.getTime())
 	);
 };
 
