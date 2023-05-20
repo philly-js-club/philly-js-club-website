@@ -194,6 +194,7 @@ Let us know if you think you've found one we'd like. 😏
 
 /* About */
 
+.contact-text,
 .about-the-website {
 	font-size: var(--font-size-small);
 	margin: 1rem 0 2rem;
