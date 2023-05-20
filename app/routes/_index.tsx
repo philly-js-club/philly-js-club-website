@@ -24,6 +24,7 @@ export const loader = async () => {
 		events
 			.filter(({ date }) => date > now && date < oneMonthInTheFuture)
 			.sort((a, b) => {
+				// Sort event date by ascending order.
 				if (a.date > b.date) return 1;
 				else if (a.date === b.date) return 0;
 				else return -1;
