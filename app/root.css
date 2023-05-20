@@ -4,10 +4,10 @@
 :root {
 	--color-background: #efdb4f;
 	--color-foreground: #323330;
-	--font-size-small: clamp(1vh, 4vw, var(--font-size-medium));
-	--font-size-medium: clamp(2.5vh, 5vw, var(--font-size-large));
-	--font-size-large: clamp(4vh, 5vw, 5vh);
-	--font-size-larger: clamp(4.5vh, 5vw, 8vh);
+	--font-size-small: clamp(2vh, 4vw, var(--font-size-medium));
+	--font-size-medium: clamp(3vh, 5vw, var(--font-size-large));
+	--font-size-large: clamp(5vh, 5vw, 5.5vh);
+	--font-size-larger: clamp(6vh, 5vw, 9vh);
 	--font-size-title: clamp(11vh, 15vw, 24vh);
 	--font-weight-light: 400;
 	--font-weight-medium: 600;
