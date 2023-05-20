@@ -5,17 +5,17 @@
 	--color-background: #efdb4f;
 	--color-foreground: #323330;
 	--font-size-small: clamp(2vh, 4vw, var(--font-size-medium));
-	--font-size-medium: clamp(3vh, 5vw, var(--font-size-large));
-	--font-size-large: clamp(5vh, 5vw, 5.5vh);
-	--font-size-larger: clamp(6vh, 5vw, 9vh);
-	--font-size-title: clamp(11vh, 15vw, 24vh);
+	--font-size-medium: clamp(3.4vh, 5vw, var(--font-size-large));
+	--font-size-large: clamp(3vh, 5vw, 4.4vh);
+	--font-size-larger: clamp(5.3vh, 5vw, 7.33vh);
+	--font-size-title: clamp(10.5vh, 15vw, 22vh);
 	--font-weight-light: 400;
 	--font-weight-medium: 600;
 	--font-weight-large: 700;
 	--font-weight-larger: 700;
 	--font-weight-title: 900;
 	--line-height-medium: clamp(3vh, 6vw, var(--font-size-medium));
-	--line-height-title: clamp(10vh, 12vw, 20vh);
+	--line-height-title: clamp(10vh, 12vw, 17.6vh);
 	--width-main-max: 150rem;
 }
 
