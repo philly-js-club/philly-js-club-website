@@ -21,7 +21,9 @@ export const loader = async () => {
 	oneMonthInTheFuture.setUTCMonth(oneMonthInTheFuture.getUTCMonth() + 1);
 
 	return json(
-		events.filter(({ date }) => date > now && date < oneMonthInTheFuture)
+		events
+			.filter(({ date }) => date > now && date < oneMonthInTheFuture)
+			.sort((a, b) => (a.date >= b.date ? 1 : -1))
 	);
 };
 
