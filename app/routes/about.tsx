@@ -54,8 +54,14 @@ export default function About() {
 							<li key={name}>{name}</li>
 						))}
 					</ul>
+					<h3 className="large">Get In Touch</h3>
+					<p className="about-page-text">
+						You can reach out to{" "}
+						<a href="mailto:phillyjs@joewoods.dev">Joe over email</a> with any
+						questions or comments.
+					</p>
 					<h3 className="large">The Website</h3>
-					<p className="about-the-website">
+					<p className="about-page-text">
 						Courtesy of Josh using Figma, Remix, and TypeScript.
 					</p>
 				</>
