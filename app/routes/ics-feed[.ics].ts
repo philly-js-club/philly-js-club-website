@@ -1,6 +1,6 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { Response } from "@remix-run/node";
-import type { EventAttributes } from "ics";
+import type { DurationObject, EventAttributes } from "ics";
 import { generateIcs } from "ics-service";
 
 import { site } from "~/config";
@@ -22,7 +22,7 @@ export const loader: LoaderFunction = async () => {
 				],
 				startInputType: "utc",
 				endInputType: "utc",
-				duration: { hours: 3 },
+				duration: event.duration as DurationObject,
 			};
 		}
 	);
