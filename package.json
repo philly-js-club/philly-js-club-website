@@ -35,6 +35,8 @@
 		"clsx": "^1.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"ics": "^3.1.0",
+		"ics-service": "^1.4.0",
 		"isbot": "latest",
 		"playwright": "^1.32.3",
 		"react": "^18.2.0",
