@@ -21,6 +21,7 @@
 		"phillyjs",
 		"Rasha",
 		"stylelint",
-		"typecheck"
+		"typecheck",
+		"webcal"
 	]
 }
