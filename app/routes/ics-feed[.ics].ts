@@ -10,6 +10,7 @@ export const loader: LoaderFunction = async () => {
 		(event) => {
 			const date = new Date(event.date);
 			return {
+				// TODO: add uid: event.uid,
 				title: event.topics.join(", "),
 				location: event.location,
 				url: event.link,

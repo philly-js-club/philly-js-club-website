@@ -3,6 +3,7 @@ import { json } from "@remix-run/node";
 import type { V2_MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 
+import CalendarSubscriptionLinks from "~/components/CalendarSubscriptionLinks";
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
 import { site } from "~/config";
@@ -37,9 +38,9 @@ export default function Events() {
 		<PageGrid
 			left={
 				<>
-					<a href={`webcal://${site.domain}/ics-feed.ics`} rel="noreferrer">
-						Subscribe to our calendar
-					</a>
+					<CalendarSubscriptionLinks
+						webcalUrl={`webcal://${site.domain}/ics-feed.ics`}
+					/>
 					<ol className="events-year">
 						{Object.entries(data)
 							.sort(([a], [b]) => +b - +a)
