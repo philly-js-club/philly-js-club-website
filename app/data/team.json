@@ -3,7 +3,8 @@
 		{ "name": "Joe Woods", "role": "Director" },
 		{ "name": "Chasen Stark", "role": "Events" },
 		{ "name": "Josh Goldberg", "role": "Marketing" },
-		{ "name": "Cody Lewis", "role": "Community" }
+		{ "name": "Cody Lewis", "role": "Community" },
+		{ "name": "Denzel Echevarria", "role": "Outreach" }
 	],
 	"organizersEmeritum": ["Rasha Moumneh", "Matt Brophy"]
 }
