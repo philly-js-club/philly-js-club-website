@@ -26,5 +26,3 @@ export function CalendarSubscriptionLinks({
 		</div>
 	);
 }
-
-export default CalendarSubscriptionLinks;

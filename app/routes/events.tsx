@@ -3,7 +3,7 @@ import { json } from "@remix-run/node";
 import type { V2_MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 
-import CalendarSubscriptionLinks from "~/components/CalendarSubscriptionLinks";
+import { CalendarSubscriptionLinks } from "~/components/CalendarSubscriptionLinks";
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
 import { site } from "~/config";
