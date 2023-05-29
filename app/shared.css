@@ -30,6 +30,11 @@ Let us know if you think you've found one we'd like. 😏
 	font-weight: var(--font-weight-medium);
 }
 
+.smaller {
+	font-size: var(--font-size-small);
+	font-weight: var(--font-weight-small);
+}
+
 .body-text {
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-light);
@@ -92,12 +97,8 @@ Let us know if you think you've found one we'd like. 😏
 .page-grid {
 	display: grid;
 	grid-gap: 0 4rem;
-	grid-template-areas:
-		"header"
-		"left"
-		"footer";
-	grid-template-columns: minmax(100%, 1fr);
-	grid-template-rows: minmax(min-content, max-content);
+	grid-template: minmax(min-content, max-content) / minmax(100%, 1fr);
+	grid-template-areas: "header" "left" "footer";
 	height: 100%;
 	margin: auto;
 	padding: 2rem;
@@ -184,6 +185,8 @@ Let us know if you think you've found one we'd like. 😏
 
 	.page-grid-footer {
 		align-self: flex-end;
+		bottom: 2rem;
+		height: auto;
 		justify-content: flex-end;
 	}
 
@@ -309,4 +312,39 @@ Let us know if you think you've found one we'd like. 😏
 	.ad-text h1 {
 		font-size: 10rem;
 	}
+}
+
+/* Sponsors */
+
+.sponsor-cta > a {
+	text-decoration: underline;
+}
+
+.sponsors {
+	list-style-type: none;
+	margin-top: 3rem;
+	padding: 0;
+}
+
+.sponsor-list + .sponsor-list {
+	margin-top: 3rem;
+}
+
+.sponsor {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2rem;
+}
+
+.sponsor-info {
+	flex: 1 0 50%;
+}
+
+.sponsor-info > * + * {
+	margin-top: 0.5rem;
+}
+
+.sponsor-image {
+	height: 10rem;
+	width: 10rem;
 }

@@ -76,6 +76,23 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 						rotate={-45}
 					/>
 				</a>
+				<span className="page-grid-footer-separator" />
+				<a className="page-grid-footer-link" href="/sponsors">
+					Sponsors
+				</a>
+				<a
+					className="page-grid-footer-link"
+					href="https://www.linkedin.com/groups/12846035/"
+					rel="me noreferrer"
+					target="_blank"
+				>
+					LinkedIn
+					<Arrow
+						className="arrow-out"
+						label="External link indication arrow"
+						rotate={-45}
+					/>
+				</a>
 			</footer>
 		</div>
 	);
