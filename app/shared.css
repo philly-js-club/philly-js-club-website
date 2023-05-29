@@ -185,6 +185,8 @@ Let us know if you think you've found one we'd like. 😏
 
 	.page-grid-footer {
 		align-self: flex-end;
+		bottom: 2rem;
+		height: auto;
 		justify-content: flex-end;
 	}
 
