@@ -226,6 +226,38 @@ Let us know if you think you've found one we'd like. 😏
 	padding: 0;
 }
 
+/* Calendar Subscription */
+
+.calendar-subscription {
+	font-size: var(--font-size-small);
+}
+
+.calendar-subscription button {
+	background: var(--color-background);
+	border: 2px solid var(--color-foreground);
+	border-radius: 1em;
+	color: var(--color-foreground);
+	font-size: var(--font-size-smaller);
+	margin: 1em 0;
+	padding: 0.5em;
+	text-align: left;
+	width: auto;
+}
+
+.calendar-subscription a {
+	text-decoration: underline;
+}
+
+.calendar-subscription p {
+	margin-top: 0.5em;
+}
+
+@media screen and (width >= 1000px) {
+	.calendar-subscription button {
+		margin-top: 0;
+	}
+}
+
 /* Ad page */
 
 .ad-main {

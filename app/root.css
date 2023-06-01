@@ -4,6 +4,7 @@
 :root {
 	--color-background: #efdb4f;
 	--color-foreground: #323330;
+	--font-size-smaller: clamp(1.5rem, 2vw, 2rem);
 	--font-size-small: clamp(1.5rem, 4vw, 2rem);
 	--font-size-medium: clamp(1.5rem, 4vw, var(--font-size-large));
 	--font-size-large: clamp(2rem, 4vw, 3rem);
