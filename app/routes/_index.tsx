@@ -2,10 +2,8 @@ import { json } from "@remix-run/node";
 import type { V2_MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 
-import { CalendarSubscriptionLinks } from "~/components/CalendarSubscriptionLinks";
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
-import { site } from "~/config";
 import { constructSiteTitle } from "~/utils/common";
 
 export const loader = async () => {
@@ -42,9 +40,6 @@ export default function Index() {
 			left={
 				<>
 					<h2 className="larger">Next Jawn{events.length === 1 ? "" : "s"}</h2>
-					<CalendarSubscriptionLinks
-						webcalUrl={`webcal://${site.domain}/ics-feed.ics`}
-					/>
 					{events.map((event, index) => (
 						<EventDetails
 							date={new Date(event.date)}
