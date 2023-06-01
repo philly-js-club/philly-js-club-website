@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 
 interface CalendarSubscriptionLinksProps {
 	webcalUrl: string;
@@ -7,22 +7,28 @@ interface CalendarSubscriptionLinksProps {
 export function CalendarSubscriptionLinks({
 	webcalUrl,
 }: CalendarSubscriptionLinksProps) {
+	const [showMore, setShowMore] = useState(false);
+
 	return (
 		<div>
-			{[
-				{ href: webcalUrl, vendor: "Apple" },
-				{
-					href: `https://www.google.com/calendar/render?cid=${webcalUrl}`,
-					vendor: "Google",
-				},
-			].map(({ href, vendor }, i, list) => (
-				<React.Fragment key={vendor}>
-					<a href={href} rel="noreferrer">
-						Subscribe with your {vendor} calendar
+			<button onClick={() => setShowMore((s) => !s)}>
+				📆 Subscribe with your favorite calendar client
+			</button>
+			{showMore && (
+				<>
+					<a href={`https://www.google.com/calendar/render?cid=${webcalUrl}`}>
+						Subscribe with Google Calendar
 					</a>
-					{i !== list.length - 1 && <span> • </span>}
-				</React.Fragment>
-			))}
+					<br />
+					To subscribe, point your calendar client to the following URL:
+					<br />
+					{webcalUrl}
+					<br />
+					⚠️ Be sure to not download and import that file! You'll need to
+					subscribe to the calendar updates in order for your calendar client to
+					continue to fetch new events.
+				</>
+			)}
 		</div>
 	);
 }
