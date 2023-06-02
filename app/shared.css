@@ -237,6 +237,7 @@ Let us know if you think you've found one we'd like. 😏
 	border: 2px solid var(--color-foreground);
 	border-radius: 1em;
 	color: var(--color-foreground);
+	cursor: pointer;
 	font-size: var(--font-size-smaller);
 	margin: 1em 0;
 	padding: 0.5em;
