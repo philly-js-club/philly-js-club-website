@@ -4,6 +4,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
+    # top of the hour so that we're not trying to run on GitHub's servers when
+    # every other cron job is trying to run
+    - cron: "14 * * * *"
 
 jobs:
   build:
@@ -35,7 +40,8 @@ jobs:
           npm run dev &
           sleep 10 &&
           wget --mirror http://localhost:3000 -P out --no-host-directories --page-requisites --adjust-extension &&
-          wget --mirror http://localhost:3000/ad -P out --no-host-directories --page-requisites --adjust-extension
+          wget --mirror http://localhost:3000/ad -P out --no-host-directories --page-requisites --adjust-extension &&
+          wget --mirror http://localhost:3000/ics-feed.ics -P out --no-host-directories --page-requisites --adjust-extension
           echo "phillyjs.com" > out/CNAME &&
           cp public/favicon.ico out &&
           cp public/logo.png out &&
