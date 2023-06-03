@@ -359,6 +359,7 @@ Let us know if you think you've found one we'd like. 😏
 }
 
 .icon {
+	align-items: center;
 	display: flex;
 	flex-flow: row wrap;
 	gap: 2rem;
