@@ -1,6 +1,7 @@
 import { Arrow } from "~/components/Arrow";
 
 interface IconProp {
+	description?: string;
 	href: string;
 	imageHref: string;
 	name: string;
@@ -14,7 +15,7 @@ interface IconsProps {
 export function Icons({ icons, imageClassName }: IconsProps) {
 	return (
 		<ol className="icons">
-			{icons.map(({ href, imageHref, name }) => (
+			{icons.map(({ description, href, imageHref, name }) => (
 				<li className="icon-list" key={name}>
 					<div className="icon">
 						<img
@@ -33,6 +34,7 @@ export function Icons({ icons, imageClassName }: IconsProps) {
 									/>
 								</h3>
 							</a>
+							{description && <p className="smaller">{description}</p>}
 						</div>
 					</div>
 				</li>
