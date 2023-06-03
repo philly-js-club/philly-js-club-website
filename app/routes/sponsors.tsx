@@ -1,7 +1,7 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData, type V2_MetaFunction } from "@remix-run/react";
 
-import { Arrow } from "~/components/Arrow";
+import { Icons } from "~/components/Icons";
 import { PageGrid } from "~/components/PageGrid";
 import { constructSiteTitle } from "~/utils/common";
 
@@ -35,36 +35,10 @@ export default function Sponsors() {
 							Reach out to Joe!
 						</a>
 					</p>
-					<ol className="sponsors">
-						{sponsors.currentSponsors.map(
-							({ name, description, href, imageHref }) => {
-								return (
-									<li className="sponsor-list" key={name}>
-										<div className="sponsor">
-											<img
-												alt={`${name} logo`}
-												className="sponsor-image"
-												src={imageHref}
-											/>
-											<div className="sponsor-info">
-												<a href={href} rel="noreferrer" target="_blank">
-													<h3 className="larger">
-														{name}{" "}
-														<Arrow
-															className="arrow-out medium"
-															label="External link indication arrow"
-															rotate={-45}
-														/>
-													</h3>
-												</a>
-												<p className="smaller">{description}</p>
-											</div>
-										</div>
-									</li>
-								);
-							}
-						)}
-					</ol>
+					<Icons
+						icons={sponsors.currentSponsors}
+						imageClassName="sponsor-image"
+					/>
 				</>
 			}
 			subtitle

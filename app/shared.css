@@ -346,37 +346,46 @@ Let us know if you think you've found one we'd like. 😏
 	}
 }
 
+/* Icons */
+
+.icons {
+	list-style-type: none;
+	margin-top: 3rem;
+	padding: 0;
+}
+
+.icon-list + .icon-list {
+	margin-top: 3rem;
+}
+
+.icon {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 2rem;
+}
+
+.icon-info {
+	flex: 1 0 50%;
+}
+
+.icon-info > * + * {
+	margin-top: 0.5rem;
+}
+
 /* Sponsors */
 
 .sponsor-cta > a {
 	text-decoration: underline;
 }
 
-.sponsors {
-	list-style-type: none;
-	margin-top: 3rem;
-	padding: 0;
-}
-
-.sponsor-list + .sponsor-list {
-	margin-top: 3rem;
-}
-
-.sponsor {
-	display: flex;
-	flex-flow: row wrap;
-	gap: 2rem;
-}
-
-.sponsor-info {
-	flex: 1 0 50%;
-}
-
-.sponsor-info > * + * {
-	margin-top: 0.5rem;
-}
-
 .sponsor-image {
 	height: 10rem;
 	width: 10rem;
+}
+
+/* Join Us */
+
+.platform-image {
+	height: 5rem;
+	width: 5rem;
 }

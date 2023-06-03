@@ -1,0 +1,29 @@
+{
+	"currentPlatforms": [
+		{
+			"href": "https://github.com/philly-js-club",
+			"name": "Github",
+			"imageHref": "/assets/logos/github.png"
+		},
+		{
+			"href": "https://forms.gle/NDLyNNE51RHoXgMC7",
+			"name": "Slack",
+			"imageHref": "/assets/logos/slack.png"
+		},
+		{
+			"href": "https://jawns.club/@jsclub",
+			"name": "Mastadon",
+			"imageHref": "/assets/logos/mastadon.svg"
+		},
+		{
+			"href": "https://www.linkedin.com/groups/12846035/",
+			"name": "LinkedIn",
+			"imageHref": "/assets/logos/linkedin.png"
+		},
+		{
+			"href": "https://newsletter.joewoods.dev/phillyjs",
+			"name": "Newsletter",
+			"imageHref": "/assets/logos/newsletter.png"
+		}
+	]
+}
