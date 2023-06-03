@@ -70,7 +70,7 @@ export default function About() {
 				</>
 			}
 			subtitle
-			title="Code of Conduct"
+			title="CoC"
 		/>
 	);
 }

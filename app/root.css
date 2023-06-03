@@ -9,7 +9,7 @@
 	--font-size-medium: clamp(1.5rem, 4vw, var(--font-size-large));
 	--font-size-large: clamp(2rem, 4vw, 3rem);
 	--font-size-larger: clamp(2.5rem, 5vw, 5rem);
-	--font-size-title: clamp(7rem, 15vw, 15rem);
+	--font-size-title: clamp(7rem, 13vw, 15rem);
 	--font-weight-light: 400;
 	--font-weight-medium: 600;
 	--font-weight-large: 700;
