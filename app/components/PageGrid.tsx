@@ -1,5 +1,3 @@
-import { NavLink } from "@remix-run/react";
-
 import { site } from "~/config";
 
 import { Arrow } from "./Arrow";
@@ -16,35 +14,35 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 			<header className="page-grid-header">
 				<h1 className="page-grid-title">{title}</h1>
 				{subtitle && (
-					<NavLink className="page-grid-subtitle" to="/">
+					<a className="page-grid-subtitle" href="/">
 						{site.title}
 						<Arrow
 							className="arrow-back"
 							label="Back indication arrow"
 							rotate={180}
 						/>
-					</NavLink>
+					</a>
 				)}
 			</header>
 			<main className="page-grid-left">{left}</main>
 			<footer className="page-grid-footer">
-				<NavLink className="page-grid-footer-link" to="/about">
+				<a className="page-grid-footer-link" href="/about">
 					About
-				</NavLink>
-				<NavLink className="page-grid-footer-link" to="/code-of-conduct">
+				</a>
+				<a className="page-grid-footer-link" href="/code-of-conduct">
 					Code of Conduct
-				</NavLink>
+				</a>
 				<span className="page-grid-footer-separator" />
-				<NavLink className="page-grid-footer-link" to="/events">
+				<a className="page-grid-footer-link" href="/events">
 					Events
-				</NavLink>
-				<NavLink className="page-grid-footer-link" to="/sponsors">
+				</a>
+				<a className="page-grid-footer-link" href="/sponsors">
 					Sponsors
-				</NavLink>
+				</a>
 				<span className="page-grid-footer-separator" />
-				<NavLink className="page-grid-footer-link" to="/join-us">
+				<a className="page-grid-footer-link" href="/join-us">
 					Join Us
-				</NavLink>
+				</a>
 			</footer>
 		</div>
 	);
