@@ -16,7 +16,7 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 			<header className="page-grid-header">
 				<h1 className="page-grid-title">{title}</h1>
 				{subtitle && (
-					<NavLink className="page-grid-subtitle" to="/">
+					<NavLink className="page-grid-subtitle" reloadDocument to="/">
 						{site.title}
 						<Arrow
 							className="arrow-back"
@@ -28,21 +28,29 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 			</header>
 			<main className="page-grid-left">{left}</main>
 			<footer className="page-grid-footer">
-				<NavLink className="page-grid-footer-link" to="/about">
+				<NavLink className="page-grid-footer-link" reloadDocument to="/about">
 					About
 				</NavLink>
-				<NavLink className="page-grid-footer-link" to="/code-of-conduct">
+				<NavLink
+					className="page-grid-footer-link"
+					reloadDocument
+					to="/code-of-conduct"
+				>
 					Code of Conduct
 				</NavLink>
 				<span className="page-grid-footer-separator" />
-				<NavLink className="page-grid-footer-link" to="/events">
+				<NavLink className="page-grid-footer-link" reloadDocument to="/events">
 					Events
 				</NavLink>
-				<NavLink className="page-grid-footer-link" to="/sponsors">
+				<NavLink
+					className="page-grid-footer-link"
+					reloadDocument
+					to="/sponsors"
+				>
 					Sponsors
 				</NavLink>
 				<span className="page-grid-footer-separator" />
-				<NavLink className="page-grid-footer-link" to="/join-us">
+				<NavLink className="page-grid-footer-link" reloadDocument to="/join-us">
 					Join Us
 				</NavLink>
 			</footer>
