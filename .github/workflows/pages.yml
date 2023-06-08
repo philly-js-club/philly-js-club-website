@@ -1,14 +1,14 @@
 name: Deploy to GitHub Pages
 # inspired by https://blog.oldweb2.com/remix-static-site
 
-on:
-  push:
-    branches: [main]
-  schedule:
-    # Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
-    # top of the hour so that we're not trying to run on GitHub's servers when
-    # every other cron job is trying to run
-    - cron: "14 * * * *"
+# on:
+#   push:
+#     branches: [main]
+#   schedule:
+# Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
+# top of the hour so that we're not trying to run on GitHub's servers when
+# every other cron job is trying to run
+# - cron: "14 * * * *"
 
 jobs:
   build:
