@@ -1,14 +1,14 @@
 name: Deploy to GitHub Pages
 # inspired by https://blog.oldweb2.com/remix-static-site
 
-# on:
-#   push:
-#     branches: [main]
-#   schedule:
-# Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
-# top of the hour so that we're not trying to run on GitHub's servers when
-# every other cron job is trying to run
-# - cron: "14 * * * *"
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
+    # top of the hour so that we're not trying to run on GitHub's servers when
+    # every other cron job is trying to run
+    - cron: "14 * * * *"
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: "20.2"
 
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --force
 
       - run: npm run build
 
@@ -39,13 +39,11 @@ jobs:
         run: |
           npm run dev &
           sleep 10 &&
+          cp -r public/ out &&
           wget --mirror http://localhost:3000 -P out --no-host-directories --page-requisites --adjust-extension &&
           wget --mirror http://localhost:3000/ad -P out --no-host-directories --page-requisites --adjust-extension &&
           wget --mirror http://localhost:3000/ics-feed.ics -P out --no-host-directories --page-requisites --adjust-extension
-          echo "phillyjs.com" > out/CNAME &&
-          cp public/favicon.ico out &&
-          cp public/logo.png out &&
-          cp public/logo.svg out
+          echo "phillyjs.com" > out/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

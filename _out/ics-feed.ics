@@ -1,0 +1,162 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-WR-CALNAME:Philly JS Club
+X-ORIGINAL-URL:https://phillyjs.com
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:0
+SUMMARY:Our very first meeting!
+DTSTAMP:20230621T225226Z
+DTSTART:20220609T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-meetup-tickets-345
+	760176997
+LOCATION:Fastmail's Philadelphia HQ
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:1
+SUMMARY:Social meeting / sharing projects
+DTSTAMP:20230621T225226Z
+DTSTART:20220714T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-meetup-tickets-370
+	871054307
+LOCATION:Fastmail's Philadelphia HQ
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:2
+SUMMARY:Social meeting / sharing projects
+DTSTAMP:20230621T225226Z
+DTSTART:20220811T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-38723
+	3926097
+LOCATION:Fastmail's Philadelphia HQ
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:3
+SUMMARY:Social meeting / sharing projects
+DTSTAMP:20230621T225226Z
+DTSTART:20220908T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-40097
+	2919797
+LOCATION:Fastmail's Philadelphia HQ
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:4
+SUMMARY:Social meeting / sharing projects
+DTSTAMP:20230621T225226Z
+DTSTART:20221013T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-42095
+	8005727
+LOCATION:Fastmail's Philadelphia HQ
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:5
+SUMMARY:Linting & Mastodon!
+DTSTAMP:20230621T225226Z
+DTSTART:20221110T230000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-45121
+	6569907
+LOCATION:Fastmail's Philadelphia HQ
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:6
+SUMMARY:JavaScript build systems + TypeScript projects
+DTSTAMP:20230621T225226Z
+DTSTART:20230111T230000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-47256
+	5545267
+LOCATION:Indy Hall
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:7
+SUMMARY:Social meeting / hack night
+DTSTAMP:20230621T225226Z
+DTSTART:20230209T230000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-51996
+	5168817
+LOCATION:Indy Hall
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:8
+SUMMARY:We're very excited to welcome Alexa Stefanou from PhillyCHI to shar
+	e her expertise with JavaScript Design Systems.
+DTSTAMP:20230621T225226Z
+DTSTART:20230309T230000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-54186
+	8732967
+LOCATION:Indy Hall
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:9
+SUMMARY:We're very excited to welcome Ken Rimple to share the latest develo
+	pments in Next.js 13.x!
+DTSTAMP:20230621T225226Z
+DTSTART:20230420T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-tickets-56992
+	0616907
+LOCATION:Indy Hall
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:10
+SUMMARY:Technical.ly Super Meetup during Philly Tech Week
+DTSTAMP:20230621T225226Z
+DTSTART:20230510T220000Z
+URL:https://www.eventbrite.com/e/technically-super-meetup-during-philly-tec
+	h-week-tickets-611213515077
+LOCATION:HealthVerity
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:11
+SUMMARY:Contributing to Open Source Projects
+DTSTAMP:20230621T225226Z
+DTSTART:20230517T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-contributing-
+	to-open-source-projects-tickets-621853449407
+LOCATION:Indy Hall
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:12
+SUMMARY:Developments in React Router (and Remix) with Matt Brophy
+DTSTAMP:20230621T225226Z
+DTSTART:20230608T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-developments-
+	in-react-router-and-remix-tickets-627760688117
+LOCATION:Indy Hall
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:13
+SUMMARY:Scripted Philadelphia: a Python\, JavaScript\, and Ruby joint meetu
+	p
+DTSTAMP:20230621T225226Z
+DTSTART:20230629T213000Z
+URL:https://www.eventbrite.com/e/scripted-philadelphia-a-python-javascript-
+	and-ruby-joint-meetup-tickets-626403759507
+LOCATION:Jon M. Huntsman Hall
+DURATION:PT3H
+END:VEVENT
+BEGIN:VEVENT
+UID:14
+SUMMARY:Image Processing with JavaScript with Colby Fayock and Joe Woods
+DTSTAMP:20230621T225226Z
+DTSTART:20230713T220000Z
+URL:https://www.eventbrite.com/e/philadelphia-javascript-club-image-process
+	ing-with-javascript-tickets-654081735077
+LOCATION:Indy Hall
+DURATION:PT3H
+END:VEVENT
+END:VCALENDAR
