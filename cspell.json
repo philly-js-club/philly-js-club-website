@@ -6,7 +6,8 @@
 		"build",
 		"node_modules",
 		"pnpm-lock.yaml",
-		"public"
+		"public",
+		"_out"
 	],
 	"words": [
 		"Brophy",
