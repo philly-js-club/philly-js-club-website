@@ -1,74 +1,23 @@
 import type { V2_MetaFunction } from "@remix-run/react";
-import { useSearchParams } from "@remix-run/react";
 
 import { AdLogo } from "~/components/AdLogo";
-import { site } from "~/config";
+import { AdText } from "~/components/AdText";
 import { constructSiteTitle, upperFirst } from "~/utils/common";
+import { getMonthAndYear } from "~/utils/dates";
 
 export const meta: V2_MetaFunction = ({ location }) => {
-	const params = new URLSearchParams(location.search);
-	const { month, year } = getMonthAndYear(params);
-	let pageTitle = "Ad";
-	if (!isValidMonth(month) || !isValidYear(year)) {
-		return [{ title: constructSiteTitle(pageTitle) }];
-	}
+	const { month, year } = getMonthAndYear(new URLSearchParams(location.search));
 
-	pageTitle = `Ad (${upperFirst(month)} ${year})`;
-	return [{ title: constructSiteTitle(pageTitle) }];
+	return [{ title: constructSiteTitle(`Ad (${upperFirst(month)} ${year})`) }];
 };
 
 export default function Ad() {
-	const [params] = useSearchParams();
-	const { month, year } = getMonthAndYear(params);
-
-	if (!isValidMonth(month)) {
-		return "nope (month)";
-	}
-
-	if (!isValidYear(year)) {
-		return "nope (year)";
-	}
-
 	return (
 		<main className="ad-main">
 			<div className="ad-img-area">
 				<AdLogo className="ad-img" />
 			</div>
-			<div className="ad-text">
-				<h1>{site.title}</h1>
-				<p>
-					{upperFirst(month)} {year}
-				</p>
-			</div>
+			<AdText />
 		</main>
 	);
-}
-
-function getMonthAndYear(params: URLSearchParams) {
-	const month = params.get("month")?.toLowerCase() ?? "idk";
-	const year = params.get("year")?.toLowerCase() ?? "when";
-	return { month, year };
-}
-
-function isValidMonth(month: string) {
-	const monthNames = new Set([
-		"january",
-		"february",
-		"march",
-		"april",
-		"may",
-		"june",
-		"july",
-		"august",
-		"september",
-		"october",
-		"november",
-		"december",
-	]);
-
-	return monthNames.has(month);
-}
-
-function isValidYear(year: string) {
-	return /\d{4}/.test(year);
 }
