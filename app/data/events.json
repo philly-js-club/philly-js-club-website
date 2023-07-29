@@ -1,5 +1,34 @@
 [
 	{
+		"date": "2023-08-10T18:00:00.000-04:00",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-authenticate-your-nextjs-app-with-auth0-tickets-676231214767",
+		"location": "Indy Hall",
+		"topics": ["Authenticate Your Next.js App with Auth0 with Ceora Ford"]
+	},
+	{
+		"date": "2023-07-28T18:00:00.000-04:00",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://www.eventbrite.com/e/philly-js-club-hack-night-tickets-675704709977",
+		"location": "Iffy Books",
+		"topics": ["Hack Night at Iffy Books"]
+	},
+	{
+		"date": "2023-07-13T18:00:00.000-04:00",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-image-processing-with-javascript-tickets-654081735077",
+		"location": "Indy Hall",
+		"topics": [
+			"Image Processing with JavaScript with Colby Fayock and Joe Woods"
+		]
+	},
+	{
 		"date": "2023-06-29T17:30:00.000-04:00",
 		"duration": {
 			"hours": 3
