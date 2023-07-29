@@ -152,7 +152,7 @@ Let us know if you think you've found one we'd like. 😏
 }
 
 .page-grid-footer-link.active {
-	color: white;
+	text-decoration: underline;
 }
 
 .page-grid-footer-link:not(
