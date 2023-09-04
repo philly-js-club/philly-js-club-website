@@ -1,14 +1,5 @@
 [
 	{
-		"date": "2023-08-25T17:00:00.000-04:00",
-		"duration": {
-			"hours": 3
-		},
-		"link": "https://www.eventbrite.com/e/philly-js-club-august-hack-night-tickets-699155150877",
-		"location": "Iffy Books",
-		"topics": ["Hack Night at Iffy Books"]
-	},
-	{
 		"date": "2023-09-14T18:00:00.000-04:00",
 		"duration": {
 			"hours": 2
@@ -16,6 +7,15 @@
 		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-debugging-javascript-applications-tickets-695620659117",
 		"location": "Indy Hall",
 		"topics": ["Debugging JavaScript Applications with Matt Brophy"]
+	},
+	{
+		"date": "2023-08-25T17:00:00.000-04:00",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://www.eventbrite.com/e/philly-js-club-august-hack-night-tickets-699155150877",
+		"location": "Iffy Books",
+		"topics": ["Hack Night at Iffy Books"]
 	},
 	{
 		"date": "2023-08-10T18:00:00.000-04:00",
