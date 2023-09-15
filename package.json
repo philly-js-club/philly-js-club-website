@@ -30,8 +30,8 @@
 	"dependencies": {
 		"@axe-core/playwright": "^4.6.1",
 		"@playwright/test": "^1.32.3",
-		"@remix-run/node": "^1.16.1",
-		"@remix-run/react": "^1.16.1",
+		"@remix-run/node": "^1.19.3",
+		"@remix-run/react": "^1.19.3",
 		"clsx": "^1.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
@@ -43,9 +43,9 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@remix-run/dev": "^1.16.1",
-		"@remix-run/eslint-config": "^1.16.1",
-		"@remix-run/serve": "^1.16.1",
+		"@remix-run/dev": "^1.19.3",
+		"@remix-run/eslint-config": "^1.19.3",
+		"@remix-run/serve": "^1.19.3",
 		"@types/react": "^18.0.25",
 		"@types/react-dom": "^18.0.8",
 		"@typescript-eslint/eslint-plugin": "6.0.0-alpha.124",
