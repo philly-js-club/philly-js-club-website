@@ -1,5 +1,4 @@
 import type { LoaderFunction } from "@remix-run/node";
-import { Response } from "@remix-run/node";
 import type { DurationObject, EventAttributes } from "ics";
 import { generateIcs } from "ics-service";
 
