@@ -1,11 +1,11 @@
-import type { V2_MetaFunction } from "@remix-run/react";
+import type { MetaFunction } from "@remix-run/react";
 import { useSearchParams } from "@remix-run/react";
 
 import { AdLogo } from "~/components/AdLogo";
 import { site } from "~/config";
 import { constructSiteTitle, upperFirst } from "~/utils/common";
 
-export const meta: V2_MetaFunction = ({ location }) => {
+export const meta: MetaFunction = ({ location }) => {
 	const params = new URLSearchParams(location.search);
 	const { month, year } = getMonthAndYear(params);
 	let pageTitle = "Ad";
