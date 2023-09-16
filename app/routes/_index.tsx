@@ -1,5 +1,5 @@
 import { json } from "@remix-run/node";
-import type { V2_MetaFunction } from "@remix-run/react";
+import type { MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 
 import { EventDetails } from "~/components/EventDetails";
@@ -28,7 +28,7 @@ export const loader = async () => {
 	);
 };
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle() }];
 };
 

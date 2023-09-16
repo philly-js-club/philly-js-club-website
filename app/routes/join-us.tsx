@@ -1,5 +1,5 @@
 import type { LoaderFunction } from "@remix-run/node";
-import { useLoaderData, type V2_MetaFunction } from "@remix-run/react";
+import { type MetaFunction, useLoaderData } from "@remix-run/react";
 
 import { Icons } from "~/components/Icons";
 import { PageGrid } from "~/components/PageGrid";
@@ -13,7 +13,7 @@ export const loader: LoaderFunction = async () => {
 	return await import("../data/platforms.json");
 };
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("Join Us") }];
 };
 

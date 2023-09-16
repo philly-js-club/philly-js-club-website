@@ -1,9 +1,9 @@
-import type { V2_MetaFunction } from "@remix-run/react";
+import type { MetaFunction } from "@remix-run/react";
 
 import { PageGrid } from "~/components/PageGrid";
 import { constructSiteTitle } from "~/utils/common";
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("Code of Conduct") }];
 };
 
