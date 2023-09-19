@@ -22,8 +22,8 @@ There are two steps involved:
 
 ### Finding an Issue
 
-With the exception of very small typos, all changes to this repository generally need to correspond to an [open issue marked as `accepting prs` on the issue tracker](https://github.com/philly-js-club/philly-js-club-website-remix/issues?q=is%3Aopen+is%3Aissue+label%3A%22accepting+prs%22).
-If this is your first time contributing, consider searching for [unassigned issues that also have the `good first issue` label](https://github.com/philly-js-club/philly-js-club-website-remix/issues?q=is%3Aopen+is%3Aissue+label%3A%22accepting+prs%22+label%3A%22good+first+issue%22+no%3Aassignee).
+With the exception of very small typos, all changes to this repository generally need to correspond to an [open issue marked as `accepting prs` on the issue tracker](https://github.com/philly-js-club/philly-js-club-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22status%3A+accepting+prs%22+).
+If this is your first time contributing, consider searching for [unassigned issues that also have the `good first issue` label](https://github.com/philly-js-club/philly-js-club-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+no%3Aassignee+label%3A%22status%3A+accepting+prs%22).
 If the issue you'd like to fix isn't found on the issue, see [Reporting Issues](#reporting-issues) for filing your own (please do!).
 
 ### Sending a Pull Request
