@@ -38,20 +38,26 @@ export default function Index() {
 	return (
 		<PageGrid
 			left={
-				<>
-					<h2 className="larger">Next Jawn{events.length === 1 ? "" : "s"}</h2>
-					{events.map((event, index) => (
-						<EventDetails
-							date={new Date(event.date)}
-							key={index}
-							link={event.link}
-							linkText="Register Now"
-							location={event.location}
-							topics={event.topics}
-							weight="medium"
-						/>
-					))}
-				</>
+				events.length ? (
+					<>
+						<h2 className="larger">
+							Next Jawn{events.length === 1 ? "" : "s"}
+						</h2>
+						{events.map((event, index) => (
+							<EventDetails
+								date={new Date(event.date)}
+								key={index}
+								link={event.link}
+								linkText="Register Now"
+								location={event.location}
+								topics={event.topics}
+								weight="medium"
+							/>
+						))}
+					</>
+				) : (
+					<></>
+				)
 			}
 			title={
 				<>
