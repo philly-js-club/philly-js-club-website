@@ -1,6 +1,6 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import type { V2_MetaFunction } from "@remix-run/react";
+import type { MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 
 import { CalendarSubscriptionLinks } from "~/components/CalendarSubscriptionLinks";
@@ -17,7 +17,7 @@ export const loader: LoaderFunction = async () => {
 	);
 };
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("Events") }];
 };
 

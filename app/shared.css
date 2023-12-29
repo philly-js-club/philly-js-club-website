@@ -151,6 +151,10 @@ Let us know if you think you've found one we'd like. 😏
 	padding: 0;
 }
 
+.page-grid-footer-link.active {
+	text-decoration: underline;
+}
+
 .page-grid-footer-link:not(
 		:first-of-type,
 		.page-grid-footer-separator + .page-grid-footer-link

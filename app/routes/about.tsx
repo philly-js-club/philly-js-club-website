@@ -1,10 +1,10 @@
 import type { LoaderFunction } from "@remix-run/node";
-import { useLoaderData, type V2_MetaFunction } from "@remix-run/react";
+import { type MetaFunction, useLoaderData } from "@remix-run/react";
 
 import { PageGrid } from "~/components/PageGrid";
 import { constructSiteTitle } from "~/utils/common";
 
-export const meta: V2_MetaFunction = () => {
+export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("About") }];
 };
 
