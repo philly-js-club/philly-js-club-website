@@ -1,53 +1,53 @@
-name: Deploy to GitHub Pages
-# inspired by https://blog.oldweb2.com/remix-static-site
+# name: Deploy to GitHub Pages
+# # inspired by https://blog.oldweb2.com/remix-static-site
 
-on:
-  push:
-    branches: [main]
-  schedule:
-    # Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
-    # top of the hour so that we're not trying to run on GitHub's servers when
-    # every other cron job is trying to run
-    - cron: "14 * * * *"
+# on:
+#   push:
+#     branches: [main]
+#   schedule:
+#     # Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
+#     # top of the hour so that we're not trying to run on GitHub's servers when
+#     # every other cron job is trying to run
+#     - cron: "14 * * * *"
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
+#     steps:
+#       - uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: "20.2"
+#       - name: Setup Node
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: "20.2"
 
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+#       - name: Cache dependencies
+#         uses: actions/cache@v2
+#         with:
+#           path: ~/.npm
+#           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+#           restore-keys: |
+#             ${{ runner.os }}-node-
 
-      - name: Install dependencies
-        run: npm install --force
+#       - name: Install dependencies
+#         run: npm install --force
 
-      - run: npm run build
+#       - run: npm run build
 
-      - name: Start server and mirror it with wget
-        run: |
-          npm run dev &
-          sleep 10 &&
-          cp -r public/ out &&
-          wget --mirror http://localhost:3000 -P out --no-host-directories --page-requisites --adjust-extension &&
-          wget --mirror http://localhost:3000/ad -P out --no-host-directories --page-requisites --adjust-extension &&
-          wget --mirror http://localhost:3000/ics-feed.ics -P out --no-host-directories --page-requisites --adjust-extension
-          echo "phillyjs.com" > out/CNAME
+#       - name: Start server and mirror it with wget
+#         run: |
+#           npm run dev &
+#           sleep 10 &&
+#           cp -r public/ out &&
+#           wget --mirror http://localhost:3000 -P out --no-host-directories --page-requisites --adjust-extension &&
+#           wget --mirror http://localhost:3000/ad -P out --no-host-directories --page-requisites --adjust-extension &&
+#           wget --mirror http://localhost:3000/ics-feed.ics -P out --no-host-directories --page-requisites --adjust-extension
+#           echo "phillyjs.com" > out/CNAME
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./out
-          external_repository: philly-js-club/js-club-website-public
+#       - name: Deploy to GitHub Pages
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+#           publish_dir: ./out
+#           external_repository: philly-js-club/js-club-website-public
