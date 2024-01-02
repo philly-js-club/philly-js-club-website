@@ -15,7 +15,7 @@
 		"lint:package": "npmPkgJsonLint .",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
 		"lint:styles": "stylelint \"**/*.css\"",
-		"prepare": "husky install",
+		"prepare": "husky install; panda codegen",
 		"test": "playwright test --headed",
 		"test:ci": "playwright test --project=chromium",
 		"typecheck": "tsc"
@@ -37,12 +37,13 @@
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"ics": "^3.1.0",
 		"ics-service": "^1.4.0",
-		"isbot": "latest",
+		"isbot": "3",
 		"playwright": "^1.32.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@pandacss/dev": "^0.24.0",
 		"@remix-run/dev": "^2.0.0",
 		"@remix-run/eslint-config": "^2.0.0",
 		"@remix-run/serve": "^2.0.0",

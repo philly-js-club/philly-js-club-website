@@ -1,6 +1,6 @@
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
 	ignoredRouteFiles: ["**/.*"],
-	future: {},
+	postcss: true,
 	serverModuleFormat: "cjs",
 };

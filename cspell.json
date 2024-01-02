@@ -13,6 +13,9 @@
 		"Brophy",
 		"Chasen",
 		"clsx",
+		"codegen",
+		"Denzel",
+		"Echevarria",
 		"emeritum",
 		"fastmail",
 		"Fastmail",
@@ -25,8 +28,6 @@
 		"Rasha",
 		"stylelint",
 		"typecheck",
-		"webcal",
-		"Denzel",
-		"Echevarria"
+		"webcal"
 	]
 }

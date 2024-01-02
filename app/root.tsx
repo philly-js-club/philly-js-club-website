@@ -8,7 +8,8 @@ import {
 } from "@remix-run/react";
 
 import { site } from "./config";
-import styles from "./root.css";
+// import styles from "./root.css";
+import styles from "./index.css";
 
 const metaTags = [
 	{ charSet: "utf-8" },
