@@ -1,11 +1,11 @@
 /* eslint-disable */
 export type Token =
-	| "fontSizes.smallerJosh"
-	| "fontSizes.smallJosh"
-	| "fontSizes.mediumJosh"
-	| "fontSizes.largeJosh"
-	| "fontSizes.largerJosh"
-	| "fontSizes.titleJosh"
+	| "fontSizes.smaller"
+	| "fontSizes.small"
+	| "fontSizes.medium"
+	| "fontSizes.large"
+	| "fontSizes.larger"
+	| "fontSizes.title"
 	| "fontSizes.wat"
 	| "breakpoints.sm"
 	| "breakpoints.md"
@@ -19,12 +19,12 @@ export type Token =
 	| "sizes.breakpoint-2xl";
 
 export type FontSizeToken =
-	| "smallerJosh"
-	| "smallJosh"
-	| "mediumJosh"
-	| "largeJosh"
-	| "largerJosh"
-	| "titleJosh"
+	| "smaller"
+	| "small"
+	| "medium"
+	| "large"
+	| "larger"
+	| "title"
 	| "wat";
 
 export type BreakpointToken = "sm" | "md" | "lg" | "xl" | "2xl";

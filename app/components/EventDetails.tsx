@@ -30,16 +30,16 @@ export function EventDetails({
 		<article className={`event-details medium event-details-${weight}`}>
 			<h3
 				className={css({
-					fontSize: "token(fontSizes.wat)", // todo: token?
-					marginBlock: "1rem",
+					fontSize: "medium",
+					marginBlock: "[1rem]",
 				})}
 			>
 				{formatter.format(date)}
 			</h3>
 			<p>{location}</p>
-			<ul className={css({ margin: "2rem 0 1rem" })}>
+			<ul className={css({ margin: "[2rem 0 1rem]" })}>
 				{topics.map((topic) => (
-					<li className={css({ margin: "0.25em 0" })} key={topic}>
+					<li className={css({ margin: "[0.25em 0]" })} key={topic}>
 						{topic}
 					</li>
 				))}

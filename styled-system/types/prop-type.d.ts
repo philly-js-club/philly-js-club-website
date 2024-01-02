@@ -24,8 +24,8 @@ interface PropertyValueTypes {
 	insetInlineStart: Tokens["spacing"];
 	right: Tokens["spacing"];
 	bottom: Tokens["spacing"];
-	insetX: Tokens["spacing"] | CssProperties["insetInline"];
-	insetY: Tokens["spacing"] | CssProperties["insetBlock"];
+	insetX: Tokens["spacing"];
+	insetY: Tokens["spacing"];
 	float: "left" | "right" | "start" | "end";
 	hideFrom: Tokens["breakpoints"];
 	hideBelow: Tokens["breakpoints"];
@@ -150,7 +150,6 @@ interface PropertyValueTypes {
 	divideX: string;
 	divideY: string;
 	divideColor: Tokens["colors"];
-	divideStyle: CssProperties["borderStyle"];
 	width:
 		| "auto"
 		| Tokens["sizes"]
@@ -508,16 +507,16 @@ interface PropertyValueTypes {
 	borderTopRightRadius: Tokens["radii"];
 	borderBottomRightRadius: Tokens["radii"];
 	borderBottomLeftRadius: Tokens["radii"];
-	borderTopRadius: Tokens["radii"] | CssProperties["borderRadius"];
-	borderRightRadius: Tokens["radii"] | CssProperties["borderRadius"];
-	borderBottomRadius: Tokens["radii"] | CssProperties["borderRadius"];
-	borderLeftRadius: Tokens["radii"] | CssProperties["borderRadius"];
+	borderTopRadius: Tokens["radii"];
+	borderRightRadius: Tokens["radii"];
+	borderBottomRadius: Tokens["radii"];
+	borderLeftRadius: Tokens["radii"];
 	borderStartStartRadius: Tokens["radii"];
 	borderStartEndRadius: Tokens["radii"];
-	borderStartRadius: Tokens["radii"] | CssProperties["borderRadius"];
+	borderStartRadius: Tokens["radii"];
 	borderEndStartRadius: Tokens["radii"];
 	borderEndEndRadius: Tokens["radii"];
-	borderEndRadius: Tokens["radii"] | CssProperties["borderRadius"];
+	borderEndRadius: Tokens["radii"];
 	border: Tokens["borders"];
 	borderWidth: Tokens["borderWidths"];
 	borderTopWidth: Tokens["borderWidths"];
@@ -574,8 +573,8 @@ interface PropertyValueTypes {
 	animation: Tokens["animations"];
 	animationName: Tokens["animationName"];
 	animationDelay: Tokens["durations"];
-	scale: "auto" | CssProperties["scale"];
-	translate: "auto" | CssProperties["translate"];
+	scale: "auto";
+	translate: "auto";
 	translateX:
 		| Tokens["spacing"]
 		| "1/2"
@@ -612,8 +611,8 @@ interface PropertyValueTypes {
 	caretColor: Tokens["colors"];
 	scrollbar: "visible" | "hidden";
 	scrollMargin: Tokens["spacing"];
-	scrollMarginX: Tokens["spacing"] | CssProperties["scrollMarginInline"];
-	scrollMarginY: Tokens["spacing"] | CssProperties["scrollMarginBlock"];
+	scrollMarginX: Tokens["spacing"];
+	scrollMarginY: Tokens["spacing"];
 	scrollMarginLeft: Tokens["spacing"];
 	scrollMarginRight: Tokens["spacing"];
 	scrollMarginTop: Tokens["spacing"];
@@ -631,8 +630,8 @@ interface PropertyValueTypes {
 	scrollPaddingInline: Tokens["spacing"];
 	scrollPaddingInlineEnd: Tokens["spacing"];
 	scrollPaddingInlineStart: Tokens["spacing"];
-	scrollPaddingX: Tokens["spacing"] | CssProperties["scrollPaddingInline"];
-	scrollPaddingY: Tokens["spacing"] | CssProperties["scrollPaddingBlock"];
+	scrollPaddingX: Tokens["spacing"];
+	scrollPaddingY: Tokens["spacing"];
 	scrollPaddingLeft: Tokens["spacing"];
 	scrollPaddingRight: Tokens["spacing"];
 	scrollPaddingTop: Tokens["spacing"];
@@ -649,33 +648,7 @@ interface PropertyValueTypes {
 	strokeWidth: Tokens["borderWidths"];
 	srOnly: boolean;
 	debug: boolean;
-	colorPalette:
-		| "current"
-		| "black"
-		| "white"
-		| "transparent"
-		| "rose"
-		| "pink"
-		| "fuchsia"
-		| "purple"
-		| "violet"
-		| "indigo"
-		| "blue"
-		| "sky"
-		| "cyan"
-		| "teal"
-		| "emerald"
-		| "green"
-		| "lime"
-		| "yellow"
-		| "amber"
-		| "orange"
-		| "red"
-		| "neutral"
-		| "stone"
-		| "zinc"
-		| "gray"
-		| "slate";
+	colorPalette: string;
 	textStyle:
 		| "xs"
 		| "sm"
@@ -695,7 +668,7 @@ interface PropertyValueTypes {
 type CssValue<T> = T extends keyof CssProperties ? CssProperties[T] : never;
 
 type Shorthand<T> = T extends keyof PropertyValueTypes
-	? PropertyValueTypes[T] | CssValue<T>
+	? PropertyValueTypes[T]
 	: CssValue<T>;
 
 export interface PropertyTypes extends PropertyValueTypes {
@@ -787,16 +760,20 @@ export interface PropertyTypes extends PropertyValueTypes {
 	y: Shorthand<"translateY">;
 }
 
+type FilterString<T> = T extends `${infer _}` ? T : never;
+type WithArbitraryValue<T> = T | `[${string}]`;
+type PropOrCondition<T> = ConditionalValue<WithArbitraryValue<T>>;
+
 type PropertyTypeValue<T extends string> = T extends keyof PropertyTypes
-	? ConditionalValue<PropertyTypes[T] | CssValue<T> | (string & {})>
+	? PropOrCondition<FilterString<PropertyTypes[T]>>
 	: never;
 
 type CssPropertyValue<T extends string> = T extends keyof CssProperties
-	? ConditionalValue<CssProperties[T] | (string & {})>
+	? PropOrCondition<FilterString<CssProperties[T]>>
 	: never;
 
 export type PropertyValue<T extends string> = T extends keyof PropertyTypes
 	? PropertyTypeValue<T>
 	: T extends keyof CssProperties
 	? CssPropertyValue<T>
-	: ConditionalValue<string | number>;
+	: PropOrCondition<string | number>;

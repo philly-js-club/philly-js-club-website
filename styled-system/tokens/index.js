@@ -1,27 +1,27 @@
 const tokens = {
-	"fontSizes.smallerJosh": {
+	"fontSizes.smaller": {
 		value: "clamp(1.5rem, 2vw, 2rem)",
-		variable: "var(--font-sizes-smaller-josh)",
+		variable: "var(--font-sizes-smaller)",
 	},
-	"fontSizes.smallJosh": {
+	"fontSizes.small": {
 		value: "clamp(1.5rem, 4vw, 2rem)",
-		variable: "var(--font-sizes-small-josh)",
+		variable: "var(--font-sizes-small)",
 	},
-	"fontSizes.mediumJosh": {
-		value: "clamp(1.5rem, 4vw, var(--font-sizes-large)",
-		variable: "var(--font-sizes-medium-josh)",
+	"fontSizes.medium": {
+		value: "clamp(1.5rem, 4vw, var(--font-sizes-large))",
+		variable: "var(--font-sizes-medium)",
 	},
-	"fontSizes.largeJosh": {
+	"fontSizes.large": {
 		value: "clamp(2rem, 4vw, 3rem)",
-		variable: "var(--font-sizes-large-josh)",
+		variable: "var(--font-sizes-large)",
 	},
-	"fontSizes.largerJosh": {
+	"fontSizes.larger": {
 		value: "clamp(2.5rem, 5vw, 5rem)",
-		variable: "var(--font-sizes-larger-josh)",
+		variable: "var(--font-sizes-larger)",
 	},
-	"fontSizes.titleJosh": {
+	"fontSizes.title": {
 		value: "clamp(7rem, 13vw, 15rem)",
-		variable: "var(--font-sizes-title-josh)",
+		variable: "var(--font-sizes-title)",
 	},
 	"fontSizes.wat": {
 		value: "123px",
