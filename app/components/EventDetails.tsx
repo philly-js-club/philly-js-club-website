@@ -1,3 +1,5 @@
+import { css } from "styled-system/css";
+
 import { Arrow } from "~/components/Arrow";
 import { region } from "~/config";
 
@@ -26,22 +28,25 @@ export function EventDetails({
 
 	return (
 		<article className={`event-details medium event-details-${weight}`}>
-			<h3 className="event-details-date">{formatter.format(date)}</h3>
+			<h3
+				className={css({
+					fontSize: "token(fontSizes.wat)", // todo: token?
+					marginBlock: "1rem",
+				})}
+			>
+				{formatter.format(date)}
+			</h3>
 			<p>{location}</p>
-			<ul className="event-details-topics">
+			<ul className={css({ margin: "2rem 0 1rem" })}>
 				{topics.map((topic) => (
-					<li className="event-details-topic" key={topic}>
+					<li className={css({ margin: "0.25em 0" })} key={topic}>
 						{topic}
 					</li>
 				))}
 			</ul>
 			<a href={link} rel="noreferrer" target="_blank">
 				{linkText}
-				<Arrow
-					className="arrow-out"
-					label="External link indication arrow"
-					rotate={-45}
-				/>
+				<Arrow direction="out" label="External link indication arrow" />
 			</a>
 		</article>
 	);

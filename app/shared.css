@@ -46,25 +46,6 @@ Let us know if you think you've found one we'd like. 😏
 	margin-top: 1em;
 }
 
-/* Arrows */
-
-.arrow {
-	margin: 0;
-}
-
-.arrow-back {
-	height: 0.7em;
-	margin-left: 0.1em;
-	width: 0.7em;
-}
-
-.arrow-out {
-	height: 1em;
-	margin-bottom: -0.1em;
-	margin-left: 0.1em;
-	width: 1em;
-}
-
 /* EventDetails */
 
 .event-details {
@@ -77,19 +58,6 @@ Let us know if you think you've found one we'd like. 😏
 
 .event-details + .event-details {
 	margin-top: 3rem;
-}
-
-.event-details-date {
-	font-size: var(--font-size-large);
-	margin-bottom: 1rem;
-}
-
-.event-details-topics {
-	margin: 2rem 0 1rem;
-}
-
-.event-details-topic {
-	margin: 0.25em 0;
 }
 
 /* PageGrid */

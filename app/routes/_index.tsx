@@ -1,7 +1,6 @@
 import { json } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
-import { css } from "styled-system/css";
 
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
@@ -65,9 +64,6 @@ export default function Index() {
 					PHILLY
 					<br />
 					JS CLUB
-					<div className={css({ fontSize: "2xl", fontWeight: "black" })}>
-						Hello 🐼!
-					</div>
 				</>
 			}
 		/>
