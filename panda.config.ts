@@ -1,5 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
 
+// todo: https://panda-css.com/docs/theming/text-styles#defining-text-styles
+
 export default defineConfig({
 	exclude: [],
 	include: [
@@ -35,6 +37,10 @@ export default defineConfig({
 				large: { value: 700 },
 				larger: { value: 700 },
 				title: { value: 900 },
+			},
+			lineHeights: {
+				medium: { value: "clamp(1.5rem, 6vw, {fontSizes.medium})" },
+				title: { value: "clamp(5.5rem, 12vw, 12rem)" },
 			},
 		},
 	},

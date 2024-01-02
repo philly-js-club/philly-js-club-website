@@ -2,8 +2,6 @@
 @import "./shared.css";
 
 :root {
-	--line-height-medium: clamp(1.5rem, 6vw, var(--font-size-medium));
-	--line-height-title: clamp(5.5rem, 12vw, 12rem);
 	--width-main-max: 150rem;
 }
 

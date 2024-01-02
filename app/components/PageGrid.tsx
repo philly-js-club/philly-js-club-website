@@ -30,13 +30,69 @@ const navLink = css({
 	},
 });
 
+const pageGridHeaderAndFooter = css.raw({
+	position: "fixed",
+	right: "[2rem]",
+	width: "[50%]",
+});
+
 export function PageGrid({ left, subtitle, title }: PageGridProps) {
 	return (
-		<div className="page-grid">
-			<header className="page-grid-header">
-				<h1 className="page-grid-title">{title}</h1>
+		<div
+			className={css({
+				base: {
+					display: "grid",
+					gridGap: "[0 4rem]",
+					gridTemplate:
+						"[minmax(min-content, max-content) / minmax(100%, 1fr)]",
+					gridTemplateAreas: '["header" "left" "footer"]',
+					height: "[100%]",
+					margin: "auto",
+					padding: "[2rem]",
+					position: "relative",
+					width: "[100%]",
+				},
+				medium: {
+					gridTemplateColumns: "[minmax(40%, 1fr) 1fr]",
+				},
+			})}
+		>
+			<header
+				className={css(
+					{
+						display: "flex",
+						flexDirection: "column",
+						gridArea: "[header]",
+						medium: {
+							textAlign: "right",
+							top: "[2rem]",
+							zIndex: "[1]",
+						},
+					},
+					pageGridHeaderAndFooter
+				)}
+			>
+				<h1
+					className={css({
+						fontSize: "title",
+						fontWeight: "title",
+						lineHeight: "title",
+						margin: "[0]",
+						padding: "[0]",
+					})}
+				>
+					{title}
+				</h1>
 				{subtitle && (
-					<NavLink className="page-grid-subtitle" reloadDocument to="/">
+					<NavLink
+						className={css({
+							fontSize: "larger",
+							fontWeight: "title",
+							textTransform: "uppercase",
+						})}
+						reloadDocument
+						to="/"
+					>
 						{site.title}
 						<Arrow direction="back" label="Back indication arrow" />
 					</NavLink>
@@ -53,23 +109,26 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 				{left}
 			</main>
 			<footer
-				className={css({
-					alignContent: "flex-end",
-					alignItems: "baseline",
-					display: "flex",
-					flexWrap: "wrap",
-					fontSize: "medium",
-					fontWeight: "large",
-					gridArea: "[footer]",
-					height: "[100%]",
-					justifyContent: "flex-start",
-					medium: {
-						alignSelf: "flex-end",
-						bottom: "[2rem]",
-						height: "auto",
-						justifyContent: "flex-end",
+				className={css(
+					{
+						alignContent: "flex-end",
+						alignItems: "baseline",
+						display: "flex",
+						flexWrap: "wrap",
+						fontSize: "medium",
+						fontWeight: "large",
+						gridArea: "[footer]",
+						height: "[100%]",
+						justifyContent: "flex-start",
+						medium: {
+							alignSelf: "flex-end",
+							bottom: "[2rem]",
+							height: "auto",
+							justifyContent: "flex-end",
+						},
 					},
-				})}
+					pageGridHeaderAndFooter
+				)}
 			>
 				<NavLink className={navLink} reloadDocument to="/about">
 					About
