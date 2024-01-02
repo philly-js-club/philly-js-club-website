@@ -19,6 +19,12 @@ You can run a [Remix](https://remix.run/docs) development server to start servin
 pnpm dev
 ```
 
+Then in a separate terminal, start the Panda CSS codegen:
+
+```shell
+pnpm panda codegen --watch
+```
+
 Saving files on disk will update the local dev page.
 There's no need to restart the server each time you update a file.
 
