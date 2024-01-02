@@ -4,11 +4,6 @@
 :root {
 	--color-background: #efdb4f;
 	--color-foreground: #323330;
-	--font-weight-light: 400;
-	--font-weight-medium: 600;
-	--font-weight-large: 700;
-	--font-weight-larger: 700;
-	--font-weight-title: 900;
 	--line-height-medium: clamp(1.5rem, 6vw, var(--font-size-medium));
 	--line-height-title: clamp(5.5rem, 12vw, 12rem);
 	--width-main-max: 150rem;

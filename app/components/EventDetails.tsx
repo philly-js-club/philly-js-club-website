@@ -1,16 +1,37 @@
-import { css } from "styled-system/css";
+import type { RecipeVariantProps } from "styled-system/css";
+import { css, cva } from "styled-system/css";
 
 import { Arrow } from "~/components/Arrow";
 import { region } from "~/config";
 
-interface EventDetailsProps {
+export interface EventDetailsProps
+	extends NonNullable<RecipeVariantProps<typeof eventDetails>> {
 	date: Date;
 	link: string;
 	linkText: string;
 	location: string;
 	topics: string[];
-	weight?: "light" | "medium";
 }
+
+const eventDetails = cva({
+	base: {
+		fontSize: "medium",
+		fontWeight: "medium",
+		margin: "[1.5rem 0]",
+		// Todo: find a different way...
+		"& + &": {
+			marginTop: "[3rem]",
+		},
+	},
+	variants: {
+		weight: {
+			light: {
+				fontWeight: "light",
+			},
+			medium: {},
+		},
+	},
+});
 
 export function EventDetails({
 	date,
@@ -27,7 +48,7 @@ export function EventDetails({
 	});
 
 	return (
-		<article className={`event-details medium event-details-${weight}`}>
+		<article className={eventDetails({ weight })}>
 			<h3
 				className={css({
 					fontSize: "medium",

@@ -1,30 +1,29 @@
 import { clsx } from "clsx";
+import type { RecipeVariantProps } from "styled-system/css";
 import { cva } from "styled-system/css";
 
-interface ArrowProps {
+export interface ArrowProps
+	extends NonNullable<RecipeVariantProps<typeof arrow>> {
 	className?: string;
-	direction: "back" | "out";
 	label: string;
 }
 
 const arrow = cva({
 	base: {
-		margin: 0,
+		margin: "[0 0 0 0.1em]",
 	},
 	variants: {
 		direction: {
 			back: {
-				height: "0.7em",
-				marginLeft: "0.1em",
-				transform: `rotate(180deg)`,
-				width: "0.7em",
+				height: "[0.7em]",
+				transform: `[rotate(180deg)]`,
+				width: "[0.7em]",
 			},
 			out: {
-				height: "1em",
-				marginBottom: "-0.1em",
-				marginLeft: "0.1em",
-				transform: `rotate(-45deg)`,
-				width: "1em",
+				height: "[1em]",
+				marginBottom: "[-0.1em]",
+				transform: `[rotate(-45deg)]`,
+				width: "[1em]",
 			},
 		},
 	},

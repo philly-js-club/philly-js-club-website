@@ -19,8 +19,13 @@ export default defineConfig({
 				large: { value: "clamp(2rem, 4vw, 3rem)" },
 				larger: { value: "clamp(2.5rem, 5vw, 5rem)" },
 				title: { value: "clamp(7rem, 13vw, 15rem)" },
-
-				wat: { value: "123px" },
+			},
+			fontWeights: {
+				light: { value: 400 },
+				medium: { value: 600 },
+				large: { value: 700 },
+				larger: { value: 700 },
+				title: { value: 900 },
 			},
 		},
 	},
