@@ -8,3 +8,4 @@ test-results
 .DS_Store
 out
 package-lock.json
+styled-system
