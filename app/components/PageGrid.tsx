@@ -1,4 +1,5 @@
 import { NavLink } from "@remix-run/react";
+import { css } from "styled-system/css";
 
 import { site } from "~/config";
 
@@ -10,6 +11,25 @@ interface PageGridProps {
 	title: React.ReactNode;
 }
 
+const navLink = css({
+	padding: "[0]",
+	"&:active": {
+		textDecoration: "underline",
+	},
+	// Todo: find another way lol
+	// &:not(:first-of-type, .page-grid-footer-separator + &)
+	"&:not(:first-of-type)::before": {
+		background: "foreground",
+		borderRadius: "[100%]",
+		content: `[""]`,
+		display: "inline-block",
+		height: "[0.3em]",
+		margin: "[0 0.5em 0.15em]",
+		position: "relative",
+		width: "[0.3em]",
+	},
+});
+
 export function PageGrid({ left, subtitle, title }: PageGridProps) {
 	return (
 		<div className="page-grid">
@@ -18,39 +38,54 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 				{subtitle && (
 					<NavLink className="page-grid-subtitle" reloadDocument to="/">
 						{site.title}
-						<Arrow
-							className="arrow-back"
-							label="Back indication arrow"
-							rotate={180}
-						/>
+						<Arrow direction="back" label="Back indication arrow" />
 					</NavLink>
 				)}
 			</header>
-			<main className="page-grid-left">{left}</main>
-			<footer className="page-grid-footer">
-				<NavLink className="page-grid-footer-link" reloadDocument to="/about">
+			<main
+				className={css({
+					gridArea: "[left]",
+					medium: {
+						paddingBottom: "[2rem]",
+					},
+				})}
+			>
+				{left}
+			</main>
+			<footer
+				className={css({
+					alignContent: "flex-end",
+					alignItems: "baseline",
+					display: "flex",
+					flexWrap: "wrap",
+					fontSize: "medium",
+					fontWeight: "large",
+					gridArea: "[footer]",
+					height: "[100%]",
+					justifyContent: "flex-start",
+					medium: {
+						alignSelf: "flex-end",
+						bottom: "[2rem]",
+						height: "auto",
+						justifyContent: "flex-end",
+					},
+				})}
+			>
+				<NavLink className={navLink} reloadDocument to="/about">
 					About
 				</NavLink>
-				<NavLink
-					className="page-grid-footer-link"
-					reloadDocument
-					to="/code-of-conduct"
-				>
+				<NavLink className={navLink} reloadDocument to="/code-of-conduct">
 					Code of Conduct
 				</NavLink>
-				<span className="page-grid-footer-separator" />
-				<NavLink className="page-grid-footer-link" reloadDocument to="/events">
+				<span /* className="page-grid-footer-separator" */ />
+				<NavLink className={navLink} reloadDocument to="/events">
 					Events
 				</NavLink>
-				<NavLink
-					className="page-grid-footer-link"
-					reloadDocument
-					to="/sponsors"
-				>
+				<NavLink className={navLink} reloadDocument to="/sponsors">
 					Sponsors
 				</NavLink>
-				<span className="page-grid-footer-separator" />
-				<NavLink className="page-grid-footer-link" reloadDocument to="/join-us">
+				<span className={css({ flexBasis: "[100%]" })} />
+				<NavLink className={navLink} reloadDocument to="/join-us">
 					Join Us
 				</NavLink>
 			</footer>

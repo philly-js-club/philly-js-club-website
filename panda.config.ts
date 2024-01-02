@@ -11,7 +11,16 @@ export default defineConfig({
 	preflight: true,
 	strictTokens: true,
 	theme: {
+		breakpoints: {
+			small: "700px",
+			medium: "1000px",
+			large: "1400px",
+		},
 		tokens: {
+			colors: {
+				background: { value: "#efdb4f" },
+				foreground: { value: "#323330" },
+			},
 			fontSizes: {
 				smaller: { value: "clamp(1.5rem, 2vw, 2rem)" },
 				small: { value: "clamp(1.5rem, 4vw, 2rem)" },

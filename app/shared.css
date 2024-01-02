@@ -81,48 +81,6 @@ Let us know if you think you've found one we'd like. 😏
 	text-transform: uppercase;
 }
 
-.page-grid-left {
-	grid-area: left;
-}
-
-.page-grid-footer {
-	align-content: flex-end;
-	align-items: baseline;
-	display: flex;
-	flex-wrap: wrap;
-	font-size: var(--font-size-medium);
-	font-weight: var(--font-weight-large);
-	grid-area: footer;
-	height: 100%;
-	justify-content: flex-start;
-}
-
-.page-grid-footer-separator {
-	flex-basis: 100%;
-}
-
-.page-grid-footer-link {
-	padding: 0;
-}
-
-.page-grid-footer-link.active {
-	text-decoration: underline;
-}
-
-.page-grid-footer-link:not(
-		:first-of-type,
-		.page-grid-footer-separator + .page-grid-footer-link
-	)::before {
-	background: var(--color-foreground);
-	border-radius: 100%;
-	content: "";
-	display: inline-block;
-	height: 0.3em;
-	margin: 0 0.5em 0.15em;
-	position: relative;
-	width: 0.3em;
-}
-
 @media (width >= 1000px) {
 	.page-grid {
 		grid-template-columns: minmax(40%, 1fr) 1fr;
@@ -146,10 +104,6 @@ Let us know if you think you've found one we'd like. 😏
 		bottom: 2rem;
 		height: auto;
 		justify-content: flex-end;
-	}
-
-	.page-grid-left {
-		padding-bottom: 2rem;
 	}
 }
 
