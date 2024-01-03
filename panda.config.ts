@@ -59,14 +59,14 @@ export default defineConfig({
 			colors: {
 				background: {
 					value: {
-						base: "{colors.slate}",
-						_osDark: "{colors.goldfish}",
+						base: "{colors.goldfish}",
+						_osDark: "{colors.slate}",
 					},
 				},
 				foreground: {
 					value: {
-						base: "{colors.goldfish}",
-						_osDark: "{colors.slate}",
+						base: "{colors.slate}",
+						_osDark: "{colors.goldfish}",
 					},
 				},
 			},
