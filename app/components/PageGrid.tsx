@@ -11,13 +11,15 @@ interface PageGridProps {
 	title: React.ReactNode;
 }
 
-const navLink = css({
+const navLink = css.raw({
 	padding: "[0]",
+	lineHeight: "medium",
 	"&:active": {
 		textDecoration: "underline",
 	},
-	// Todo: find another way lol
-	// &:not(:first-of-type, .page-grid-footer-separator + &)
+});
+
+const navLinkWithDot = css.raw({
 	"&:not(:first-of-type)::before": {
 		background: "foreground",
 		borderRadius: "[100%]",
@@ -130,21 +132,29 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 					pageGridHeaderAndFooter
 				)}
 			>
-				<NavLink className={navLink} reloadDocument to="/about">
+				<NavLink className={css(navLink)} reloadDocument to="/about">
 					About
 				</NavLink>
-				<NavLink className={navLink} reloadDocument to="/code-of-conduct">
+				<NavLink
+					className={css(navLink, navLinkWithDot)}
+					reloadDocument
+					to="/code-of-conduct"
+				>
 					Code of Conduct
 				</NavLink>
-				<span /* className="page-grid-footer-separator" */ />
-				<NavLink className={navLink} reloadDocument to="/events">
+				<span className={css({ flexBasis: "[100%]" })} />
+				<NavLink className={css(navLink)} reloadDocument to="/events">
 					Events
 				</NavLink>
-				<NavLink className={navLink} reloadDocument to="/sponsors">
+				<NavLink
+					className={css(navLink, navLinkWithDot)}
+					reloadDocument
+					to="/sponsors"
+				>
 					Sponsors
 				</NavLink>
 				<span className={css({ flexBasis: "[100%]" })} />
-				<NavLink className={navLink} reloadDocument to="/join-us">
+				<NavLink className={css(navLink)} reloadDocument to="/join-us">
 					Join Us
 				</NavLink>
 			</footer>
