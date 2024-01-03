@@ -19,33 +19,33 @@ export default defineConfig({
 		textStyles: {
 			body: {
 				value: {
-					fontSize: "{fontSizes.medium}",
-					fontWeight: "{fontSizes.light}",
-					lineHeight: "{fontSizes.medium}",
+					fontSize: "medium",
+					fontWeight: "light",
+					lineHeight: "medium",
 				},
 			},
 			large: {
 				value: {
-					fontSize: "{fontSizes.large}",
-					fontWeight: "{fontWeights.large}",
+					fontSize: "large",
+					fontWeight: "large",
 				},
 			},
 			larger: {
 				value: {
-					fontSize: "{fontSizes.larger}",
-					fontWeight: "{fontWeights.larger}",
+					fontSize: "larger",
+					fontWeight: "larger",
 				},
 			},
 			medium: {
 				value: {
-					fontSize: "{fontSizes.medium}",
-					fontWeight: "{fontWeights.medium}",
+					fontSize: "medium",
+					fontWeight: "medium",
 				},
 			},
 			smaller: {
 				value: {
-					fontSize: "{fontSizes.smaller}",
-					fontWeight: "{fontWeights.smaller}",
+					fontSize: "smaller",
+					fontWeight: "smaller",
 				},
 			},
 			underline: {
