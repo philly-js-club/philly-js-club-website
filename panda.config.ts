@@ -1,6 +1,10 @@
 import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
+	conditions: {
+		dark: "@media (prefers-color-scheme: dark)",
+		light: "@media (prefers-color-scheme: light)",
+	},
 	exclude: [],
 	include: ["./app/**/*.{j,t}s?"],
 	outdir: "styled-system",
@@ -51,10 +55,29 @@ export default defineConfig({
 				},
 			},
 		},
+		semanticTokens: {
+			colors: {
+				background: {
+					value: {
+						base: "{colors.slate}",
+						_osDark: "{colors.goldfish}",
+					},
+				},
+				foreground: {
+					value: {
+						base: "{colors.goldfish}",
+						_osDark: "{colors.slate}",
+					},
+				},
+			},
+		},
 		tokens: {
 			colors: {
-				background: { value: "#efdb4f" },
-				foreground: { value: "#323330" },
+				goldfish: { value: "#efdb4f" },
+				slate: { value: "#323330" },
+			},
+			fonts: {
+				body: { value: "League Spartan, monospace" },
 			},
 			fontSizes: {
 				smaller: { value: "clamp(1.5rem, 2vw, 2rem)" },

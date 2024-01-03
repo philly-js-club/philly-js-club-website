@@ -10,6 +10,7 @@ import { css } from "styled-system/css";
 
 import { site } from "./config";
 import styles from "./index.css";
+import reset from "./reset.css";
 
 const metaTags = [
 	{ charSet: "utf-8" },
@@ -35,6 +36,7 @@ export default function App() {
 					<meta key={JSON.stringify(meta)} {...meta} />
 				))}
 				<link href="https://fonts.googleapis.com" rel="preconnect" />
+				<link href={reset} rel="stylesheet" />
 				<link href={styles} rel="stylesheet" />
 				<Meta />
 				<Links />
@@ -43,7 +45,7 @@ export default function App() {
 				className={css({
 					background: "background",
 					color: "foreground",
-					fontFamily: `["League Spartan", monospace]`,
+					fontFamily: "body",
 					fontSmooth: "[smooth]",
 					fontSmoothing: "antialiased",
 					overflow: "auto",
