@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { css } from "styled-system/css";
 
 interface CalendarSubscriptionLinksProps {
 	webcalUrl: string;
@@ -10,14 +11,39 @@ export function CalendarSubscriptionLinks({
 	const [showMore, setShowMore] = useState(false);
 
 	return (
-		<div className="calendar-subscription">
-			<button onClick={() => setShowMore((s) => !s)}>
+		<div className={css({ fontSize: "small" })}>
+			<button
+				className={css({
+					base: {
+						background: "background",
+						border: "[2px solid {colors.foreground}]",
+						borderRadius: "[1em]",
+						color: "foreground",
+						cursor: "pointer",
+						fontSize: "smaller",
+						margin: "[1em 0]",
+						padding: "[0.5em]",
+						textAlign: "left",
+						width: "auto",
+					},
+					medium: {
+						marginTop: "[0]",
+					},
+					"& p": {
+						marginTop: "[0.5rem]",
+					},
+				})}
+				onClick={() => setShowMore((s) => !s)}
+			>
 				📆 Subscribe with your favorite calendar client
 			</button>
 			{showMore && (
 				<>
 					<p>
-						<a href={`https://www.google.com/calendar/render?cid=${webcalUrl}`}>
+						<a
+							className={css({ textStyle: "underline" })}
+							href={`https://www.google.com/calendar/render?cid=${webcalUrl}`}
+						>
 							Subscribe with Google Calendar
 						</a>
 					</p>

@@ -1,7 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
 
-// todo: https://panda-css.com/docs/theming/text-styles#defining-text-styles
-
 export default defineConfig({
 	exclude: [],
 	include: [
@@ -17,6 +15,44 @@ export default defineConfig({
 			small: "700px",
 			medium: "1000px",
 			large: "1400px",
+		},
+		textStyles: {
+			body: {
+				value: {
+					fontSize: "{fontSizes.medium}",
+					fontWeight: "{fontSizes.light}",
+					lineHeight: "{fontSizes.medium}",
+				},
+			},
+			large: {
+				value: {
+					fontSize: "{fontSizes.large}",
+					fontWeight: "{fontWeights.large}",
+				},
+			},
+			larger: {
+				value: {
+					fontSize: "{fontSizes.larger}",
+					fontWeight: "{fontWeights.larger}",
+				},
+			},
+			medium: {
+				value: {
+					fontSize: "{fontSizes.medium}",
+					fontWeight: "{fontWeights.medium}",
+				},
+			},
+			smaller: {
+				value: {
+					fontSize: "{fontSizes.smaller}",
+					fontWeight: "{fontWeights.smaller}",
+				},
+			},
+			underline: {
+				value: {
+					textDecoration: "underline",
+				},
+			},
 		},
 		tokens: {
 			colors: {

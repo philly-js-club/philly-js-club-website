@@ -1,5 +1,6 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { type MetaFunction, useLoaderData } from "@remix-run/react";
+import { css } from "styled-system/css";
 
 import { Icons } from "~/components/Icons";
 import { PageGrid } from "~/components/PageGrid";
@@ -27,17 +28,20 @@ export default function Sponsors() {
 		<PageGrid
 			left={
 				<>
-					<h2 className="larger">Thanks, Sponsors!</h2>
-					<p className="sponsor-cta body-text">
+					<h2 className={css({ textStyle: "larger" })}>Thanks, Sponsors!</h2>
+					<p className={css({ textStyle: "body" })}>
 						Philly JS wouldn't exist without the support of our beloved
 						sponsors. Interested in sponsoring us?{" "}
-						<a className="underline" href="mailto:phillyjs@joewoods.dev">
+						<a
+							className={css({ textStyle: "underline" })}
+							href="mailto:phillyjs@joewoods.dev"
+						>
 							Reach out to Joe!
 						</a>
 					</p>
 					<Icons
 						icons={sponsors.currentSponsors}
-						imageClassName="sponsor-image"
+						imageClassName={css({ height: "[10rem]", width: "[10rem]" })}
 					/>
 				</>
 			}

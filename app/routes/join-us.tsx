@@ -1,5 +1,6 @@
 import type { LoaderFunction } from "@remix-run/node";
 import { type MetaFunction, useLoaderData } from "@remix-run/react";
+import { css } from "styled-system/css";
 
 import { Icons } from "~/components/Icons";
 import { PageGrid } from "~/components/PageGrid";
@@ -24,10 +25,12 @@ export default function Socials() {
 		<PageGrid
 			left={
 				<>
-					<p className="body-text">Here's where you can find us:</p>
+					<p className={css({ textStyle: "body" })}>
+						Here's where you can find us:
+					</p>
 					<Icons
 						icons={platforms.currentPlatforms}
-						imageClassName="platform-image"
+						imageClassName={css({ width: "[5rem]" })}
 					/>
 				</>
 			}
