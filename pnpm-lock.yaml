@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.4.0
     version: 1.4.0
   isbot:
-    specifier: '3'
-    version: 3.0.0
+    specifier: ^3.7.1
+    version: 3.7.1
   playwright:
     specifier: ^1.32.3
     version: 1.32.3
@@ -1530,7 +1530,7 @@ packages:
     resolution: {integrity: sha512-UMnjqVcbZ4f1Ng7RhNI6jIOBgIyGdj0PBDIwqqzdkhps8vfR6/zCxZXFo1hBwo53ujva8q9xUY9LQ2OApHAU5g==}
     dependencies:
       '@pandacss/error': 0.24.0
-      '@pandacss/is-valid-prop': 0.24.0
+      '@pandacss/is-valid-prop': 0.24.1
       '@pandacss/logger': 0.24.0
       '@pandacss/shared': 0.24.0
       '@pandacss/token-dictionary': 0.24.0
@@ -1588,7 +1588,7 @@ packages:
     resolution: {integrity: sha512-CuMVyqglamRgsP7rmxZBBCSecbCnz9l7La4GBw3C1nDBhMCMFvLvvqASK4ACSI3Ote1VR1tumhdwY3m+aKTOdw==}
     dependencies:
       '@pandacss/core': 0.24.0
-      '@pandacss/is-valid-prop': 0.24.0
+      '@pandacss/is-valid-prop': 0.24.1
       '@pandacss/logger': 0.24.0
       '@pandacss/shared': 0.24.0
       '@pandacss/token-dictionary': 0.24.0
@@ -1600,8 +1600,8 @@ packages:
       ts-pattern: 5.0.5
     dev: true
 
-  /@pandacss/is-valid-prop@0.24.0:
-    resolution: {integrity: sha512-xGPArh0yYGPmvPaXknIu0WnySAYxsVfAKX/9PHMwAaLiBAmuYlmmmf2CNU39DD0UcJ8Q79Y6pf9R41l/OvpkHg==}
+  /@pandacss/is-valid-prop@0.24.1:
+    resolution: {integrity: sha512-47ISyVjTYJJP0Hu/2wlNH/wcr8HAI17GJ0H+3fHQPjmh2r7gTAW76TsFGjqUJ1JFAmphYymvDvI6ZBBvp/fvkQ==}
     dev: true
 
   /@pandacss/logger@0.24.0:
@@ -2819,7 +2819,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001572
-      electron-to-chromium: 1.4.616
+      electron-to-chromium: 1.4.617
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
     dev: true
@@ -3600,8 +3600,8 @@ packages:
     resolution: {integrity: sha512-FRHZO+1tUNO4TOPXmlxetkoaIY8uwHzd1kKopK/Gx2SKn1L47wJXWD44wxP5CGRyyP98z/c8e1eBzJrgPeiBOg==}
     dev: true
 
-  /electron-to-chromium@1.4.616:
-    resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==}
+  /electron-to-chromium@1.4.617:
+    resolution: {integrity: sha512-sYNE3QxcDS4ANW1k4S/wWYMXjCVcFSOX3Bg8jpuMFaXt/x8JCmp0R1Xe1ZXDX4WXnSRBf+GJ/3eGWicUuQq5cg==}
     dev: true
 
   /emoji-regex@8.0.0:
@@ -5402,9 +5402,9 @@ packages:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
     dev: true
 
-  /isbot@3.0.0:
-    resolution: {integrity: sha512-yQTMI/OksWaOiPHo+pBxQ1Vp5RWnmeaWB3AMxu98DP48MGC2F69PCglCuSPXAqu6UMI7glSXxQXHoMiEgwKixg==}
-    engines: {node: '>=10'}
+  /isbot@3.7.1:
+    resolution: {integrity: sha512-JfqOaY3O1lcWt2nc+D6Mq231CNpwZrBboLa59Go0J8hjGH+gY/Sy0CA/YLUSIScINmAVwTdJZIsOTk4PfBtRuw==}
+    engines: {node: '>=12'}
     dev: false
 
   /isexe@2.0.0:
@@ -7141,7 +7141,7 @@ packages:
     dependencies:
       jsonc-parser: 3.2.0
       mlly: 1.2.0
-      pathe: 1.1.0
+      pathe: 1.1.1
     dev: true
 
   /pkg-types@1.0.3:
