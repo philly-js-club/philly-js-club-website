@@ -1,58 +1,20 @@
 import { defineConfig } from "@pandacss/dev";
 
+import { textStyles } from "./text-styles";
+
 export default defineConfig({
 	exclude: [],
-	include: [
-		"./app/routes/**/*.{ts,tsx,js,jsx}",
-		"./app/components/**/*.{ts,tsx,js,jsx}",
-	],
+	include: ["./app/**/*.{ts,tsx,js,jsx}"],
 	outdir: "styled-system",
 	outExtension: "js",
 	preflight: true,
 	strictTokens: true,
 	theme: {
+		extend: { textStyles },
 		breakpoints: {
 			small: "700px",
 			medium: "1000px",
 			large: "1400px",
-		},
-		textStyles: {
-			body: {
-				value: {
-					fontSize: "{fontSizes.medium}",
-					fontWeight: "{fontSizes.light}",
-					lineHeight: "{fontSizes.medium}",
-				},
-			},
-			large: {
-				value: {
-					fontSize: "{fontSizes.large}",
-					fontWeight: "{fontWeights.large}",
-				},
-			},
-			larger: {
-				value: {
-					fontSize: "{fontSizes.larger}",
-					fontWeight: "{fontWeights.larger}",
-				},
-			},
-			medium: {
-				value: {
-					fontSize: "{fontSizes.medium}",
-					fontWeight: "{fontWeights.medium}",
-				},
-			},
-			smaller: {
-				value: {
-					fontSize: "{fontSizes.smaller}",
-					fontWeight: "{fontWeights.smaller}",
-				},
-			},
-			underline: {
-				value: {
-					textDecoration: "underline",
-				},
-			},
 		},
 		tokens: {
 			colors: {
