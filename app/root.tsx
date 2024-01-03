@@ -6,9 +6,9 @@ import {
 	Scripts,
 	ScrollRestoration,
 } from "@remix-run/react";
+import { css } from "styled-system/css";
 
 import { site } from "./config";
-// import styles from "./root.css";
 import styles from "./index.css";
 
 const metaTags = [
@@ -39,7 +39,30 @@ export default function App() {
 				<Meta />
 				<Links />
 			</head>
-			<body>
+			<body
+				className={css({
+					background: "background",
+					color: "foreground",
+					fontFamily: `["League Spartan", monospace]`,
+					fontSmooth: "[smooth]",
+					fontSmoothing: "antialiased",
+					overflow: "auto",
+					textDecoration: "none",
+
+					"& :link, & :visited": {
+						textDecoration: "none",
+					},
+
+					"& ::selection": {
+						background: "foreground",
+						color: "background",
+					},
+
+					"& *": {
+						boxSizing: "border-box",
+					},
+				})}
+			>
 				<Outlet />
 				<ScrollRestoration />
 				<Scripts />

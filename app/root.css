@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;900&display=swap");
 
-:root {
-	--width-main-max: 150rem;
-}
-
-@media screen and (width >= 700px) {
-	:root {
-		--padding-page: 2rem;
-	}
-}
-
-* {
-	box-sizing: border-box;
-}
-
 body,
 html {
 	border: 0;
@@ -23,18 +9,7 @@ html {
 }
 
 body {
-	background: var(--color-background);
 	font-family: "League Spartan", monospace;
-	font-smooth: smooth; /* stylelint-disable property-no-unknown */
-	-webkit-font-smoothing: antialiased;
-	overflow: overlay;
-}
-
-body,
-:link,
-:visited {
-	color: var(--color-foreground);
-	text-decoration: none;
 }
 
 h1,
@@ -46,11 +21,6 @@ h6,
 p {
 	margin: 0;
 	padding: 0;
-}
-
-::selection {
-	background: var(--color-foreground);
-	color: var(--color-background);
 }
 
 @media (prefers-color-scheme: dark) {
