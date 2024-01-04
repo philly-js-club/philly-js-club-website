@@ -6,7 +6,7 @@ export default defineConfig({
 		light: "@media (prefers-color-scheme: light)",
 	},
 	exclude: [],
-	include: ["./app/**/*.{j,t}s?"],
+	include: ["./app/**/*.{js,jsx,ts,tsx}?"],
 	outdir: "styled-system",
 	outExtension: "js",
 	preflight: true,

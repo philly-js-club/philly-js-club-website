@@ -42,18 +42,15 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 	return (
 		<div
 			className={css({
-				base: {
-					display: "grid",
-					gridGap: "[0 4rem]",
-					gridTemplate:
-						"[minmax(min-content, max-content) / minmax(100%, 1fr)]",
-					gridTemplateAreas: '["header" "left" "footer"]',
-					height: "[100%]",
-					margin: "auto",
-					padding: "[2rem]",
-					position: "relative",
-					width: "[100%]",
-				},
+				display: "grid",
+				gridGap: "[0 4rem]",
+				gridTemplate: "[minmax(min-content, max-content) / minmax(100%, 1fr)]",
+				gridTemplateAreas: '["header" "left" "footer"]',
+				height: "[100%]",
+				margin: "auto",
+				padding: "[2rem]",
+				position: "relative",
+				width: "[100%]",
 				medium: {
 					gridTemplateColumns: "[minmax(40%, 1fr) 1fr]",
 				},

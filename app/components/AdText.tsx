@@ -14,12 +14,10 @@ export function AdText() {
 	return (
 		<div
 			className={css({
-				base: {
-					display: "flex",
-					flexDirection: "column",
-					gap: "[2rem]",
-					textAlign: "center",
-				},
+				display: "flex",
+				flexDirection: "column",
+				gap: "[2rem]",
+				textAlign: "center",
 				small: {
 					textAlign: "left",
 					width: "[50%]",
@@ -31,13 +29,11 @@ export function AdText() {
 		>
 			<h1
 				className={css({
-					base: {
-						fontSize: "[5rem]",
-						fontWeight: "title",
-						lineHeight: "[0.85]",
-						margin: "[0 15vw]",
-						textTransform: "uppercase",
-					},
+					fontSize: "[5rem]",
+					fontWeight: "title",
+					lineHeight: "[0.85]",
+					margin: "[0 15vw]",
+					textTransform: "uppercase",
 					small: {
 						margin: "[0]",
 					},

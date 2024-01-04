@@ -17,7 +17,7 @@ const eventDetails = cva({
 	base: {
 		fontSize: "medium",
 		fontWeight: "medium",
-		margin: "[1.5rem 0]",
+		lineHeight: "medium",
 		// Todo: find a different way...
 		"& + &": {
 			marginTop: "[3rem]",
@@ -52,7 +52,8 @@ export function EventDetails({
 			<h3
 				className={css({
 					fontSize: "medium",
-					marginBlock: "[1rem]",
+					fontWeight: "large",
+					margin: "[2.5rem 0 0.75rem 0]",
 				})}
 			>
 				{formatter.format(date)}
@@ -60,12 +61,23 @@ export function EventDetails({
 			<p>{location}</p>
 			<ul className={css({ margin: "[2rem 0 1rem]" })}>
 				{topics.map((topic) => (
-					<li className={css({ margin: "[0.25em 0]" })} key={topic}>
+					<li
+						className={css({
+							listStyle: "outside",
+							margin: "[0 0 0 0.75em]",
+						})}
+						key={topic}
+					>
 						{topic}
 					</li>
 				))}
 			</ul>
-			<a href={link} rel="noreferrer" target="_blank">
+			<a
+				className={css({ display: "flex", alignItems: "baseline" })}
+				href={link}
+				rel="noreferrer"
+				target="_blank"
+			>
 				{linkText}
 				<Arrow direction="out" label="External link indication arrow" />
 			</a>

@@ -41,7 +41,13 @@ export default function Index() {
 			left={
 				events.length ? (
 					<>
-						<h2 className={css({ textStyle: "larger" })}>
+						<h2
+							className={css({
+								lineHeight: "[1]",
+								marginBottom: "[1.5rem]",
+								textStyle: "larger",
+							})}
+						>
 							Next Jawn{events.length === 1 ? "" : "s"}
 						</h2>
 						{events.map((event, index) => (

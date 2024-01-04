@@ -16,17 +16,15 @@ export default function Ad() {
 	return (
 		<main
 			className={css({
-				base: {
-					alignItems: "center",
-					background: "foreground",
-					color: "background",
-					display: "flex",
-					flexDirection: "column",
-					gap: "[4rem]",
-					height: "[100%]",
-					justifyContent: "center",
-					width: "[100%]",
-				},
+				alignItems: "center",
+				background: "foreground",
+				color: "background",
+				display: "flex",
+				flexDirection: "column",
+				gap: "[4rem]",
+				height: "[100%]",
+				justifyContent: "center",
+				width: "[100%]",
 				small: {
 					flexDirection: "row",
 					gap: "[2rem]",
