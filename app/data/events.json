@@ -1,5 +1,16 @@
 [
 	{
+		"date": "2024-02-08T19:00:00.000-04:00",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://www.eventbrite.com/e/philadelphia-javascript-club-better-javascript-code-for-free-w-eslint-tickets-803507501567",
+		"location": "Indy Hall",
+		"topics": [
+			"Better JavaScript Code for \"Free\" with ESLint! with Cody Lewis"
+		]
+	},
+	{
 		"date": "2024-01-11T19:00:00.000-04:00",
 		"duration": {
 			"hours": 2
