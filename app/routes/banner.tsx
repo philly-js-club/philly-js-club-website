@@ -8,7 +8,9 @@ import { getMonthAndYear } from "~/utils/dates";
 export const meta: MetaFunction = ({ location }) => {
 	const { month, year } = getMonthAndYear(new URLSearchParams(location.search));
 
-	return [{ title: constructSiteTitle(`Ad (${upperFirst(month)} ${year})`) }];
+	return [
+		{ title: constructSiteTitle(`Banner (${upperFirst(month)} ${year})`) },
+	];
 };
 
 export default function Banner() {
