@@ -11,11 +11,11 @@ export const meta: MetaFunction = ({ location }) => {
 	return [{ title: constructSiteTitle(`Ad (${upperFirst(month)} ${year})`) }];
 };
 
-export default function Ad() {
+export default function Banner() {
 	return (
-		<main className="ad-main">
-			<div className="ad-img-area">
-				<AdLogo className="ad-img" />
+		<main className="banner-main">
+			<div className="banner-img-area">
+				<AdLogo className="banner-img" />
 			</div>
 			<AdText />
 		</main>

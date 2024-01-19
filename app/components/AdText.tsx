@@ -10,7 +10,7 @@ export function AdText() {
 	const { month, year } = useMonthAndYear();
 
 	return (
-		<div className="ad-text">
+		<div className="banner-text">
 			<h1>{site.title}</h1>
 			<p>
 				{upperFirst(month)} {year}
