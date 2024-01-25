@@ -1,5 +1,7 @@
 import { clsx } from "clsx";
 
+import { arrow } from "./Arrow.css";
+
 interface ArrowProps {
 	className?: string;
 	label: string;
@@ -10,7 +12,7 @@ export function Arrow({ className, label, rotate }: ArrowProps) {
 	return (
 		<svg
 			aria-label={label}
-			className={clsx("arrow", className)}
+			className={clsx("arrow", className, arrow)}
 			fill="none"
 			{...(rotate && { transform: `rotate(${rotate})` })}
 			viewBox="0 0 20 16"

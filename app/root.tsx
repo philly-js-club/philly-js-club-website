@@ -1,3 +1,4 @@
+import { cssBundleHref } from "@remix-run/css-bundle";
 import {
 	Links,
 	LiveReload,
@@ -35,6 +36,7 @@ export default function App() {
 				))}
 				<link href="https://fonts.googleapis.com" rel="preconnect" />
 				<link href={styles} rel="stylesheet" />
+				<link href={cssBundleHref} rel="stylesheet" />
 				<Meta />
 				<Links />
 			</head>
