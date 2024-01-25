@@ -1,5 +1,9 @@
+import clsx from "clsx";
+
 import { Arrow } from "~/components/Arrow";
 import { region } from "~/config";
+
+import * as styles from "./EventDetails.css";
 
 interface EventDetailsProps {
 	date: Date;
@@ -25,7 +29,7 @@ export function EventDetails({
 	});
 
 	return (
-		<article className={`event-details medium event-details-${weight}`}>
+		<article className={clsx(styles.eventDetails[weight], `medium`)}>
 			<h3 className="event-details-date">{formatter.format(date)}</h3>
 			<p>{location}</p>
 			<ul className="event-details-topics">

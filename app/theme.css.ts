@@ -6,6 +6,12 @@ export const [themeClass, vars] = createTheme({
 		foreground: "#323330",
 	},
 	font: {
-		body: "arial",
+		weight: {
+			light: "400",
+			medium: "600",
+			large: "700",
+			larger: "700",
+			title: "900",
+		},
 	},
 });

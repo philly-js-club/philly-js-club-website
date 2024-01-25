@@ -48,18 +48,6 @@ Let us know if you think you've found one we'd like. 😏
 
 /* EventDetails */
 
-.event-details {
-	margin: 1.5rem 0;
-}
-
-.event-details-light {
-	font-weight: var(--font-weight-light);
-}
-
-.event-details + .event-details {
-	margin-top: 3rem;
-}
-
 .event-details-date {
 	font-size: var(--font-size-large);
 	margin-bottom: 1rem;

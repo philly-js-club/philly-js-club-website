@@ -1,6 +1,6 @@
 import { clsx } from "clsx";
 
-import { arrow } from "./Arrow.css";
+import * as styles from "./Arrow.css";
 
 interface ArrowProps {
 	className?: string;
@@ -15,7 +15,7 @@ export function Arrow({ className, label, variant }: ArrowProps) {
 	return (
 		<svg
 			aria-label={label}
-			className={clsx(arrow[variant], className)}
+			className={clsx(styles.arrow[variant], className)}
 			fill="none"
 			viewBox="0 0 20 16"
 			xmlns="http://www.w3.org/2000/svg"
