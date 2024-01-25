@@ -29,8 +29,24 @@ export const [themeClass, vars] = createTheme({
 });
 
 export const fonts = styleVariants({
+	body: {
+		fontSize: vars.font.size.medium,
+		fontWeight: vars.font.weight.light,
+		lineHeight: vars.lineHeight.medium,
+	},
+	larger: {
+		fontSize: vars.font.size.larger,
+		fontWeight: vars.font.weight.larger,
+	},
+	large: {
+		fontSize: vars.font.size.large,
+		fontWeight: vars.font.weight.large,
+	},
 	medium: {
 		fontSize: vars.font.size.medium,
 		fontWeight: vars.font.weight.medium,
+	},
+	smaller: {
+		fontSize: vars.font.size.small,
 	},
 });
