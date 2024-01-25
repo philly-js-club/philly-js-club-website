@@ -22,6 +22,10 @@ export const [themeClass, vars] = createTheme({
 			title: "900",
 		},
 	},
+	lineHeight: {
+		medium: "clamp(1.5rem, 6vw, var(--font-size-medium))",
+		title: "clamp(5.5rem, 12vw, 12rem)",
+	},
 });
 
 export const fonts = styleVariants({
