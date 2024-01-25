@@ -5,6 +5,8 @@ import { AdText } from "~/components/AdText";
 import { constructSiteTitle, upperFirst } from "~/utils/common";
 import { getMonthAndYear } from "~/utils/dates";
 
+import * as styles from "./ad.css";
+
 export const meta: MetaFunction = ({ location }) => {
 	const { month, year } = getMonthAndYear(new URLSearchParams(location.search));
 
@@ -13,9 +15,9 @@ export const meta: MetaFunction = ({ location }) => {
 
 export default function Ad() {
 	return (
-		<main className="ad-main">
-			<div className="ad-img-area">
-				<AdLogo className="ad-img" />
+		<main className={styles.ad}>
+			<div className={styles.imgArea}>
+				<AdLogo className={styles.img} />
 			</div>
 			<AdText />
 		</main>
