@@ -31,11 +31,11 @@ export function EventDetails({
 
 	return (
 		<article className={clsx(styles.eventDetails[weight], fonts.medium)}>
-			<h3 className="event-details-date">{formatter.format(date)}</h3>
+			<h3 className={styles.date}>{formatter.format(date)}</h3>
 			<p>{location}</p>
-			<ul className="event-details-topics">
+			<ul className={styles.topics}>
 				{topics.map((topic) => (
-					<li className="event-details-topic" key={topic}>
+					<li className={styles.topic} key={topic}>
 						{topic}
 					</li>
 				))}

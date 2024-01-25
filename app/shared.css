@@ -41,21 +41,6 @@ Let us know if you think you've found one we'd like. 😏
 	line-height: var(--line-height-medium);
 }
 
-/* EventDetails */
-
-.event-details-date {
-	font-size: var(--font-size-large);
-	margin-bottom: 1rem;
-}
-
-.event-details-topics {
-	margin: 2rem 0 1rem;
-}
-
-.event-details-topic {
-	margin: 0.25em 0;
-}
-
 /* PageGrid */
 
 .page-grid {

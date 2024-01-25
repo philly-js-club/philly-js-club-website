@@ -20,3 +20,16 @@ export const eventDetails = styleVariants({
 	],
 	medium: [base],
 });
+
+export const date = style({
+	fontSize: vars.font.size.large,
+	marginBottom: "1rem",
+});
+
+export const topics = style({
+	margin: "2rem 0 1rem",
+});
+
+export const topic = style({
+	margin: "0.25rem 0",
+});
