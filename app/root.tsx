@@ -10,6 +10,7 @@ import {
 
 import { site } from "./config";
 import styles from "./root.css";
+import { themeClass } from "./theme.css";
 
 const metaTags = [
 	{ charSet: "utf-8" },
@@ -29,7 +30,7 @@ const metaTags = [
 
 export default function App() {
 	return (
-		<html lang="en">
+		<html className={themeClass} lang="en">
 			<head>
 				{metaTags.map((meta) => (
 					<meta key={JSON.stringify(meta)} {...meta} />
