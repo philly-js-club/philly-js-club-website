@@ -21,7 +21,7 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 						<Arrow
 							className="arrow-back"
 							label="Back indication arrow"
-							rotate={180}
+							variant="back"
 						/>
 					</NavLink>
 				)}

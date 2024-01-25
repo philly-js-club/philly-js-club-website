@@ -1,9 +1,27 @@
-import { style } from "@vanilla-extract/css";
+import { style, styleVariants } from "@vanilla-extract/css";
 
-import { vars } from "~/theme.css";
+const base = style({
+	margin: 0,
+});
 
-export const arrow = style({
-	border: "solid 5px red",
-	background: vars.color.brand,
-	color: "#454545",
+export const arrow = styleVariants({
+	back: [
+		base,
+		{
+			height: "0.7em",
+			marginLeft: "0.1em",
+			transform: `rotate(180deg)`,
+			width: "0.7em",
+		},
+	],
+	out: [
+		base,
+		{
+			height: "1em",
+			marginBottom: "-0.1em",
+			marginLeft: "0.1em",
+			transform: `rotate(-45deg)`,
+			width: "1em",
+		},
+	],
 });
