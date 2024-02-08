@@ -1,5 +1,16 @@
 [
 	{
+		"date": "2024-03-14T18:00:00.000-04:00",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://www.eventbrite.com/e/philadelphia-js-club-style-authenticate-your-nextjs-app-w-josh-joe-tickets-828968245337",
+		"location": "Indy Hall",
+		"topics": [
+			"Style and Authenticate Your Next.js App with Josh Goldberg & Joe Woods"
+		]
+	},
+	{
 		"date": "2024-02-08T19:00:00.000-04:00",
 		"duration": {
 			"hours": 2
