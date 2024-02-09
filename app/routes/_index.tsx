@@ -17,13 +17,14 @@ export const loader = async () => {
 	// This assumes we'll always have a rebuild of the site after an event finishes.
 	// Surely this assumption tied to datetime logic will never come back to haunt us.
 	const now = new Date();
-	const oneMonthInTheFuture = new Date();
-	oneMonthInTheFuture.setUTCMonth(oneMonthInTheFuture.getUTCMonth() + 1);
+	const sixWeeksInTheFuture = new Date(
+		now.getTime() + 6 * 7 * 24 * 60 * 60 * 1000
+	);
 
 	return json(
 		// Filter and sort event date in ascending order.
 		events
-			.filter(({ date }) => date > now && date < oneMonthInTheFuture)
+			.filter(({ date }) => date > now && date < sixWeeksInTheFuture)
 			.sort((a, b) => a.date.getTime() - b.date.getTime())
 	);
 };
