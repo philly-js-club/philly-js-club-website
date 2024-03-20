@@ -30,6 +30,7 @@
 	"dependencies": {
 		"@axe-core/playwright": "^4.6.1",
 		"@playwright/test": "^1.32.3",
+		"@remix-run/css-bundle": "^2.5.1",
 		"@remix-run/node": "^2.0.0",
 		"@remix-run/react": "^2.0.0",
 		"clsx": "^1.2.1",
@@ -50,6 +51,7 @@
 		"@types/react-dom": "^18.0.8",
 		"@typescript-eslint/eslint-plugin": "6.0.0-alpha.124",
 		"@typescript-eslint/parser": "6.0.0-alpha.124",
+		"@vanilla-extract/css": "^1.14.0",
 		"cspell": "^6.31.1",
 		"eslint": "^8.27.0",
 		"eslint-plugin-deprecation": "^1.4.1",

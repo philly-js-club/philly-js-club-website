@@ -30,7 +30,7 @@ export function Icons({ icons, imageClassName }: IconsProps) {
 									<Arrow
 										className="arrow-out medium"
 										label="External link indication arrow"
-										rotate={-45}
+										variant="out"
 									/>
 								</h3>
 							</a>
