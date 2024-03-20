@@ -1,6 +1,7 @@
 import { json } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
+import { css } from "styled-system/css";
 
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
@@ -41,7 +42,13 @@ export default function Index() {
 			left={
 				events.length ? (
 					<>
-						<h2 className="larger">
+						<h2
+							className={css({
+								lineHeight: "[1]",
+								marginBottom: "[1.5rem]",
+								textStyle: "larger",
+							})}
+						>
 							Next Jawn{events.length === 1 ? "" : "s"}
 						</h2>
 						{events.map((event, index) => (

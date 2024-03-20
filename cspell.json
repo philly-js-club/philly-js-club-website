@@ -13,6 +13,9 @@
 		"Brophy",
 		"Chasen",
 		"clsx",
+		"codegen",
+		"Denzel",
+		"Echevarria",
 		"emeritum",
 		"fastmail",
 		"Fastmail",
@@ -20,13 +23,13 @@
 		"jawn",
 		"knip",
 		"Moumneh",
+		"outdir",
 		"packagejson",
+		"pandacss",
 		"phillyjs",
 		"Rasha",
 		"stylelint",
 		"typecheck",
-		"webcal",
-		"Denzel",
-		"Echevarria"
+		"webcal"
 	]
 }

@@ -2,6 +2,7 @@ import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
+import { css } from "styled-system/css";
 
 import { CalendarSubscriptionLinks } from "~/components/CalendarSubscriptionLinks";
 import { EventDetails } from "~/components/EventDetails";
@@ -41,13 +42,16 @@ export default function Events() {
 					<CalendarSubscriptionLinks
 						webcalUrl={`webcal://${site.domain}/ics-feed.ics`}
 					/>
-					<ol className="events-year">
+					<ol className={css({ listStyleType: "none", padding: "[0]" })}>
 						{Object.entries(data)
 							.sort(([a], [b]) => +b - +a)
 							.map(([year, events]) => (
-								<li className="events-year-list" key={year}>
-									<h2 className="events-year-heading">{year}</h2>
-									<ol className="events-year-events-list">
+								<li
+									className={css({ "& + &": { marginTop: "[5rem]" } })}
+									key={year}
+								>
+									<h2 className={css({ textStyle: "larger" })}>{year}</h2>
+									<ol className={css({ padding: "[0]" })}>
 										{events.map((event) => (
 											<EventDetails
 												date={new Date(event.date)}
