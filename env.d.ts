@@ -1,6 +1,3 @@
-/// <reference types="@remix-run/dev" />
-/// <reference types="@remix-run/node" />
-
 declare module "ics-service" {
 	const createAboutRoute: unknown;
 	const createFeedRoute: unknown;

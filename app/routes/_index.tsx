@@ -1,4 +1,4 @@
-import { json } from "@remix-run/node";
+import { unstable_defineLoader } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 
@@ -6,10 +6,12 @@ import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
 import { constructSiteTitle } from "~/utils/common";
 
-export const loader = async () => {
+import eventsJson from "../data/events.json";
+
+export const loader = unstable_defineLoader(async () => {
 	// This assumes the events are always in sorted order, newest first.
 	// Surely this assumption on undocumented data behavior will never come back to haunt us.
-	const events = (await import("../data/events.json")).map((event) => ({
+	const events = eventsJson.map((event) => ({
 		...event,
 		date: new Date(event.date),
 	}));
@@ -21,13 +23,11 @@ export const loader = async () => {
 		now.getTime() + 6 * 7 * 24 * 60 * 60 * 1000
 	);
 
-	return json(
-		// Filter and sort event date in ascending order.
-		events
-			.filter(({ date }) => date > now && date < sixWeeksInTheFuture)
-			.sort((a, b) => a.date.getTime() - b.date.getTime())
-	);
-};
+	// Filter and sort event date in ascending order.
+	return events
+		.filter(({ date }) => date > now && date < sixWeeksInTheFuture)
+		.sort((a, b) => a.date.getTime() - b.date.getTime());
+});
 
 export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle() }];

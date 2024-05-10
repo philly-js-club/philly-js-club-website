@@ -1,12 +1,13 @@
-import type { LoaderFunction } from "@remix-run/node";
+import { unstable_defineLoader } from "@remix-run/node";
 import type { DurationObject, EventAttributes } from "ics";
-import { generateIcs } from "ics-service";
+import icsService from "ics-service";
 
 import { site } from "~/config";
 
-export const loader: LoaderFunction = async () => {
-	const eventData = (await import("../data/events.json")).default;
-	eventData.reverse();
+import eventJson from "../data/events.json";
+
+export const loader = unstable_defineLoader(() => {
+	const eventData = [...eventJson].reverse();
 	const events: EventAttributes[] = eventData.map((event, index) => {
 		const date = new Date(event.date);
 		return {
@@ -30,7 +31,7 @@ export const loader: LoaderFunction = async () => {
 	});
 	let ics = "";
 	try {
-		ics = generateIcs(site.title, events, site.baseURL);
+		ics = icsService.generateIcs(site.title, events, site.baseURL);
 	} catch (err) {
 		return new Response("Invalid ICS File", { status: 500 });
 	}
@@ -41,4 +42,4 @@ export const loader: LoaderFunction = async () => {
 			"Content-Disposition": `attachment; filename="phillyjs.ics"`,
 		},
 	});
-};
+});
