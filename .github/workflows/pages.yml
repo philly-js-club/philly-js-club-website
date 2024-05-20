@@ -12,6 +12,7 @@ on:
 
 jobs:
   build:
+    if: github.repository == 'philly-js-club/philly-js-club-website'
     runs-on: ubuntu-latest
 
     steps:
