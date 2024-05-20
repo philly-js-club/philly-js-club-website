@@ -1,5 +1,4 @@
-import type { LoaderFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import { unstable_defineLoader } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 
@@ -9,30 +8,18 @@ import { PageGrid } from "~/components/PageGrid";
 import { site } from "~/config";
 import { constructSiteTitle, groupBy } from "~/utils/common";
 
-export const loader: LoaderFunction = async () => {
-	return json(
-		groupBy(await import("../data/events.json"), (event) =>
-			new Date(event.date).getFullYear()
-		)
-	);
-};
+import events from "../data/events.json";
+
+export const loader = unstable_defineLoader(() => {
+	return groupBy(events, (event) => new Date(event.date).getFullYear());
+});
 
 export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("Events") }];
 };
 
 export default function Events() {
-	const data = useLoaderData<
-		Record<
-			number,
-			{
-				date: string;
-				link: string;
-				location: string;
-				topics: string[];
-			}[]
-		>
-	>();
+	const data = useLoaderData<typeof loader>();
 
 	return (
 		<PageGrid

@@ -4,9 +4,10 @@
 	"description": "Website for the Philly JS Club. 🥳",
 	"license": "MIT",
 	"sideEffects": false,
+	"type": "module",
 	"scripts": {
-		"build": "remix build",
-		"dev": "remix dev",
+		"build": "remix vite:build",
+		"dev": "remix vite:dev",
 		"format": "prettier \"**/*\" --ignore-unknown",
 		"format:write": "pnpm format --write",
 		"lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
@@ -30,8 +31,8 @@
 	"dependencies": {
 		"@axe-core/playwright": "^4.6.1",
 		"@playwright/test": "^1.32.3",
-		"@remix-run/node": "^2.0.0",
-		"@remix-run/react": "^2.0.0",
+		"@remix-run/node": "2.9.2",
+		"@remix-run/react": "2.9.2",
 		"clsx": "^1.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
@@ -43,9 +44,9 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@remix-run/dev": "^2.0.0",
-		"@remix-run/eslint-config": "^2.0.0",
-		"@remix-run/serve": "^2.0.0",
+		"@remix-run/dev": "2.9.2",
+		"@remix-run/eslint-config": "2.9.2",
+		"@remix-run/serve": "2.9.2",
 		"@types/react": "^18.0.25",
 		"@types/react-dom": "^18.0.8",
 		"@typescript-eslint/eslint-plugin": "6.0.0-alpha.124",
@@ -74,7 +75,9 @@
 		"stylelint": "^15.4.0",
 		"stylelint-config-standard": "^32.0.0",
 		"stylelint-order": "^6.0.3",
-		"typescript": "^5.0.4",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.11",
+		"vite-tsconfig-paths": "^4.3.2",
 		"yaml-eslint-parser": "^1.2.0"
 	},
 	"packageManager": "pnpm@8.2.0",

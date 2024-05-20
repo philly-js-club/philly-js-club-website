@@ -1,6 +1,7 @@
+import "./root.css";
+
 import {
 	Links,
-	LiveReload,
 	Meta,
 	Outlet,
 	Scripts,
@@ -8,7 +9,6 @@ import {
 } from "@remix-run/react";
 
 import { site } from "./config";
-import styles from "./root.css";
 
 const metaTags = [
 	{ charSet: "utf-8" },
@@ -34,7 +34,6 @@ export default function App() {
 					<meta key={JSON.stringify(meta)} {...meta} />
 				))}
 				<link href="https://fonts.googleapis.com" rel="preconnect" />
-				<link href={styles} rel="stylesheet" />
 				<Meta />
 				<Links />
 			</head>
@@ -42,7 +41,6 @@ export default function App() {
 				<Outlet />
 				<ScrollRestoration />
 				<Scripts />
-				<LiveReload />
 			</body>
 		</html>
 	);

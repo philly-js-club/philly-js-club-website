@@ -16,7 +16,12 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "es2021"
+		"target": "es2021",
+		"types": [
+			"@remix-run/node",
+			"vite/client",
+			"@remix-run/react/future/single-fetch.d.ts"
+		]
 	},
-	"include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"]
+	"include": ["env.d.ts", "**/*.ts", "**/*.tsx"]
 }
