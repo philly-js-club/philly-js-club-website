@@ -1,5 +1,10 @@
+import clsx from "clsx";
+
 import { Arrow } from "~/components/Arrow";
 import { region } from "~/config";
+import { fonts } from "~/theme.css";
+
+import * as styles from "./EventDetails.css";
 
 interface EventDetailsProps {
 	date: Date;
@@ -25,23 +30,19 @@ export function EventDetails({
 	});
 
 	return (
-		<article className={`event-details medium event-details-${weight}`}>
-			<h3 className="event-details-date">{formatter.format(date)}</h3>
+		<article className={clsx(styles.eventDetails[weight], fonts.medium)}>
+			<h3 className={styles.date}>{formatter.format(date)}</h3>
 			<p>{location}</p>
-			<ul className="event-details-topics">
+			<ul className={styles.topics}>
 				{topics.map((topic) => (
-					<li className="event-details-topic" key={topic}>
+					<li className={styles.topic} key={topic}>
 						{topic}
 					</li>
 				))}
 			</ul>
 			<a href={link} rel="noreferrer" target="_blank">
 				{linkText}
-				<Arrow
-					className="arrow-out"
-					label="External link indication arrow"
-					rotate={-45}
-				/>
+				<Arrow label="External link indication arrow" variant="out" />
 			</a>
 		</article>
 	);

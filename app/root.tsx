@@ -1,3 +1,4 @@
+import { cssBundleHref } from "@remix-run/css-bundle";
 import {
 	Links,
 	LiveReload,
@@ -9,6 +10,7 @@ import {
 
 import { site } from "./config";
 import styles from "./root.css";
+import { themeClass } from "./theme.css";
 
 const metaTags = [
 	{ charSet: "utf-8" },
@@ -28,13 +30,14 @@ const metaTags = [
 
 export default function App() {
 	return (
-		<html lang="en">
+		<html className={themeClass} lang="en">
 			<head>
 				{metaTags.map((meta) => (
 					<meta key={JSON.stringify(meta)} {...meta} />
 				))}
 				<link href="https://fonts.googleapis.com" rel="preconnect" />
 				<link href={styles} rel="stylesheet" />
+				<link href={cssBundleHref} rel="stylesheet" />
 				<Meta />
 				<Links />
 			</head>

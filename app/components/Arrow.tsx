@@ -1,18 +1,22 @@
 import { clsx } from "clsx";
 
+import * as styles from "./Arrow.css";
+
 interface ArrowProps {
 	className?: string;
 	label: string;
-	rotate?: number;
+
+	// todo: get from styleVariants?
+	// is there a type utility for this?
+	variant: "back" | "out";
 }
 
-export function Arrow({ className, label, rotate }: ArrowProps) {
+export function Arrow({ className, label, variant }: ArrowProps) {
 	return (
 		<svg
 			aria-label={label}
-			className={clsx("arrow", className)}
+			className={clsx(styles.arrow[variant], className)}
 			fill="none"
-			{...(rotate && { transform: `rotate(${rotate})` })}
 			viewBox="0 0 20 16"
 			xmlns="http://www.w3.org/2000/svg"
 		>
