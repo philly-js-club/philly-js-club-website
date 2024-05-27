@@ -15,7 +15,7 @@
 		"lint:package": "npmPkgJsonLint .",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
 		"lint:styles": "stylelint \"**/*.css\"",
-		"prepare": "husky install",
+		"prepare": "husky install; panda codegen",
 		"test": "playwright test --headed",
 		"test:ci": "playwright test --project=chromium",
 		"typecheck": "tsc"
@@ -43,6 +43,7 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@pandacss/dev": "^0.24.0",
 		"@remix-run/dev": "^2.0.0",
 		"@remix-run/eslint-config": "^2.0.0",
 		"@remix-run/serve": "^2.0.0",

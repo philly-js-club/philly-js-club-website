@@ -1,14 +1,37 @@
+import type { RecipeVariantProps } from "styled-system/css";
+import { css, cva } from "styled-system/css";
+
 import { Arrow } from "~/components/Arrow";
 import { region } from "~/config";
 
-interface EventDetailsProps {
+export interface EventDetailsProps
+	extends NonNullable<RecipeVariantProps<typeof eventDetails>> {
 	date: Date;
 	link: string;
 	linkText: string;
 	location: string;
 	topics: string[];
-	weight?: "light" | "medium";
 }
+
+const eventDetails = cva({
+	base: {
+		fontSize: "medium",
+		fontWeight: "medium",
+		lineHeight: "medium",
+		// Todo: find a different way...
+		"& + &": {
+			marginTop: "[3rem]",
+		},
+	},
+	variants: {
+		weight: {
+			light: {
+				fontWeight: "light",
+			},
+			medium: {},
+		},
+	},
+});
 
 export function EventDetails({
 	date,
@@ -25,23 +48,38 @@ export function EventDetails({
 	});
 
 	return (
-		<article className={`event-details medium event-details-${weight}`}>
-			<h3 className="event-details-date">{formatter.format(date)}</h3>
+		<article className={eventDetails({ weight })}>
+			<h3
+				className={css({
+					fontSize: "medium",
+					fontWeight: "large",
+					margin: "[2.5rem 0 0.75rem 0]",
+				})}
+			>
+				{formatter.format(date)}
+			</h3>
 			<p>{location}</p>
-			<ul className="event-details-topics">
+			<ul className={css({ margin: "[2rem 0 1rem]" })}>
 				{topics.map((topic) => (
-					<li className="event-details-topic" key={topic}>
+					<li
+						className={css({
+							listStyle: "outside",
+							margin: "[0 0 0 0.75em]",
+						})}
+						key={topic}
+					>
 						{topic}
 					</li>
 				))}
 			</ul>
-			<a href={link} rel="noreferrer" target="_blank">
+			<a
+				className={css({ display: "flex", alignItems: "baseline" })}
+				href={link}
+				rel="noreferrer"
+				target="_blank"
+			>
 				{linkText}
-				<Arrow
-					className="arrow-out"
-					label="External link indication arrow"
-					rotate={-45}
-				/>
+				<Arrow direction="out" label="External link indication arrow" />
 			</a>
 		</article>
 	);

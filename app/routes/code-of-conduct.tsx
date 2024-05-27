@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/react";
+import { css } from "styled-system/css";
 
 import { PageGrid } from "~/components/PageGrid";
 import { constructSiteTitle } from "~/utils/common";
@@ -12,10 +13,10 @@ export default function About() {
 		<PageGrid
 			left={
 				<>
-					<h2 className="larger">
+					<h2 className={css({ textStyle: "larger" })}>
 						Anti-Harassment and Anti-Bullying Code of Conduct
 					</h2>
-					<p className="body-text">
+					<p className={css({ textStyle: "body" })}>
 						The Philadelphia JavaScript Club is dedicated to providing a
 						respectful, harassment-free community for everyone. We do not
 						tolerate harassment or bullying of any community member in any form.
@@ -24,7 +25,7 @@ export default function About() {
 						Philadelphia JavaScript Club community of users, developers and
 						integrators through events or interactions.
 					</p>
-					<p className="body-text">
+					<p className={css({ textStyle: "body" })}>
 						Harassment includes offensive verbal/electronic comments related to
 						personal characteristics or choices, sexual images or comments in
 						public or online spaces, deliberate intimidation, bullying,
@@ -34,7 +35,7 @@ export default function About() {
 						unwelcome sexual attention. Participants asked to stop any harassing
 						or bullying behavior are expected to comply immediately.
 					</p>
-					<p className="body-text">
+					<p className={css({ textStyle: "body" })}>
 						If a participant engages in harassing behavior, representatives of
 						the community may take reasonable action they deem appropriate,
 						including warning the offender, expulsion from any Philadelphia
@@ -43,7 +44,7 @@ export default function About() {
 						channels to resolve the issue. This may include expulsion from
 						Philadelphia JavaScript Club membership.
 					</p>
-					<p className="body-text">
+					<p className={css({ textStyle: "body" })}>
 						If you are being harassed, notice that someone else is being
 						harassed, or have any other concerns, please act to intercede or ask
 						for help from any member of the Philadelphia JavaScript Club, Slack
@@ -51,11 +52,14 @@ export default function About() {
 						physical events put on under the auspices of the Philadelphia
 						JavaScript Club.
 					</p>
-					<p className="body-text">—</p>
-					<p className="body-text">
+					<p className={css({ textStyle: "body" })}>—</p>
+					<p className={css({ textStyle: "body" })}>
 						This Code of Conduct adapted from{" "}
 						<a
-							className="page-grid-footer-link"
+							className={css({
+								padding: "[0]",
+								"&:active": { textStyle: "underline" },
+							})}
 							href="https://plone.org/foundation/materials/foundation-resolutions/code-of-conduct"
 							rel="noreferrer"
 							target="_blank"
@@ -63,7 +67,7 @@ export default function About() {
 							https://plone.org/foundation/materials/foundation-resolutions/code-of-conduct
 						</a>
 					</p>
-					<p className="body-text">
+					<p className={css({ textStyle: "body" })}>
 						The content of this Code of Conduct is licensed under a Creative
 						Commons Attribution-ShareAlike 4.0 International license.
 					</p>

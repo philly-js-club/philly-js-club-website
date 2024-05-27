@@ -1,3 +1,5 @@
+import { css } from "styled-system/css";
+
 import { Arrow } from "~/components/Arrow";
 
 interface IconProp {
@@ -14,27 +16,54 @@ interface IconsProps {
 
 export function Icons({ icons, imageClassName }: IconsProps) {
 	return (
-		<ol className="icons">
+		<ol
+			className={css({
+				listStyleType: "none",
+				marginTop: "[3rem]",
+				padding: "[0]",
+			})}
+		>
 			{icons.map(({ description, href, imageHref, name }) => (
-				<li className="icon-list" key={name}>
-					<div className="icon">
+				<li
+					className={css({
+						"& + &": {
+							marginTop: "[3rem]",
+						},
+					})}
+					key={name}
+				>
+					<div
+						className={css({
+							alignItems: "center",
+							display: "flex",
+							flexFlow: "[row wrap]",
+							gap: "[2rem]",
+						})}
+					>
 						<img
 							alt={`${name} logo`}
 							className={imageClassName}
 							src={imageHref}
 						/>
-						<div className="icon-info">
+						<div
+							className={css({
+								flex: "[1 0 50%]",
+								"& > * + *": { marginTop: "[0.5rem]" },
+							})}
+						>
 							<a href={href} rel="noreferrer" target="_blank">
-								<h3 className="larger">
+								<h3 className={css({ textStyle: "larger" })}>
 									{name}{" "}
 									<Arrow
-										className="arrow-out medium"
+										className={css({ textStyle: "medium" })}
+										direction="out"
 										label="External link indication arrow"
-										rotate={-45}
 									/>
 								</h3>
 							</a>
-							{description && <p className="smaller">{description}</p>}
+							{description && (
+								<p className={css({ textStyle: "smaller" })}>{description}</p>
+							)}
 						</div>
 					</div>
 				</li>
