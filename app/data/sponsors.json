@@ -11,6 +11,12 @@
 			"href": "https://indyhall.org/",
 			"imageHref": "/assets/logos/indy-hall.png",
 			"name": "Indy Hall"
+		},
+		{
+			"description": "The essential destination site for technical job seekers.",
+			"href": "https://libertyjobs.com",
+			"imageHref": "/assets/logos/liberty.png",
+			"name": "Liberty Jobs"
 		}
 	]
 }
