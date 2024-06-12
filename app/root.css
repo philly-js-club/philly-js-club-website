@@ -69,9 +69,21 @@ p {
 	color: var(--color-background);
 }
 
+.only-dark {
+	display: none;
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-background: #323330;
 		--color-foreground: #efdb4f;
+	}
+
+	.only-dark {
+		display: block;
+	}
+
+	.only-light {
+		display: none;
 	}
 }

@@ -7,7 +7,7 @@ import { constructSiteTitle } from "~/utils/common";
 
 interface LoaderData {
 	currentSponsors: Record<
-		"description" | "href" | "imageHref" | "name",
+		"darkModeImageHref" | "description" | "href" | "imageHref" | "name",
 		string
 	>[];
 }
