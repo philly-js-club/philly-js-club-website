@@ -27,6 +27,6 @@ export default {
 	webServer: {
 		command: "pnpm dev",
 		reuseExistingServer: true,
-		port: 3000,
+		port: 5137,
 	},
 } satisfies PlaywrightTestConfig;
