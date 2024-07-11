@@ -6,6 +6,6 @@
 		"@typescript-eslint/eslint-plugin-stylistic-type-checked",
 		"isbot",
 		"stylelint-config-standard",
-		"stylelint-order"
-	]
+		"stylelint-order",
+	],
 }

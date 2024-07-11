@@ -20,7 +20,7 @@ export const loader = unstable_defineLoader(() => {
 	// Surely this assumption tied to datetime logic will never come back to haunt us.
 	const now = new Date();
 	const sixWeeksInTheFuture = new Date(
-		now.getTime() + 6 * 7 * 24 * 60 * 60 * 1000
+		now.getTime() + 6 * 7 * 24 * 60 * 60 * 1000,
 	);
 
 	// Filter and sort event date in ascending order.

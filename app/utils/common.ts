@@ -16,7 +16,7 @@ export function constructSiteTitle(pageTitle?: string): string {
 
 export function groupBy<T, K extends number | string>(
 	items: T[],
-	getKey: (item: T) => K
+	getKey: (item: T) => K,
 ) {
 	const grouped = {} as Record<K, T[] | undefined>;
 
