@@ -12,7 +12,7 @@ export function Arrow({ className, label, rotate }: ArrowProps) {
 			aria-label={label}
 			className={clsx("arrow", className)}
 			fill="none"
-			{...(rotate && { transform: `rotate(${rotate})` })}
+			{...(rotate && { transform: `rotate(${rotate.toString()})` })}
 			viewBox="0 0 20 16"
 			xmlns="http://www.w3.org/2000/svg"
 		>
