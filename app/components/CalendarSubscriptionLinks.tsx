@@ -11,7 +11,11 @@ export function CalendarSubscriptionLinks({
 
 	return (
 		<div className="calendar-subscription">
-			<button onClick={() => setShowMore((s) => !s)}>
+			<button
+				onClick={() => {
+					setShowMore((s) => !s);
+				}}
+			>
 				📆 Subscribe with your favorite calendar client
 			</button>
 			{showMore && (
