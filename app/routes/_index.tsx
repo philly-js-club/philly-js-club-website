@@ -8,7 +8,7 @@ import { constructSiteTitle } from "~/utils/common";
 
 import eventsJson from "../data/events.json";
 
-export const loader = unstable_defineLoader(async () => {
+export const loader = unstable_defineLoader(() => {
 	// This assumes the events are always in sorted order, newest first.
 	// Surely this assumption on undocumented data behavior will never come back to haunt us.
 	const events = eventsJson.map((event) => ({
