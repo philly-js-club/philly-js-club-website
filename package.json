@@ -23,10 +23,6 @@
 	"lint-staged": {
 		"*": "prettier --ignore-unknown --write"
 	},
-	"resolutions": {
-		"@typescript-eslint/eslint-plugin": "6.0.0-alpha.124",
-		"@typescript-eslint/parser": "6.0.0-alpha.124"
-	},
 	"dependencies": {
 		"@axe-core/playwright": "^4.9.1",
 		"@playwright/test": "^1.45.1",
