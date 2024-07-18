@@ -1,27 +1,20 @@
-import type { LoaderFunction } from "@remix-run/node";
+import { unstable_defineLoader } from "@remix-run/node";
 import { type MetaFunction, useLoaderData } from "@remix-run/react";
 
 import { Icons } from "~/components/Icons";
 import { PageGrid } from "~/components/PageGrid";
 import { constructSiteTitle } from "~/utils/common";
 
-interface LoaderData {
-	currentSponsors: Record<
-		"darkModeImageHref" | "description" | "href" | "imageHref" | "name",
-		string
-	>[];
-}
+import sponsors from "../data/sponsors.json";
 
-export const loader: LoaderFunction = async () => {
-	return await import("../data/sponsors.json");
-};
+export const loader = unstable_defineLoader(() => sponsors);
 
 export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("Sponsors") }];
 };
 
 export default function Sponsors() {
-	const sponsors = useLoaderData<LoaderData>();
+	const sponsors = useLoaderData<typeof loader>();
 
 	return (
 		<PageGrid

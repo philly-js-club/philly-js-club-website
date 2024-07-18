@@ -11,7 +11,7 @@ export default {
 	fullyParallel: false,
 	reporter: process.env.CI ? "github" : "html",
 	use: {
-		baseURL: "http://localhost:3000",
+		baseURL: "http://localhost:5173",
 		trace: "on",
 	},
 	projects: [
@@ -27,6 +27,6 @@ export default {
 	webServer: {
 		command: "pnpm dev",
 		reuseExistingServer: true,
-		port: 3000,
+		port: 5173,
 	},
 } satisfies PlaywrightTestConfig;

@@ -1,24 +1,19 @@
-import type { LoaderFunction } from "@remix-run/node";
+import { unstable_defineLoader } from "@remix-run/node";
 import { type MetaFunction, useLoaderData } from "@remix-run/react";
 
 import { PageGrid } from "~/components/PageGrid";
 import { constructSiteTitle } from "~/utils/common";
 
+import team from "../data/team.json";
+
 export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("About") }];
 };
 
-interface LoaderData {
-	members: Record<"name" | "role", string>[];
-	organizersEmeritum: string[];
-}
-
-export const loader: LoaderFunction = async () => {
-	return await import("../data/team.json");
-};
+export const loader = unstable_defineLoader(() => team);
 
 export default function About() {
-	const data = useLoaderData<LoaderData>();
+	const data = useLoaderData<typeof loader>();
 
 	return (
 		<PageGrid
@@ -50,7 +45,7 @@ export default function About() {
 					</ul>
 					<h3 className="large">Organizers Emeritus</h3>
 					<ul className="body-text">
-						{(data.organizersEmeritum as string[]).map((name) => (
+						{data.organizersEmeritum.map((name) => (
 							<li key={name}>{name}</li>
 						))}
 					</ul>
