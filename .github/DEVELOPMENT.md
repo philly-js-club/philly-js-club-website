@@ -13,7 +13,7 @@ pnpm install
 
 ## Local Development
 
-You can run a [Remix](https://remix.run/docs) development server to start serving the app locally on `localhost:3000`:
+You can run a [Remix](https://remix.run/docs) development server to start serving the app locally on `localhost:5173`:
 
 ```shell
 pnpm dev
