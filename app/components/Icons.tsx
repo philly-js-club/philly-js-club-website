@@ -50,7 +50,7 @@ export function Icons({ icons, imageClassName }: IconsProps) {
 							</div>
 						</div>
 					</li>
-				)
+				),
 			)}
 		</ol>
 	);

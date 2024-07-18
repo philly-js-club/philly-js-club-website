@@ -12,9 +12,9 @@ for (const uri of ["/", "about", "events", "code-of-conduct"]) {
 			[
 				"Accessibility violations found. Run aXe to view more details:",
 				...results.violations.map(
-					(violation) => `- [${violation.id}] ${violation.help}`
+					(violation) => `- [${violation.id}] ${violation.help}`,
 				),
-			].join("\n")
+			].join("\n"),
 		).toBe(0);
 	});
 }

@@ -7,6 +7,6 @@ declare module "ics-service" {
 	declare function generateIcs(
 		title: string,
 		rawEvents: Record<string, unknown>[],
-		feedUrl?: string
+		feedUrl?: string,
 	): string;
 }

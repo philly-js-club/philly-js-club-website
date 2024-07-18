@@ -15,7 +15,7 @@ module.exports = {
 	],
 	overrides: [
 		{
-			extends: ["plugin:markdown/recommended"],
+			extends: ["plugin:markdown/recommended-legacy"],
 			files: ["**/*.md"],
 			processor: "markdown/markdown",
 		},

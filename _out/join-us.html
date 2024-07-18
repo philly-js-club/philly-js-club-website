@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -222,12 +222,12 @@
 						{
 							key,
 						},
-						""
+						"",
 					);
 				}
 				try {
 					let positions = JSON.parse(
-						sessionStorage.getItem(STORAGE_KEY) || "{}"
+						sessionStorage.getItem(STORAGE_KEY) || "{}",
 					);
 					let storedY = positions[restoreKey || window.history.state.key];
 					if (typeof storedY === "number") {
@@ -418,14 +418,14 @@
 				ws.onclose = (event) => {
 					if (event.code === 1006) {
 						console.log(
-							"Remix dev asset server web socket closed. Reconnecting..."
+							"Remix dev asset server web socket closed. Reconnecting...",
 						);
 						setTimeout(
 							() =>
 								remixLiveReloadConnect({
 									onOpen: () => window.location.reload(),
 								}),
-							1000
+							1000,
 						);
 					}
 				};

@@ -12,8 +12,8 @@ import { constructSiteTitle, groupBy } from "~/utils/common";
 export const loader: LoaderFunction = async () => {
 	return json(
 		groupBy(await import("../data/events.json"), (event) =>
-			new Date(event.date).getFullYear()
-		)
+			new Date(event.date).getFullYear(),
+		),
 	);
 };
 
