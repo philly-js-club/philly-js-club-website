@@ -41,9 +41,9 @@ jobs:
           npm run dev &
           sleep 10 &&
           cp -r public/ out &&
-          wget --mirror http://localhost:3000 -P out --no-host-directories --page-requisites --adjust-extension &&
-          wget --mirror http://localhost:3000/ad -P out --no-host-directories --page-requisites --adjust-extension &&
-          wget --mirror http://localhost:3000/ics-feed.ics -P out --no-host-directories --page-requisites --adjust-extension
+          wget --mirror http://localhost:5173 -P out --no-host-directories --page-requisites --adjust-extension &&
+          wget --mirror http://localhost:5173/ad -P out --no-host-directories --page-requisites --adjust-extension &&
+          wget --mirror http://localhost:5173/ics-feed.ics -P out --no-host-directories --page-requisites --adjust-extension
           echo "phillyjs.com" > out/CNAME
 
       - name: Deploy to GitHub Pages
