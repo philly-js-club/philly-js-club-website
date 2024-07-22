@@ -1,4 +1,3 @@
-import { unstable_defineLoader } from "@remix-run/node";
 import { type MetaFunction, useLoaderData } from "@remix-run/react";
 
 import { Icons } from "~/components/Icons";
@@ -7,7 +6,9 @@ import { constructSiteTitle } from "~/utils/common";
 
 import sponsors from "../data/sponsors.json";
 
-export const loader = unstable_defineLoader(() => sponsors);
+export function loader() {
+	return sponsors;
+}
 
 export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("Sponsors") }];

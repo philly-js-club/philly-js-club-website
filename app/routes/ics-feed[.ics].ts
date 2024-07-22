@@ -1,4 +1,3 @@
-import { unstable_defineLoader } from "@remix-run/node";
 import type { DurationObject, EventAttributes } from "ics";
 import icsService from "ics-service";
 
@@ -6,7 +5,7 @@ import { site } from "~/config";
 
 import eventJson from "../data/events.json";
 
-export const loader = unstable_defineLoader(() => {
+export function loader() {
 	const eventData = [...eventJson].reverse();
 	const events: EventAttributes[] = eventData.map((event, index) => {
 		const date = new Date(event.date);
@@ -42,4 +41,4 @@ export const loader = unstable_defineLoader(() => {
 			"Content-Disposition": `attachment; filename="phillyjs.ics"`,
 		},
 	});
-});
+}
