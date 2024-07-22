@@ -1,4 +1,3 @@
-import { unstable_defineLoader } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
 
@@ -8,7 +7,7 @@ import { constructSiteTitle } from "~/utils/common";
 
 import eventsJson from "../data/events.json";
 
-export const loader = unstable_defineLoader(() => {
+export function loader() {
 	// This assumes the events are always in sorted order, newest first.
 	// Surely this assumption on undocumented data behavior will never come back to haunt us.
 	const events = eventsJson.map((event) => ({
@@ -27,7 +26,7 @@ export const loader = unstable_defineLoader(() => {
 	return events
 		.filter(({ date }) => date > now && date < sixWeeksInTheFuture)
 		.sort((a, b) => a.date.getTime() - b.date.getTime());
-});
+}
 
 export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle() }];
@@ -46,7 +45,7 @@ export default function Index() {
 						</h2>
 						{events.map((event, index) => (
 							<EventDetails
-								date={new Date(event.date)}
+								date={event.date}
 								key={index}
 								link={event.link}
 								linkText="Register Now"

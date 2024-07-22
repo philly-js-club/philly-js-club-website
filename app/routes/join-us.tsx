@@ -1,4 +1,3 @@
-import { unstable_defineLoader } from "@remix-run/node";
 import { type MetaFunction, useLoaderData } from "@remix-run/react";
 
 import { Icons } from "~/components/Icons";
@@ -7,7 +6,9 @@ import { constructSiteTitle } from "~/utils/common";
 
 import platforms from "../data/platforms.json";
 
-export const loader = unstable_defineLoader(() => platforms);
+export function loader() {
+	return platforms;
+}
 
 export const meta: MetaFunction = () => {
 	return [{ title: constructSiteTitle("Join Us") }];
