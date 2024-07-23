@@ -132,7 +132,6 @@ Let us know if you think you've found one we'd like. 😏
 }
 
 .page-grid-footer {
-	align-content: flex-end;
 	align-items: baseline;
 	display: flex;
 	flex-wrap: wrap;
@@ -140,7 +139,7 @@ Let us know if you think you've found one we'd like. 😏
 	font-weight: var(--font-weight-large);
 	grid-area: footer;
 	height: 100%;
-	justify-content: flex-start;
+	place-content: flex-end flex-start;
 }
 
 .page-grid-footer-separator {
@@ -236,12 +235,13 @@ Let us know if you think you've found one we'd like. 😏
 	font-size: var(--font-size-small);
 }
 
-.calendar-subscription button {
+.calendar-subscription summary {
 	background: var(--color-background);
 	border: 2px solid var(--color-foreground);
 	border-radius: 1em;
 	color: var(--color-foreground);
 	cursor: pointer;
+	display: inline-block;
 	font-size: var(--font-size-smaller);
 	margin: 1em 0;
 	padding: 0.5em;
@@ -258,7 +258,7 @@ Let us know if you think you've found one we'd like. 😏
 }
 
 @media screen and (width >= 1000px) {
-	.calendar-subscription button {
+	.calendar-subscription summary {
 		margin-top: 0;
 	}
 }
