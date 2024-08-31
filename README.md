@@ -12,11 +12,11 @@ The website for Philadelphia's monthly JavaScript meetup. ✨
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- prettier-ignore-end -->
 	</a>
-	<a href="https://github.com/philly-js-club/philly-js-club-website-remix/blob/main/.github/CODE_OF_CONDUCT.md" target="_blank">
+	<a href="https://github.com/philly-js-club/philly-js-club-website/blob/main/.github/CODE_OF_CONDUCT.md" target="_blank">
 		<img alt="Contributor Covenant" src="https://img.shields.io/badge/code_of_conduct-enforced-21bb42" />
 	</a>
-	<a href="https://github.com/philly-js-club/philly-js-club-website-remix/blob/main/LICENSE.md" target="_blank">
-	    <img alt="License: MIT" src="https://img.shields.io/github/license/philly-js-club/philly-js-club-website-remix?color=21bb42">
+	<a href="https://github.com/philly-js-club/philly-js-club-website/blob/main/LICENSE.md" target="_blank">
+	    <img alt="License: MIT" src="https://img.shields.io/github/license/philly-js-club/philly-js-club-website?color=21bb42">
     </a>
 	<img alt="Style: Prettier" src="https://img.shields.io/badge/style-prettier-21bb42.svg" />
     <img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-21bb42.svg" />
