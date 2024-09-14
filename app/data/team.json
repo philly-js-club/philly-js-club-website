@@ -1,9 +1,19 @@
 {
 	"members": [
-		{ "name": "Joe Woods", "role": "Director" },
-		{ "name": "Chasen Stark", "role": "Events" },
-		{ "name": "Cody Lewis", "role": "Community" },
-		{ "name": "Denzel Echevarria", "role": "Outreach" }
+		{
+			"name": "Chasen Stark",
+			"role": "Events"
+		},
+		{
+			"name": "Denzel Echevarria",
+			"role": "Outreach"
+		}
 	],
-	"organizersEmeritum": ["Rasha Moumneh", "Matt Brophy", "Josh Goldberg"]
+	"organizersEmeritum": [
+		"Rasha Moumneh",
+		"Matt Brophy",
+		"Cody Lewis",
+		"Josh Goldberg",
+		"Joe Woods"
+	]
 }
