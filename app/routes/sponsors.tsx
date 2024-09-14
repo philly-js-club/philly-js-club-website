@@ -25,8 +25,8 @@ export default function Sponsors() {
 					<p className="sponsor-cta body-text">
 						Philly JS wouldn't exist without the support of our beloved
 						sponsors. Interested in sponsoring us?{" "}
-						<a className="underline" href="mailto:phillyjs@joewoods.dev">
-							Reach out to Joe!
+						<a className="underline" href="mailto:organizers@phillyjs.com">
+							Reach out to the Team!
 						</a>
 					</p>
 					<Icons

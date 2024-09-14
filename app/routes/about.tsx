@@ -53,8 +53,8 @@ export default function About() {
 					<h3 className="large">Get In Touch</h3>
 					<p className="about-page-text">
 						You can reach out to{" "}
-						<a href="mailto:phillyjs@joewoods.dev">Joe over email</a> with any
-						questions or comments.
+						<a href="mailto:organizers@phillyjs.com">the Team over email</a>{" "}
+						with any questions or comments.
 					</p>
 					<h3 className="large">The Website</h3>
 					<p className="about-page-text">
