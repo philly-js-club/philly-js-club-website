@@ -1,12 +1,25 @@
 [
 	{
+		"date": "2024-10-10T18:00:00.000-04:00",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://rsvp.place/events/phillyjs/66dc524f0b06b60a16cbc1af",
+		"location": "Indy Hall",
+		"topics": [
+			"Set Phasers to Love: Designing with Lit and Design Systems with Sarah Peony (Rescheduled)"
+		]
+	},
+	{
 		"date": "2024-09-12T18:00:00.000-04:00",
 		"duration": {
 			"hours": 2
 		},
 		"link": "https://rsvp.place/events/phillyjs/66b4fbb594b4cd1e6e1eff9b",
 		"location": "Indy Hall",
-		"topics": ["Design systems and Lit with Sarah Peony"]
+		"topics": [
+			"XSS Code Injection with Jason Voccia and Brainstorming Future Topics with Dalton Strang"
+		]
 	},
 	{
 		"date": "2024-08-08T18:00:00.000-04:00",
