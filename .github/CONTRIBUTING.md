@@ -10,7 +10,7 @@ This project contains a [Contributor Covenant code of conduct](./CODE_OF_CONDUCT
 
 ## Reporting Issues
 
-Please do [report an issue on the issue tracker](https://github.com/philly-js-club/philly-js-club-website-remix/issues/new/choose) if there's any bugfix, documentation improvement, or general enhancement you'd like to see in the repository! Please fully fill out all required fields in the most appropriate issue form.
+Please do [report an issue on the issue tracker](https://github.com/philly-js-club/philly-js-club-website/issues/new/choose) if there's any bugfix, documentation improvement, or general enhancement you'd like to see in the repository! Please fully fill out all required fields in the most appropriate issue form.
 
 ## Sending Contributions
 
@@ -34,7 +34,7 @@ Be sure to fill out the pull request template's requested information -- otherwi
 PRs are also expected to have a title that adheres to [commitlint](https://github.com/conventional-changelog/commitlint).
 Only PR titles need to be in that format, not individual commits.
 Don't worry if you get this wrong: you can always change the PR title after sending it.
-Check [previously merged PRs](https://github.com/philly-js-club/philly-js-club-website-remix/pulls?q=is%3Apr+is%3Amerged+-label%3Adependencies+) for reference.
+Check [previously merged PRs](https://github.com/philly-js-club/philly-js-club-website/pulls?q=is%3Apr+is%3Amerged+-label%3Adependencies+) for reference.
 
 #### Draft PRs
 
