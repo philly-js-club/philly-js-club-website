@@ -1,7 +1,3 @@
-// We deploy to static pages, so this must be a client-only component.
-// https://github.com/philly-js-club/philly-js-club-website/issues/61
-"use client";
-
 import { site } from "~/config";
 import { upperFirst } from "~/utils/common";
 import { useMonthAndYear } from "~/utils/dates";

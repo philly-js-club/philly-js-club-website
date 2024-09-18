@@ -1,4 +1,4 @@
-import { type MetaFunction, useLoaderData } from "@remix-run/react";
+import { type MetaFunction, useLoaderData } from "react-router";
 
 import { Icons } from "~/components/Icons";
 import { PageGrid } from "~/components/PageGrid";
@@ -15,7 +15,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Socials() {
-	const platforms = useLoaderData<typeof loader>();
+	const platforms = useLoaderData() as Awaited<ReturnType<typeof loader>>;
 
 	return (
 		<PageGrid
