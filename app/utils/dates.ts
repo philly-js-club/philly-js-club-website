@@ -1,4 +1,4 @@
-import { useSearchParams } from "@remix-run/react";
+import { useSearchParams } from "react-router";
 
 export function getMonthAndYear(params: URLSearchParams) {
 	const month = params.get("month")?.toLowerCase();

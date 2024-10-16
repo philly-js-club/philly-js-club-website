@@ -258,7 +258,7 @@ Let us know if you think you've found one we'd like. 😏
 }
 
 @media screen and (width >= 1000px) {
-	.calendar-subscription button {
+	.calendar-subscription summary {
 		margin-top: 0;
 	}
 }

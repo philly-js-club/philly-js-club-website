@@ -1,4 +1,4 @@
-import { type MetaFunction, useLoaderData } from "@remix-run/react";
+import { type MetaFunction, useLoaderData } from "react-router";
 
 import { PageGrid } from "~/components/PageGrid";
 import { constructSiteTitle } from "~/utils/common";
@@ -14,7 +14,7 @@ export function loader() {
 }
 
 export default function About() {
-	const data = useLoaderData<typeof loader>();
+	const data = useLoaderData() as Awaited<ReturnType<typeof loader>>;
 
 	return (
 		<PageGrid
