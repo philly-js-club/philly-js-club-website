@@ -9,5 +9,5 @@ export const site = {
 
 export const region = {
 	locale: "en-US",
-	timeZone: "UTC",
+	timeZone: "America/New_York",
 } as const;
