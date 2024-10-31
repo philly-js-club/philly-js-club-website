@@ -27,11 +27,17 @@ export function EventDetails({
 	try {
 		strDate = formatter.format(date);
 	} catch (ex) {
-		strDate = date.toLocaleDateString("en-US", {
-			month: "long",
-			day: "numeric",
-			year: "numeric",
-		});
+		try {
+			strDate = date.toLocaleDateString("en-US", {
+				month: "long",
+				day: "numeric",
+				year: "numeric",
+			});
+		} catch (ex) {
+			console.log("Date:", date);
+			console.log("Error:", ex);
+			strDate = "Unknown";
+		}
 	}
 
 	return (
