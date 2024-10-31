@@ -36,7 +36,7 @@ export function EventDetails({
 
 	return (
 		<article className={`event-details medium event-details-${weight}`}>
-			<h3 className="event-details-date">{formatter.format(date)}</h3>
+			<h3 className="event-details-date">{strDate}</h3>
 			<p>{location}</p>
 			<ul className="event-details-topics">
 				{topics.map((topic) => (
