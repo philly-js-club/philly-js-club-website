@@ -23,6 +23,17 @@ export function EventDetails({
 		day: "numeric",
 		month: "long",
 	});
+	let strDate;
+	try {
+		strDate = formatter.format(date);
+	} catch (ex) {
+		strDate = date.toLocaleDateString("en-US", {
+			month: "long",
+			day: "numeric",
+			year: "numeric",
+		});
+	}
+
 	return (
 		<article className={`event-details medium event-details-${weight}`}>
 			<h3 className="event-details-date">{formatter.format(date)}</h3>
