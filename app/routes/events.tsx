@@ -37,6 +37,9 @@ export default function Events() {
 										{events.map((event) => (
 											<EventDetails
 												date={new Date(event.date)}
+												displayDate={
+													event.displayDate ?? "Missing Display Date"
+												}
 												key={event.date}
 												link={event.link}
 												linkText="Details"

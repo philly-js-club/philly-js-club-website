@@ -3,6 +3,7 @@ import { region } from "~/config";
 
 interface EventDetailsProps {
 	date: Date;
+	displayDate: string;
 	link: string;
 	linkText: string;
 	location: string;
@@ -12,6 +13,7 @@ interface EventDetailsProps {
 
 export function EventDetails({
 	date,
+	displayDate,
 	link,
 	location,
 	linkText,
@@ -36,7 +38,7 @@ export function EventDetails({
 		} catch (ex) {
 			console.log("Date:", date);
 			console.log("Error:", ex);
-			strDate = "Unknown";
+			strDate = displayDate;
 		}
 	}
 

@@ -1,6 +1,7 @@
 [
 	{
 		"date": "2024-12-12T18:00:00.000-05:00",
+		"displayDate": "December 12",
 		"duration": {
 			"hours": 2
 		},
@@ -10,6 +11,7 @@
 	},
 	{
 		"date": "2024-11-14T18:00:00.000-05:00",
+		"displayDate": "November 14",
 		"duration": {
 			"hours": 2
 		},

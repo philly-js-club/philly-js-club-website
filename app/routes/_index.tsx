@@ -13,6 +13,7 @@ export function loader() {
 	const events = eventsJson.map((event) => ({
 		...event,
 		date: new Date(event.date),
+		displayDate: event.displayDate ?? "Missing Display Date",
 	}));
 
 	// This assumes we'll always have a rebuild of the site after an event finishes.
@@ -46,6 +47,7 @@ export default function Index() {
 						{events.map((event, index) => (
 							<EventDetails
 								date={event.date}
+								displayDate={event.displayDate}
 								key={index}
 								link={event.link}
 								linkText="Register Now"
