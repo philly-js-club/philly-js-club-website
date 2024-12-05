@@ -81,6 +81,24 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jvoccia",
+      "name": "Jason V.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6591584?v=4",
+      "profile": "https://github.com/jvoccia",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "iamtimleonard",
+      "name": "Tim Leonard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69484330?v=4",
+      "profile": "https://github.com/iamtimleonard",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
