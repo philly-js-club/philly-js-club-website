@@ -47,7 +47,7 @@ Thanks! 💖
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/chethtrayen"><img src="https://avatars.githubusercontent.com/u/14133613?v=4?s=100" width="100px;" alt="chethtrayen"/><br /><sub><b>chethtrayen</b></sub></a><br /><a href="#design-chethtrayen" title="Design">🎨</a> <a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=chethtrayen" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jvoccia"><img src="https://avatars.githubusercontent.com/u/6591584?v=4" width="100px;" alt="Jason V."/><br /><sub><b>Jason V.</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=jvoccia" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/iamtimleonard"><img src="https://avatars.githubusercontent.com/u/69484330?v=4" width="100px;" alt="chethtrayen"/><br /><sub><b>chethtrayen</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=iamtimleonard" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/iamtimleonard"><img src="https://avatars.githubusercontent.com/u/69484330?v=4" width="100px;" alt="Tim Leonard"/><br /><sub><b>Tim Leonard</b></sub></a><br /><a href="https://github.com/philly-js-club/philly-js-club-website/commits?author=iamtimleonard" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
