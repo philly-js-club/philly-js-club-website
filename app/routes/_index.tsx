@@ -1,5 +1,5 @@
-import type { MetaFunction } from "@remix-run/react";
-import { useLoaderData } from "@remix-run/react";
+import type { MetaFunction } from "react-router";
+import { useLoaderData } from "react-router";
 
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
@@ -34,7 +34,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-	const events = useLoaderData<typeof loader>();
+	const events = useLoaderData() as Awaited<ReturnType<typeof loader>>;
 
 	return (
 		<PageGrid
