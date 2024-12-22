@@ -1,5 +1,15 @@
 [
 	{
+		"date": "2025-01-09T18:00:00.000-05:00",
+		"displayDate": "January 9",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://rsvp.place/events/phillyjs/6768742c237d7ecce8dd81cc",
+		"location": "Indy Hall",
+		"topics": ["Developing Websites Using the Astro Framework - Nick Hodges"]
+	},
+	{
 		"date": "2024-12-12T18:00:00.000-05:00",
 		"displayDate": "December 12",
 		"duration": {
@@ -7,7 +17,9 @@
 		},
 		"link": "https://rsvp.place/events/phillyjs/672404aa68cc286d23ab0d5d",
 		"location": "Indy Hall",
-		"topics": ["Type-Safe APIs For All Clients Powered by GraphQL"]
+		"topics": [
+			"Type-Safe APIs For All Clients Powered by GraphQL - Graham Vasquez"
+		]
 	},
 	{
 		"date": "2024-11-14T18:00:00.000-05:00",
