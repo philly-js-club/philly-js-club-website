@@ -8,7 +8,7 @@ export function loader() {
 	const feed = new Feed({
 		title: site.title,
 		description: site.description,
-		id: site.baseURL,
+		id: `${site.baseURL}/`,
 		link: site.baseURL,
 		language: "en",
 		copyright: `All rights reserved ${new Date().getFullYear().toString()}, Philly JS Club`,
@@ -23,11 +23,13 @@ export function loader() {
 			title: event.topics.join(" "),
 			id: event.link,
 			link: event.link,
+			author: [{ name: " " }],
 			date: new Date(
 				new Date(event.date).getFullYear(),
 				new Date(event.date).getMonth(),
 				1,
 			),
+			content: `Date: ${new Date(event.date).toDateString()}, Location: ${event.location}, Details: ${event.link}`,
 		});
 	});
 
