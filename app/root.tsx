@@ -36,6 +36,12 @@ export default function App() {
 				<link href="https://fonts.googleapis.com" rel="preconnect" />
 				<Meta />
 				<Links />
+				<link
+					href="/feed.atom"
+					rel="alternate"
+					title={site.title}
+					type="application/atom+xml"
+				/>
 			</head>
 			<body>
 				<Outlet />
