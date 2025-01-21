@@ -1,5 +1,18 @@
 [
 	{
+		"date": "2025-02-20T18:00:00.000-05:00",
+		"displayDate": "February 20 (Different Day!)",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://rsvp.place/events/phillyjs/679022b0b2853a80b4b3eba7",
+		"location": "Indy Hall",
+		"topics": [
+			"Geospatial Engineering with John Solly",
+			"Joint Meeting with DataPhilly"
+		]
+	},
+	{
 		"date": "2025-01-09T18:00:00.000-05:00",
 		"displayDate": "January 9",
 		"duration": {
