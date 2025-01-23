@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/react";
+import type { MetaFunction } from "react-router";
 
 import { AdLogo } from "~/components/AdLogo";
 import { AdText } from "~/components/AdText";
