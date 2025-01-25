@@ -1,5 +1,27 @@
 [
 	{
+		"date": "2025-04-10T18:00:00.000-05:00",
+		"displayDate": "April 10",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://rsvp.place/events/phillyjs/6795094cf2058bee35445b26",
+		"location": "Indy Hall",
+		"topics": ["TBD - Graham Vasquez"]
+	},
+	{
+		"date": "2025-03-13T18:00:00.000-05:00",
+		"displayDate": "March 13",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://rsvp.place/events/phillyjs/679507e2cbe4f9cc0de0d22d",
+		"location": "Indy Hall",
+		"topics": [
+			"Management of Non-Functional Requirements for Multiple Teams - Artem Deikun"
+		]
+	},
+	{
 		"date": "2025-02-20T18:00:00.000-05:00",
 		"displayDate": "February 20 (Different Day!)",
 		"duration": {
