@@ -23,7 +23,7 @@ export function loader() {
 			title: event.topics.join(" "),
 			id: event.link,
 			link: event.link,
-			author: [{ name: " " }],
+			author: [{ name: "PhillyJS Club" }],
 			date: new Date(
 				new Date(event.date).getFullYear(),
 				new Date(event.date).getMonth(),
