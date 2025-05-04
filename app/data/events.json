@@ -1,5 +1,15 @@
 [
 	{
+		"date": "2025-06-12T18:00:00.000-05:00",
+		"displayDate": "June 12",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://lu.ma/upv4aecf",
+		"location": "Indy Hall",
+		"topics": ["Debugging Like it is 2025 - Jason Voccia"]
+	},
+	{
 		"date": "2025-05-08T18:00:00.000-05:00",
 		"displayDate": "May 8",
 		"duration": {
