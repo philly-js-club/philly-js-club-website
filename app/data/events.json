@@ -1,5 +1,15 @@
 [
 	{
+		"date": "2025-07-10T18:00:00.000-05:00",
+		"displayDate": "July 10",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://lu.ma/wjedj2vf",
+		"location": "Indy Hall",
+		"topics": ["Ray Tracing CGI the Hard Way (with JS) - Steve Reuterskiold"]
+	},
+	{
 		"date": "2025-06-12T18:00:00.000-05:00",
 		"displayDate": "June 12",
 		"duration": {
