@@ -1,5 +1,25 @@
 [
 	{
+		"date": "2025-09-11T18:00:00.000-05:00",
+		"displayDate": "September 11",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://lu.ma/48qjrzii",
+		"location": "Indy Hall",
+		"topics": ["TBD - Waskar M. Paulino"]
+	},
+	{
+		"date": "2025-08-14T18:00:00.000-05:00",
+		"displayDate": "August 14",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://lu.ma/mqpg2ova",
+		"location": "Indy Hall",
+		"topics": ["Vim Motions: For Fun & Profit - Graham Vasquez"]
+	},
+	{
 		"date": "2025-07-10T18:00:00.000-05:00",
 		"displayDate": "July 10",
 		"duration": {
