@@ -7,6 +7,13 @@
 			"name": "Indy Hall"
 		},
 		{
+			"darkModeImageHref": "/assets/logos/supabase/supabase-logo-icon.svg",
+			"description": "Build in a weekend\u2026Scale to million. Supabase is the Postgres development platform.",
+			"href": "https://supabase.com",
+			"imageHref": "/assets/logos/supabase/supabase-logo-icon.svg",
+			"name": "Supabase"
+		},
+		{
 			"darkModeImageHref": "/assets/logos/liberty.png",
 			"description": "The essential destination site for technical job seekers.",
 			"href": "https://libertyjobs.com",
