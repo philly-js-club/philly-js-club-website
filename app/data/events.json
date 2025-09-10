@@ -1,5 +1,17 @@
 [
 	{
+		"date": "2025-10-09T18:00:00.000-05:00",
+		"displayDate": "October 9",
+		"duration": {
+			"hours": 2
+		},
+		"link": "https://luma.com/0ta9bshb",
+		"location": "Indy Hall",
+		"topics": [
+			"The Heat Death of the CMS: Using Astro and Git to Build a Website - Blythe White"
+		]
+	},
+	{
 		"date": "2025-09-11T18:00:00.000-05:00",
 		"displayDate": "September 11",
 		"duration": {
