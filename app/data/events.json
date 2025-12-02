@@ -1,5 +1,19 @@
 [
 	{
+		"date": "2025-12-18T18:00:00.000-05:00",
+		"displayDate": "December 18",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/indy-hall-iday",
+		"location": "Indy Hall",
+		"topics": [
+			"Join us for Indy Hall's Holiday Party",
+			"Register as Meetup Members and Organizers",
+			"Note: 3rd Thursday of the Month"
+		]
+	},
+	{
 		"date": "2025-11-13T18:00:00.000-05:00",
 		"displayDate": "November 13",
 		"duration": {
