@@ -1,5 +1,37 @@
 [
 	{
+		"date": "2026-04-09T18:00:00.000-05:00",
+		"displayDate": "April 9",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/hlokd8cw",
+		"location": "Indy Hall",
+		"topics": ["Design / Development: The Loop that Shapped Me - Dalton Strang"]
+	},
+	{
+		"date": "2026-03-12T18:00:00.000-05:00",
+		"displayDate": "March 12",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/m0gmf9zp",
+		"location": "Indy Hall",
+		"topics": ["Introduction to Hotwire - Mike Dalton"]
+	},
+	{
+		"date": "2026-02-12T18:00:00.000-05:00",
+		"displayDate": "February 12",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/py779csx",
+		"location": "Indy Hall",
+		"topics": [
+			"Understanding the Brain of Modern Code Editors: Language Server Protocols (LSP) - Graham Vasquez"
+		]
+	},
+	{
 		"date": "2026-01-08T18:00:00.000-05:00",
 		"displayDate": "January 8",
 		"duration": {
@@ -7,7 +39,7 @@
 		},
 		"link": "https://luma.com/mrpld8aw",
 		"location": "Indy Hall",
-		"topics": ["Code with Claude.ai"]
+		"topics": ["Code with Claude.ai - Jason Voccia"]
 	},
 	{
 		"date": "2025-12-18T18:00:00.000-05:00",
