@@ -1,14 +1,5 @@
 [
 	{
-		"date": "2026-03-15T09:00:00.000-05:00",
-		"displayDate": "March 15",
-		"duration": {
-			"hours": 11
-		},
-		"link": "https://indyhall.org/goodneighbors/",
-		"topics": ["Hackathon - The Big Philly Meetup Mashup"]
-	},
-	{
 		"date": "2026-04-09T18:00:00.000-05:00",
 		"displayDate": "April 9",
 		"duration": {
@@ -27,6 +18,15 @@
 		"link": "https://luma.com/m0gmf9zp",
 		"location": "Indy Hall",
 		"topics": ["Introduction to Hotwire - Mike Dalton"]
+	},
+	{
+		"date": "2026-03-15T09:00:00.000-05:00",
+		"displayDate": "March 15",
+		"duration": {
+			"hours": 11
+		},
+		"link": "https://indyhall.org/goodneighbors/",
+		"topics": ["Hackathon - The Big Philly Meetup Mashup"]
 	},
 	{
 		"date": "2026-02-12T18:00:00.000-05:00",
