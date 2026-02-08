@@ -103,7 +103,6 @@ export default [
 	{
 		files: ["**/*.{yml,yaml}"],
 		rules: {
-			"yml/file-extension": ["error", { extension: "yml" }],
 			"yml/sort-keys": [
 				"error",
 				{
