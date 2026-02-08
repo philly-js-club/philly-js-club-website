@@ -6,7 +6,7 @@ interface EventDetailsProps {
 	displayDate: string;
 	link: string;
 	linkText: string;
-	location: string;
+	location?: string;
 	topics: string[];
 	weight?: "light" | "medium";
 }

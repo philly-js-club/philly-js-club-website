@@ -17,11 +17,7 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "es2021",
-		"types": [
-			"@remix-run/node",
-			"vite/client",
-			"@remix-run/react/future/single-fetch.d.ts"
-		]
+		"types": ["@remix-run/node", "vite/client"]
 	},
 	"include": ["env.d.ts", "**/*.ts", "**/*.tsx"]
 }

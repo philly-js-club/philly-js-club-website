@@ -23,7 +23,7 @@ export default function Sponsors() {
 				<>
 					<h2 className="larger">Thanks, Sponsors!</h2>
 					<p className="sponsor-cta body-text">
-						Philly JS wouldn&apos;t exist without the support of our beloved
+						Philly JS would not exist without the support of our beloved
 						sponsors. Interested in sponsoring us?{" "}
 						<a className="underline" href="mailto:organizers@phillyjs.com">
 							Reach out to the Team!

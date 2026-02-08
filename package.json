@@ -39,6 +39,7 @@
 		"react-dom": "^18.3.1"
 	},
 	"devDependencies": {
+		"@eslint-community/eslint-plugin-eslint-comments": "^4.6.0",
 		"@eslint/js": "^9.39.2",
 		"@remix-run/dev": "^2.10.2",
 		"@remix-run/serve": "^2.10.2",
@@ -46,10 +47,15 @@
 		"@types/react-dom": "^18.3.0",
 		"cspell": "^8.10.4",
 		"eslint": "^9.39.2",
+		"eslint-plugin-jsonc": "^2.21.0",
 		"eslint-plugin-react": "^7.34.3",
-		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-regexp": "^3.0.0",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"eslint-plugin-yml": "^3.1.2",
 		"globals": "^17.3.0",
 		"husky": "^9.0.11",
+		"jsonc-eslint-parser": "^2.4.2",
 		"knip": "^5.25.1",
 		"lint-staged": "^15.2.7",
 		"markdownlint": "^0.34.0",
@@ -65,7 +71,8 @@
 		"typescript": "^5.5.3",
 		"typescript-eslint": "^8.54.0",
 		"vite": "^5.3.3",
-		"vite-tsconfig-paths": "^4.3.2"
+		"vite-tsconfig-paths": "^4.3.2",
+		"yaml-eslint-parser": "^2.0.0"
 	},
 	"engines": {
 		"node": ">=20"

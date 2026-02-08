@@ -29,7 +29,7 @@ export function loader() {
 				new Date(event.date).getMonth(),
 				1,
 			),
-			content: `Date: ${new Date(event.date).toDateString()}, Location: ${event.location}, Details: ${event.link}`,
+			content: `Date: ${new Date(event.date).toDateString()}, Location: ${event.location ?? "Not available"}, Details: ${event.link}`,
 		});
 	});
 
