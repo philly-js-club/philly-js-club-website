@@ -28,7 +28,7 @@ export function EventDetails({
 	let strDate;
 	try {
 		strDate = formatter.format(date);
-	} catch (ex) {
+	} catch {
 		try {
 			strDate = date.toLocaleDateString("en-US", {
 				month: "long",

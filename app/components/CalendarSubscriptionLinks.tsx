@@ -16,7 +16,7 @@ export function CalendarSubscriptionLinks({
 			<p>To subscribe, point your calendar client to the following URL:</p>
 			<p>{webcalUrl}</p>
 			<p>
-				⚠️ Be sure to not download and import that file! You'll need to
+				⚠️ Be sure to not download and import that file! You&apos;ll need to
 				subscribe to the calendar updates in order for your calendar client to
 				continue to fetch new events.
 			</p>
