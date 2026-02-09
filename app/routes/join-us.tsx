@@ -21,7 +21,7 @@ export default function Socials() {
 		<PageGrid
 			left={
 				<>
-					<p className="body-text">Here's where you can find us:</p>
+					<p className="body-text">Here&apos;s where you can find us:</p>
 					<Icons
 						icons={platforms.currentPlatforms}
 						imageClassName="platform-image"

@@ -3,9 +3,12 @@ import { useLoaderData } from "@remix-run/react";
 
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
+import type { EventData } from "~/data/types";
 import { constructSiteTitle } from "~/utils/common";
 
-import eventsJson from "../data/events.json";
+import eventsJsonRaw from "../data/events.json";
+
+const eventsJson: EventData[] = eventsJsonRaw;
 
 export function loader() {
 	// This assumes the events are always in sorted order, newest first.
@@ -46,7 +49,7 @@ export default function Index() {
 						</h2>
 						{events.map((event, index) => (
 							<EventDetails
-								date={event.date}
+								date={new Date(event.date)}
 								displayDate={event.displayDate}
 								key={index}
 								link={event.link}

@@ -31,7 +31,7 @@ export function loader() {
 	let ics = "";
 	try {
 		ics = icsService.generateIcs(site.title, events, site.baseURL);
-	} catch (err) {
+	} catch {
 		return new Response("Invalid ICS File", { status: 500 });
 	}
 
