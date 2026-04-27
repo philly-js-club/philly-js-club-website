@@ -1,5 +1,27 @@
 [
 	{
+		"date": "2026-06-11T18:00:00.000-05:00",
+		"displayDate": "June 11",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/jqdj69ph",
+		"location": "Indy Hall",
+		"topics": ["Real Time Agent Feedback Loops - Chasen Stark"]
+	},
+	{
+		"date": "2026-05-14T18:00:00.000-05:00",
+		"displayDate": "May 14",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/jqdj69ph",
+		"location": "Indy Hall",
+		"topics": [
+			"Chrome and Punishment: Security Risks in the Modern Front End - Blythe White"
+		]
+	},
+	{
 		"date": "2026-04-09T18:00:00.000-05:00",
 		"displayDate": "April 9",
 		"duration": {
