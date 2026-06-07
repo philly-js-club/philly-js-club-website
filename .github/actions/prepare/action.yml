@@ -3,13 +3,13 @@ description: Prepares the repo for a typical CI job
 name: Prepare
 runs:
   steps:
-    - uses: pnpm/action-setup@v4
+    - uses: pnpm/action-setup@v6
       with:
         version: 9.5.0
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v6
       with:
         cache: pnpm
-        node-version: "22"
+        node-version: "24"
     - run: pnpm install --frozen-lockfile
       shell: bash
   using: composite
