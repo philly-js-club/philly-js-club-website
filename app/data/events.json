@@ -1,5 +1,15 @@
 [
 	{
+		"date": "2026-07-09T18:00:00.000-05:00",
+		"displayDate": "July 9",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/8fdebslh",
+		"location": "Indy Hall",
+		"topics": ["Fast Fonts for a Global Web - Kelly Choyce-Dwan"]
+	},
+	{
 		"date": "2026-06-11T18:00:00.000-05:00",
 		"displayDate": "June 11",
 		"duration": {
