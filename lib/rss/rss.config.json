@@ -1,0 +1,24 @@
+{
+	"ChannelOptions": {
+		"description": "The Philadelphia JavaScript Club, founded in 2022, is a a place for developers of all skill and experience levels to connect, show off their work, and learn new things.",
+		"language": "en-US",
+		"link": "https://phillyjs.com/",
+		"title": "Philly JS Club"
+	},
+	"RSSOptions": {
+		"version": "2.0"
+	},
+	"XMLOptions": {
+		"version": "1.0"
+	},
+	"feed": [
+		{
+			"content": {
+				"description": "The Philadelphia JavaScript Club, founded in 2022, is a a place for developers of all skill and experience levels to connect, show off their work, and learn new things.",
+				"link": "https://phillyjs.com/about",
+				"title": "Welcome to Philly JS club"
+			},
+			"type": "item"
+		}
+	]
+}
