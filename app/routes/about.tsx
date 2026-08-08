@@ -27,13 +27,13 @@ export default function About() {
 						their work, and learn new things.
 					</p>
 					<p className="body-text">
-						We are devoted to being good citizens: we're here to help support
-						individual and organizational development, to connect developers
-						with the events going on in Philadelphia, and to provide a safe
-						space for people to try new things. We want to empower everyone who
-						joins us to build the best things they can build; we want to help
-						make instant friends amongst the developers who call Philadelphia
-						home.
+						We are devoted to being good citizens: we&apos;re here to help
+						support individual and organizational development, to connect
+						developers with the events going on in Philadelphia, and to provide
+						a safe space for people to try new things. We want to empower
+						everyone who joins us to build the best things they can build; we
+						want to help make instant friends amongst the developers who call
+						Philadelphia home.
 					</p>
 					<p className="body-text">We’re happy for you to join us.</p>
 					<h2 className="larger">The Team</h2>

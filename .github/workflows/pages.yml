@@ -1,15 +1,3 @@
-name: Deploy to GitHub Pages
-# inspired by https://blog.oldweb2.com/remix-static-site
-
-on:
-  push:
-    branches: [main]
-  schedule:
-    # Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
-    # top of the hour so that we're not trying to run on GitHub's servers when
-    # every other cron job is trying to run
-    - cron: "14 * * * *"
-
 jobs:
   build:
     if: github.repository == 'philly-js-club/philly-js-club-website'
@@ -26,8 +14,8 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
-          path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: ~/.npm
           restore-keys: |
             ${{ runner.os }}-node-
 
@@ -50,7 +38,18 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./out
           external_repository: philly-js-club/js-club-website-public
-          user_name: "github-actions[bot]"
+          publish_dir: ./out
           user_email: "github-actions[bot]@users.noreply.github.com"
+          user_name: "github-actions[bot]"
+name: Deploy to GitHub Pages
+# inspired by https://blog.oldweb2.com/remix-static-site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Run every hour on minute 14 — 14 picked rather arbitrarily as not on the
+    # top of the hour so that we're not trying to run on GitHub's servers when
+    # every other cron job is trying to run
+    - cron: "14 * * * *"
