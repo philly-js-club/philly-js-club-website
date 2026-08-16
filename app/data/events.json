@@ -1,5 +1,15 @@
 [
 	{
+		"date": "2026-09-10T18:00:00.000-05:00",
+		"displayDate": "Sept 10",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/h9t1e1n8",
+		"location": "Indy Hall",
+		"topics": ["Agentic Marketplace - Eric Laquer"]
+	},
+	{
 		"date": "2026-08-13T18:00:00.000-05:00",
 		"displayDate": "Aug 13",
 		"duration": {
