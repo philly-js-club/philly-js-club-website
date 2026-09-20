@@ -1,6 +1,0 @@
-build
-node_modules
-playwright-report
-package-lock.json
-pnpm-lock.yaml
-test-results

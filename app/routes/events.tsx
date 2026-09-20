@@ -5,9 +5,12 @@ import { CalendarSubscriptionLinks } from "~/components/CalendarSubscriptionLink
 import { EventDetails } from "~/components/EventDetails";
 import { PageGrid } from "~/components/PageGrid";
 import { site } from "~/config";
+import type { EventData } from "~/data/types";
 import { constructSiteTitle, groupBy } from "~/utils/common";
 
-import events from "../data/events.json";
+import eventsRaw from "../data/events.json";
+
+const events: EventData[] = eventsRaw;
 
 export function loader() {
 	return groupBy(events, (event) => new Date(event.date).getFullYear());

@@ -6,7 +6,7 @@ interface EventDetailsProps {
 	displayDate: string;
 	link: string;
 	linkText: string;
-	location: string;
+	location?: string;
 	topics: string[];
 	weight?: "light" | "medium";
 }
@@ -28,7 +28,7 @@ export function EventDetails({
 	let strDate;
 	try {
 		strDate = formatter.format(date);
-	} catch (ex) {
+	} catch {
 		try {
 			strDate = date.toLocaleDateString("en-US", {
 				month: "long",
