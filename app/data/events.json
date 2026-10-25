@@ -1,5 +1,17 @@
 [
 	{
+		"date": "2026-11-12T18:00:00.000-05:00",
+		"displayDate": "Nov 12",
+		"duration": {
+			"hours": 3
+		},
+		"link": "https://luma.com/uv6ni7kt",
+		"location": "Indy Hall",
+		"topics": [
+			"The Ecology of an AI Agent: Building AI Harnesses for a Future Worth Sharing - Sarah Peony"
+		]
+	},
+	{
 		"date": "2026-09-10T18:00:00.000-05:00",
 		"displayDate": "Sept 10",
 		"duration": {
