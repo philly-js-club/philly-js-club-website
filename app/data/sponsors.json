@@ -7,11 +7,11 @@
 			"name": "Indy Hall"
 		},
 		{
-			"darkModeImageHref": "/assets/logos/supabase/supabase-logo-icon.svg",
-			"description": "Build in a weekend\u2026Scale to million. Supabase is the Postgres development platform.",
-			"href": "https://supabase.com",
-			"imageHref": "/assets/logos/supabase/supabase-logo-icon.svg",
-			"name": "Supabase"
+			"darkModeImageHref": "/assets/logos/aweber/AW_INLINE_WHITE.png",
+			"description": "Experience the email and automation solution that takes your business to the next level.",
+			"href": "https://www.aweber.com",
+			"imageHref": "/assets/logos/aweber/AW_INLINE_PRIMARY.svg",
+			"name": "AWeber"
 		},
 		{
 			"darkModeImageHref": "/assets/logos/liberty.png",
